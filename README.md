@@ -59,28 +59,34 @@ Al hacer click en cualquiera de las fotos de los personajes, el usuario accede a
 
 <a id="construccion"> :dizzy: 3. CONSTRUCCIÓN DEL PROYECTO :dizzy: </a>
 
-
-
-### El comienzo 
-
 Te invitamos a ver nuestra plataforma de trabajo, donde podrás ver gráficamente todo el proceso de nuestro Proyecto. 
 
 [Ingresa aquí a nuestro Board](https://miro.com/welcomeonboard/5Yy90mCtve1ddMJERFMiUXw5wQrPaYKfvtROmuIpzWqNOF85IgoVaKUB2NicW6vB)
 
 
+
+### El comienzo 
+
+
 Todo comienza con la necesidad de nuestros clientes, por crear una plataforma que potenciara la experiencia de los usuarios de "Harry Potter: Wizards United", implementando soluciones ante las necesidades de los usuarios, descubiertas luego de una investigación UX. 
 
-Si bien lo esencial era implementar el mecanismo de filtrado, y desplegar las fichas de los diferentes personajes, no queríamos ser un simple apéndice enciclopédico para el juego, sino estimular al usuario a partir de una experiencia interactiva, intiutiva y con recompensas. 
-Con esto, la idea de encontrar un Match Mágico y fue una ganadora para nuestro equipo. 
+Si bien lo esencial era implementar el mecanismo de filtrado, y desplegar las fichas de los diferentes personajes, no queríamos ser un simple apéndice enciclopédico para el juego, sino estimular al usuario a partir de una experiencia interactiva, intiutiva y con recompensas.
 
-Luego de tener un concepto básico de nuestra aplicación, comenzamos nuestra planificación, para llevar a cabo el proyecto. 
+Ideamos un primera Diagrama de Flujo de la aplicación, donde se refleja la primera aproximación a nuestra propuesta.
+
+![imagen a mostrar](Images/Diagrama1.png)
+
+Con este primer paso, teníamos un punto de partida, pero luego de ir trabajando en nuestra propuesta, y recibiendo feedback, se concibió la idea de lo que hoy es Magic Match: Una aplicación que no solo te muestra tu afín de pareja en el mundo de los Harry Potter, sino también su enemigo. 
+Con esto, Magic Match fue una idea ganadora para nuestro equipo. 
+
+Luego de tener claro hacia donde nos dirigíamos, comenzamos nuestra planificación, para llevar a cabo el proyecto. 
 
 
 ### Organización del Proyecto
 
 Nuestra forma de trabajo se basa en la metodología SCRUM de Metodologías Ágiles. 
 
-Comenzamos nuestro proceso de planificación leyendo el readme del proyecto a realizar, y desglosando cada diferente tarea y objetivo en un trello. 
+Comenzamos nuestro proceso de planificación desglosando cada diferente tarea y objetivo en un tablero de trabajo. 
 
 [Visita acá nuestro Desglose del Proyecto](https://trello.com/b/uGPxOAaF/harry-potter)
 
@@ -104,55 +110,61 @@ Con la planificación clara, procedemos a trabajar en nuestro proyecto.
 
 ### Desarrollo
 
-Comenzamos el Sprint 1 creando un diagrama de flujo de cómo se sería el flujo de nuestra aplicación. 
+SPRINT :one:
 
-![imagen a mostrar](Images/Diagrama1.png)
+Comenzamos el Sprint tomando dos lineas principales de trabajo. La primera de Investigación, donde durante la semana se estudió constantemente las distintas temáticas a aplicarse en nuestro proyecto desde las distintas perspectivas desde donde debe ser construido. 
+
+En paralelo, también nos enfocamos en re definir nuestra aplicación, y setearla como lo que actualmente proponemos como Magic Match. 
+
+Creamos un nuevo diagrama de flujo, el cuál marca el flujo real con que se desarrolla la aplicación actualmente. 
+
+![imagen a mostrar](Images/Diagrama_Final.png)
+
+Esta semana definimos a nuestros Usuarios y sus necesidades. 
+
+Hicimos Sketchs del proyecto y creamos protitpos de baja, los cuales fueron probados e hicimos iteraciones, según el feedback obtenido. 
+
+Se creó un prototipo de Alta en Figma.
+
+Se escribieron Pruebas de usuario y Criterios de Aceptación. 
+
+Se hicieron pruebas de usuario con el protipo en Alta. 
+
+En paralelo, estuvimos investigando y practicando Java Script para aplicar en la plataforma. 
+
+Finalmente, integramos en la plataforma Miro, todos los documentos de nuestro proyecto, que es el link presentado el inicio de esta Categoría. 
+
+Terminamos la semana con una retrospectiva, y reformulamos el Tablero de Actividades del Sprint 2, incluyendo las historias de Usuarios. 
+
+Sprint 2. 
+
+
+Sprint 3. 
 
 
 
+ACA TENEMOS QUE DESCRIBIR BIEN. DE MANERA CLARA Y SIN ALARGARSE TANTO, TOMANDO EN CUENTA QUE TENEMOS QUE DESCRIBIR BIEN EL PROCESO UX. 
 
-La primera parte del proceso de investigación consistió en definir las lineas investigativas, en las diversas áreas a trabajar, las cuales són HTML, CSS, JavaScript. 
 
-Acordamos posibles caminos para resolver nuestras interrogantes en cuanto la teoría y aplicación de esta misma, en función de la construcción de nuestro programa. 
-Fuimos dividiendo las temáticas y tareas, y a la vez también trabajando en conjunto y compartiendo las nuevas ideas y conocimientos, para ir paso a paso avanzando en el proyecto. 
 
-Con un marco teórico establecido, continuamos realizando un diagrama, para definir el flujo que tendría nuestra aplicación, y asi tener identificado el paso a paso de las tareas a realizar en el código. 
-
-![imagen a mostrar](IDTELOS-DIAGRAMA-DE-FLUJO.jpg)
-
-Basado en esto creamos un prototipo del programa, el cuál fue testeado en usuarios que cumplieran con el perfil construido. Veremos esto en detalle en nuestra próxima sección. 
-
-Luego de tener un feedback, después de las pruebas de usuario, procedimos a crear una maqueta de nuestro programa, la cuál tuvo un testeo final, y sobre la cuál trabajamos y comenzamos a codear. 
-
-El resultado de nuestro programa, es el punto cúlmine de todo nuestro proceso de trabajo y aprendizaje para la construcción del mismo. Si bien no se logró completar en un 100%, cada paso fue concientemente internalizado y aprendido, ya que implicó nuestro esfuerzo, trabajo y dedicación. 
 
 ***
 
-<a id="diseno">  4. DISEÑO UX :iphone: :ok_hand:</a>
+<a id="diseno"> :partly_sunny: 4. DISEÑO UX :partly_sunny: </a>
 
 
+El eje central de nuestro trabajo fue el diseño UX. 
 
-El proceso de Diseño UX fue una pieza clave para el desarrollo de esta aplicación.
+Nuestro proceso de construcción del proyecto tiene como objetivo principal exponenciar la experiencia de los usuarios de "Harry Potter: Wizards United", bajo la implementación de mecanismos solicitados como requisito técnico fundamental. 
 
-Nuestro proyecto, al tener un objetivo que se enfoca en elevar la experiencia de usuario de quienes nos escogen, es vital que tenga un proceso de diseño nutrido y profundo. 
-A continuación vamos a detallar los diferentes pasos que fuimos dando, en el proceso de diseño de la experiencia de usuario. 
+A continuación detallamos paso a paso, toda la construcción del diseño UX de la plataforma Magic Match. 
 
-
-### Nuestros Usuarios :couple: :two_women_holding_hands: :two_men_holding_hands:
-
-
-Nuestros clientes directos son los moteles pertenecientes a nuestra cadena de colaboradores, quienes buscan incansablemente el bienestar y satisfacción de sus clientes, quienes son a su vez, los usuarios principales de nuestra aplicación. 
-
-Nuestro cliente tiene la necesidad de mejorar la experiencia de usuario ofrecida, para así, no solo fidelizar a su clientela, sino para crear un vínculo indisoluble de confianza, la cuál apunta a transformar por completo la experiencia de sus usuarios. 
-
-Por otra parte, los usuarios de nuestra aplicación, son personas adultas, quienes están en una constante búsqueda por mejorar su experiencia de usuario, por tanto tienen una preferencia por los servicios y productos que eleven su experiencia de usuario; Mientras mejor sea la experiencia, más satisfecho queda este usuario y no tienen problemas en invertir recursos para que así sea. 
-
-Según esto, y según los fines de nuestra aplicación, podemos dividir a nuestros usuarios en los siguientes perfiles. 
+### Usuarios Plataforma :first_quarter_moon:
 
 
-**PERFIL DE USUARIO**
+Podemos identificar 2 perfiles de usuario predominantes en nuestra aplicación.
 
-Tenemos 3 posibles tipos de usuario para esta experiencia.  
+
 
 :black_medium_small_square:	Usuario que reserva su habitación a través de la web de un motel perteneciente a nuestra red. El usuario es redireccionado a nuestra plataforma, a través de la web del motel, para terminar de confirmar su reserva. 
 
@@ -312,6 +324,52 @@ La interfaz fue definida en cuanto a las necesidades de nuestros usuarios. Una p
  Evitamos las vueltas sin sentido en el programa y nos enfocamos en hacer una plataforma con un buen flujo y un diseño moderno, seductor y eficaz. 
 
 ***	
+
+<a id="conclusiones"> :first_quarter_moon_with_face:  5. CONCLUSIONES Y REFLEXIONES :first_quarter_moon_with_face:</a>
+
+
+COMENTAR COMO FUE NUESTRO PROCESO. COMO SE AFRONTÓ Y COMO SE DESARROLLO. 
+
+VER LAS COSAS QUE SE NOS HICIERON DIFICILES
+
+VER LAS COSAS QUE SE NOS HICIERON FACILES O DISFRUTAMOS MAS
+
+
+
+COMENTAR SI CUMPLIMOS CON OBJETIVOS DEL PROYECTO. REFLEXION AL RESPECTO 
+
+
+COMO PODEMOS MEJORAR EN EL FUTURO. 
+
+FIN DE CONCLUSIONES. REFLEXION FINAL
+
+***	
+
+
+<a id="agradecimientos"> :sun_with_face: 6. AGRADECIMIENTOS  :sun_with_face: </a>
+
+
+ACA VAN NUESTROS AGRADECIMIENTOS. ESCRIBIR ESTA PARTE EN LA SEMANA FINAL. 
+
+
+
+
+Copyright by Yosliana Aguilar y Paula Trujillo, 2020 | Laboratoria 013
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
