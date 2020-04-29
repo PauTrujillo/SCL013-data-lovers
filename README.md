@@ -1,80 +1,325 @@
 
-Pruebas Yosliana
+:zap: MAGIC MATCH :zap:
+
+### INDICE
+
+* [1. INTRODUCCIÓN A MAGIC MATCH](#introduccion)
+* [2. MAGIC MATCH: TODO LO QUE NECESITAS SABER](#informacion)	
+* [3. PLANIFICACIÓN](#construccion)	
+* [4. DISEÑO UX](#diseno)	
+* [5. CONCLUSIONES Y REFLEXIONES](#conclusiones)	
+* [6. AGRADECIMIENTOS](#agradecimientos)	
 
 
-# Data Lovers
 
-## Índice
+<a id="introduccion"> :sparkles: 1. INTRODUCCIÓN A MAGIC MATCH :sparkles: </a>
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Parte adicional-opcional](#6-parte-adicional-opcional)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
+Magic Match es una plataforma web, basada en el imaginario de Harry Potter, que ofrece a sus usuarios la oportunidad de jugar dos tests, donde podrán encontrar su alma gemela mágica y su enemigo mágico, dentro de los personajes de la Saga.
+
+El usuario también tiene acceso la información técnica de cada uno de los personajes disponibles. 
+
 
 ***
 
-## 1. Preámbulo
+<a id="informacion">  :boom: 2. Magic Match: Todo lo que necesitas saber	:boom: </a>
 
-Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 millones de terabytes de datos, una cifra sin
-precedentes.
+***Magic Match*** nace como respuesta ante la necesidad de nuestro cliente, por mejorar la experiencia de usuario de los jugadores de su plataforma "Harry Potter: Wizards Unite". 
 
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
+Luego de sus estudios en usuarios, se dieron cuenta que había ciertas elementos que podría ser util implementar, ya que aportarían a elevar la experiencia de sus usuarios. 
 
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por el usuario
-al lado derecho.
+Estos elementos son:
 
-![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
+-Poder filtrar personajes por sus características, particularmente: Patronus - Varita Mágica - Casa Mágica. 
 
-## 2. Resumen del proyecto
+-Poder acceder a la información de los personajes disponibles en la base de datos. 
 
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita.
 
-Como entregable final tendrás una página web que permita a los usuarios
-**visualizar, filtrar, ordenar, etc.**.
+Bajo este concepto se concibe ***Magic Match***, una plataforma web, cuyo objetivo principal es complementar la experiencia de usuario de los jugadores de "Harry Potter: Wizards Unite", a través de una aplicación, que les permita participar de dos experiencias de estilo test. Como recompensa, obtendrán sus Match Mágicos dentro de la gama de personajes disponibles, tanto en categoría Pareja, como Enemigo. 
 
-Te proponemos una serie de datos de diferentes _temáticas_ para que los
-explores y decidas con cuál te interesa trabajar. Cada _set_ de datos viene con
-información básica sobre los datos y su estructura, y una lista de las
-necesidades de los usuarios que proviene de una investigación (_research_)
-hecha por el equipo de Laboratoria.
+El usuario además, puede acceder a una sección de Personajes, donde se encuentra el acceso a las fichas técnicas, de cada uno de los personajes que forman parte de la base de datos dispuesta por nuestro cliente. 
 
-Una vez que elijas, diseña tu proyecto intentando ofrecerle la mejor experiencia
-posible para ayudarle a satisfacer sus necesidades.
+La plataforma ***Magic Match*** es también accesible para usuarios que no son participantes de "Harry Potter: Wizards Unite", pero que si se sienten atraídos a participar de experiencias relacionadas al mundo de Harry Potter. 
 
-Estos son datos que te proponemos:
+**¿Cómo funciona?**
 
-* [Pokémon](src/data/pokemon/pokemon.json):
-  En este set encontrarás una lista con los 151 Pokémon de la región de Kanto, junto con sus respectivas estadísticas usadas en el juego
-  [Pokémon GO](http://pokemongolive.com).
-  - [Investigación con jugadores de Pokémon Go](src/data/pokemon/README.md)
+El usuario entra a nuestra la Plataforma de ***Magic Match***, donde puede escoger entre Descubrir su Pareja Mágica, Descubrir Enemigo Mágico y conocer más sobre los personajes disponibles. 
+No es necesario registrarse, ni estar vinculado a ninguna otra plataforma para acceder. 
 
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de campeones en una liga del
-  juego League of Legends (LoL).
-  - [Investigación con jugadores de LoL](src/data/lol/README.md)
+Una vez que entran en las categorías de juego para descubrir pareja o enemigo, se le presenta un set de 5 preguntas, donde el usuario debe escoger su respuesta. 
+Este set de preguntas está relacionado con los elementos que desea implementar nuestro cliente, por tanto hay preguntas relacionadas con las varitas, los Patronus y las casas mágicas de los personajes. 
+
+El mecanismo por el cuál se obtiene el match mágico del usuario, es a través del filtrado, por tanto, el usuario efectivamente hace un filtrado a través de las respuesta que entrega en cada pregunta, pero este es un filtrado intuitivo, que entrega un resultado en función del instinto del usuario, y no un filtrado racional, que solo arroja un orden predeterminado. 
+
+Por otra parte, cuando el usuario ingresa a la categoría para conocer más sobre los personajes, accede a las fotos de los diferentes personajes, desplegados en la pagina web, las cuales puede ordenar bajo distintos criterios. 
+Al hacer click en cualquiera de las fotos de los personajes, el usuario accede a una ficha técnica con información de cada personaje. 
+
+
+***	
+
+
+<a id="construccion"> :dizzy: 3. CONSTRUCCIÓN DEL PROYECTO :dizzy: </a>
+
+Te invitamos a ver nuestra plataforma de trabajo, donde podrás ver gráficamente todo el proceso de nuestro Proyecto. 
+
+[Ingresa aquí a nuestro Board](https://miro.com/welcomeonboard/5Yy90mCtve1ddMJERFMiUXw5wQrPaYKfvtROmuIpzWqNOF85IgoVaKUB2NicW6vB)
+
+
+
+### El comienzo 
+
+
+Todo comienza con la necesidad de nuestros clientes, por crear una plataforma que potenciara la experiencia de los usuarios de "Harry Potter: Wizards Unite", implementando soluciones ante las necesidades de los usuarios, descubiertas luego de una investigación UX. 
+
+Si bien lo esencial era implementar el mecanismo de filtrado, y desplegar las fichas de los diferentes personajes, no queríamos ser un simple apéndice enciclopédico para el juego, sino estimular al usuario a partir de una experiencia interactiva, intiutiva y con recompensas.
+
+Ideamos un primera Diagrama de Flujo de la aplicación, donde se refleja la primera aproximación a nuestra propuesta.
+
+![imagen a mostrar](Images/Diagrama1.png)
+
+Con este primer paso, teníamos un punto de partida, pero luego de ir trabajando en nuestra propuesta, y recibiendo feedback, se concibió la idea de lo que hoy es ***Magic Match***: Una aplicación que no solo te muestra tu afín de pareja en el mundo de los Harry Potter, sino también su enemigo. 
+Con esto, ***Magic Match*** fue una idea ganadora para nuestro equipo. 
+
+Luego de tener claro hacia donde nos dirigíamos, comenzamos nuestra planificación, para llevar a cabo el proyecto. 
+
+
+### Organización del Proyecto
+
+Nuestra forma de trabajo se basa en la metodología SCRUM de Metodologías Ágiles. 
+
+Comenzamos nuestro proceso de planificación desglosando cada diferente tarea y objetivo en un tablero de trabajo. 
+
+[Visita acá nuestro Desglose del Proyecto](https://trello.com/b/uGPxOAaF/harry-potter)
+
+Con una aproximación más clara de nuestras misiones y objetivos, creamos una calendarización de nuestro proyecto, en la misma plataforma.
+
+[Visita acá nuestro Calendario](https://trello.com/b/x3gtxXLE/calendario-planificaci%C3%B3n-data-lovers)
+
+
+El proceso de planificación se divide en 3 Sprint: 
+
+-Planificación e Investigación
+-Desarrollo
+-Testeo y Afinamiento. 
+
+La idea general de nuestra planificación es setear tareas diarias, para ir resolviendo en equipo. Cada día contamos con un Daily Meeting, que nos servirá para ir constantemente poniéndonos al tanto como equipo, e ir avanzando en conjunto hacia los objetivos diarios. 
+
+Al final de cada Sprint tendremos una Retrospectiva de la semana, donde prepararemos el tablero de Actividades para el siguiente Sprint. 
+
+Con la planificación clara, procedemos a trabajar en nuestro proyecto. 
+
+
+### Desarrollo
+
+SPRINT :one:
+
+Comenzamos el Sprint tomando dos lineas principales de trabajo. La primera de Investigación, donde durante la semana se estudió constantemente las distintas temáticas a aplicarse en nuestro proyecto desde las distintas perspectivas desde donde debe ser construido. 
+
+En paralelo, también nos enfocamos en re definir nuestra aplicación, y setearla como lo que actualmente proponemos como Magic Match. 
+
+Creamos un nuevo diagrama de flujo, el cuál marca el flujo real con que se desarrolla la aplicación actualmente. 
+
+![imagen a mostrar](Images/Diagrama_Final.png)
+
+Esta semana definimos a nuestros Usuarios y sus necesidades. 
+
+Hicimos Sketchs del proyecto y creamos protitpos de baja, los cuales fueron probados e hicimos iteraciones, según el feedback obtenido. 
+
+Se creó un prototipo de Alta en Figma.
+
+Se escribieron Pruebas de usuario y Criterios de Aceptación. 
+
+Se hicieron pruebas de usuario con el protipo en Alta. 
+
+En paralelo, estuvimos investigando y practicando Java Script para aplicar en la plataforma. 
+
+Finalmente, integramos en la plataforma Miro, todos los documentos de nuestro proyecto, que es el link presentado el inicio de esta Categoría. 
+
+Terminamos la semana con una retrospectiva, y reformulamos el Tablero de Actividades del Sprint 2, incluyendo las historias de Usuarios. 
+
+Sprint 2. 
+
+
+Sprint 3. 
+
+
+
+ACA TENEMOS QUE DESCRIBIR BIEN. DE MANERA CLARA Y SIN ALARGARSE TANTO, TOMANDO EN CUENTA QUE TENEMOS QUE DESCRIBIR BIEN EL PROCESO UX. 
+
+
+
+
+***
+ 
+<a id="diseno">  first_quarter_moon: 4. DISEÑO UX first_quarter_moon: </a>
+
+
+El eje central de nuestro trabajo fue el diseño UX. 
+
+Nuestro proceso de construcción del proyecto tiene como objetivo principal exponenciar la experiencia de los usuarios de "Harry Potter: Wizards Unite", bajo la implementación de mecanismos solicitados como requisito técnico fundamental. 
+
+A continuación detallamos paso a paso, toda la construcción del diseño UX de la plataforma Magic Match. 
+
+### Usuarios Plataforma 
+
+
+Podemos identificar 2 perfiles de usuario predominantes en nuestra aplicación.
+
+
+
+:black_medium_small_square:	Usuario que juega "Harry Potter: Wizards United". 
+
+:black_medium_small_square:	Usuario que no juega "Harry Potter: Wizards United", pero que gusta de involucrarse con el mundo de Harry Potter. 
+
+
+**Perfil Usuario A:** 
+
+Hombres y mujeres. 
+Mayores de 10 años.
+Usuarios de "Harry Potter: Wizards Unite".
+Con acceso a plataforma web. 
+
+
+Usuario A, es un hombre o mujer, mayor de 10 años, con acceso a plataforma web. 
+Este usuario juega activamente el juego "Harry Potte: Wizards Unite". 
+Este usuario disfruta de utilizar plataformas que lo involucren en el mundo de Harry Potter, especialmente si esa experiencia va a ser un aporte para su experiencia en otras instancias, por ejemplo, al momento de elegir algunas características de su perfil en la plataforma donde juega. 
+
+Necesidades Usuario A:
+
+* Acceso a plataforma relacionada con el mundo Harry Potter
+* Plataforma que potencie su experiencia en relación a "Harry Potter: Wizards Unite". 
+* Poder obtener información sobre los personajes del juego 
+* Conocer información sobre las varitas de los personajes 
+* Poder hacer filtrado de los personajes con distintas categorías, entre ellas: Varita M´gica,    Patronus y Casa Mágica. 
+* Acceder a una interfaz amigable que se representa la identidad visual de Harry Potter. 
+
+
+
+***Perfil Usuario B***
+
+Hombres y mujeres. 
+Sin rango etario
+Gustan del mundo Harry Potter. 
+Con acceso a una plataforma web
+
+
+Usuario B, es un hombre o mujer, sin rango etario, con acceso a plataforma web. 
+Este usuario gusta del mundo Harry Potter, por tanto disfruta de las instancias que lo relacionen a este. Usuario tiene interés por por las experiencias relacionadas a Harry Potter. 
+
+Necesidades Usuario B:
+
+* Acceso a plataforma relacionada con el mundo Harry Potter y que esta sea interesante. 
+* Navegar una aplicación divertida, que lo identifique con el mundo de Harry Potter. 
+* Acceder a una interfaz amigable que se representa la identidad visual de Harry Potter. 
+
+
+![imagen a mostrar](Images/Usuarios-clientes.jpg)
+
+
+
+
+### Interfaz y Prototipado :memo: :computer:
+
+DESCRIBIR PROCESO DE CONSTRUCCION DE INTERFAZ. 
+
+SKETCHS  A MANO Y DIGITALES
+
+PROTOTIPO BAJA
+PRUEBAS DE USUARIO
+
+PROTOTIPO ALTA
+
+GUION PARA PROTOTIPO
+PRUEBAS DE USUARIO - DESCRIPCION. VIDEOS . TRANSCRIPCIONES 
+
+
+CONCLUSIONES 
+
+COMO DEFINIMOS INTERFAZ USUSARIO 
+
+:o: Existen los usuarios perfilados. 
+
+:o: El usuario siempre está en búsqueda de una mejor experiencia de usuario. 
+
+:o: El usuario disfruta la plataforma. 
+
+:o: etc
+
+:o: resolvemos necesidades de Cliente? 
+
+:o: resolvemos necesidades de ususario? 
+
+:o: 
+¡
+NUEVO PROTOTIPO EN ALTA IMPLEMENTADO EN MAZE (ESTO ESTA PENDIENTE)
+
+
+!
+ANALISIS Y RESULTADO 
+
+
+PRODUCTO FINAL  + LINK EN GIT HUB PAGES 
+
+
+
+
+***	
+
+<a id="conclusiones"> :first_quarter_moon_with_face:  5. CONCLUSIONES Y REFLEXIONES :first_quarter_moon_with_face:</a>
+
+
+COMENTAR COMO FUE NUESTRO PROCESO. COMO SE AFRONTÓ Y COMO SE DESARROLLO. 
+
+VER LAS COSAS QUE SE NOS HICIERON DIFICILES
+
+VER LAS COSAS QUE SE NOS HICIERON FACILES O DISFRUTAMOS MAS
+
+
+
+COMENTAR SI CUMPLIMOS CON OBJETIVOS DEL PROYECTO. REFLEXION AL RESPECTO 
+
+
+COMO PODEMOS MEJORAR EN EL FUTURO. 
+
+FIN DE CONCLUSIONES. REFLEXION FINAL
+
+***	
+
+
+<a id="agradecimientos"> :sun_with_face: 6. AGRADECIMIENTOS  :sun_with_face: </a>
+
+
+ACA VAN NUESTROS AGRADECIMIENTOS. ESCRIBIR ESTA PARTE EN LA SEMANA FINAL. 
+
+
+
+
+Copyright by Yosliana Aguilar y Paula Trujillo, 2020 | Laboratoria 013
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 * [Harry Potter](src/data/potter/potter.json).
   Este set de datos muestra la lista de los personajes del mundo de [Harry Potter: Wizards Unite](https://www.wizardingworld.com/), junto con sus respectivas características mencionadas en la serie de novelas de Harry Potter escrita por la autora británica J.K.Rowling.
   - [Investigación con jugadores de Harry Potter: Wizards Unite](src/data/potter/README.md)
 
-## 3. Objetivos de aprendizaje
 
-El objetivo principal de este proyecto es que, entendiendo las necesidades de tus usuarios, aprendas a diseñar y construir una interfaz web donde se pueda visualizar y manipular data.
-
-Revisa la lista y reflexiona sobre los objetivos que conseguiste en el proyecto anterior. Piensa en eso al decidir tu estrategia de trabajo individual y de equipo.
 
 ### UX
 - [ ] Diseñar la aplicación pensando y entendiendo al usuario.
@@ -458,8 +703,6 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 
 ## 9. Checklist
 
-* [ ] Usa VanillaJS.
-* [ ] No hace uso de `this`.
 * [ ] Pasa linter (`npm run pretest`)
 * [ ] Pasa tests (`npm test`)
 * [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
