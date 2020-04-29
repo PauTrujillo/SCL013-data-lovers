@@ -1,79 +1,328 @@
-lalalalalalalalalaala n2
+
+:zap: MAGIC MATCH :zap:
+
+### INDICE
+
+* [1. INTRODUCCIÓN A MAGIC MATCH](#introduccion)
+* [2. MAGIC MATCH: TODO LO QUE NECESITAS SABER](#informacion)	
+* [3. PLANIFICACIÓN](#construccion)	
+* [4. DISEÑO UX](#diseno)	
+* [5. CONCLUSIONES Y REFLEXIONES](#conclusiones)	
+* [6. AGRADECIMIENTOS](#agradecimientos)	
 
 
-# Data Lovers
 
-## Índice
+<a id="introduccion"> :sparkles: 1. INTRODUCCIÓN A MAGIC MATCH :sparkles: </a>
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Parte adicional-opcional](#6-parte-adicional-opcional)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
+Magic Match es una plataforma web, basada en el imaginario de Harry Potter, que ofrece a sus usuarios la oportunidad de jugar dos tests, donde podrán encontrar su alma gemela mágica y su enemigo mágico, dentro de los personajes de la Saga.
+
+El usuario también tiene acceso la información técnica de cada uno de los personajes disponibles. 
+
 
 ***
 
-## 1. Preámbulo
+<a id="informacion">  :boom: 2. Magic Match: Todo lo que necesitas saber	:boom: </a>
 
-Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 millones de terabytes de datos, una cifra sin
-precedentes.
+***Magic Match*** nace como respuesta ante la necesidad de nuestro cliente, por mejorar la experiencia de usuario de los jugadores de su plataforma "Harry Potter: Wizards United". 
 
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
+Luego de sus estudios en usuarios, se dieron cuenta que había ciertas elementos que podría ser util implementar, ya que aportarían a elevar la experiencia de sus usuarios. 
 
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por el usuario
-al lado derecho.
+Estos elementos son:
 
-![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
+-Poder filtrar personajes por sus características, particularmente: Patronus - Varita Mágica - Casa Mágica. 
 
-## 2. Resumen del proyecto
+-Poder acceder a la información de los personajes disponibles en la base de datos. 
 
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita.
 
-Como entregable final tendrás una página web que permita a los usuarios
-**visualizar, filtrar, ordenar, etc.**.
+Bajo este concepto se concibe ***Magic Match***, una plataforma web, cuyo objetivo principal es complementar la experiencia de usuario de los jugadores de "Harry Potter: Wizards United", a través de una aplicación, que les permita participar de dos experiencias de estilo test. Como recompensa, obtendrán sus Match Mágicos dentro de la gama de personajes disponibles, tanto en categoría Pareja, como Enemigo. 
 
-Te proponemos una serie de datos de diferentes _temáticas_ para que los
-explores y decidas con cuál te interesa trabajar. Cada _set_ de datos viene con
-información básica sobre los datos y su estructura, y una lista de las
-necesidades de los usuarios que proviene de una investigación (_research_)
-hecha por el equipo de Laboratoria.
+El usuario además, puede acceder a una sección de Personajes, donde se encuentra el acceso a las fichas técnicas, de cada uno de los personajes que forman parte de la base de datos dispuesta por nuestro cliente. 
 
-Una vez que elijas, diseña tu proyecto intentando ofrecerle la mejor experiencia
-posible para ayudarle a satisfacer sus necesidades.
+La plataforma ***Magic Match*** es también accesible para usuarios que no son participantes de "Harry Potter: Wizards United", pero que si se sienten atraídos a participar de experiencias relacionadas al mundo de Harry Potter. 
 
-Estos son datos que te proponemos:
+**¿Cómo funciona?**
 
-* [Pokémon](src/data/pokemon/pokemon.json):
-  En este set encontrarás una lista con los 151 Pokémon de la región de Kanto, junto con sus respectivas estadísticas usadas en el juego
-  [Pokémon GO](http://pokemongolive.com).
-  - [Investigación con jugadores de Pokémon Go](src/data/pokemon/README.md)
+El usuario entra a nuestra la Plataforma de Magic Match, donde puede escoger entre Descubrir su Pareja Mágica, Descubrir Enemigo Mágico y conocer más sobre los personajes disponibles. 
+No es necesario registrarse, ni estar vinculado a ninguna otra plataforma para acceder. 
 
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de campeones en una liga del
-  juego League of Legends (LoL).
-  - [Investigación con jugadores de LoL](src/data/lol/README.md)
+Una vez que entran en las categorías de juego para descubrir pareja o enemigo, se le presenta un set de 5 preguntas, donde el usuario debe escoger su respuesta. 
+Este set de preguntas está relacionado con los elementos que desea implementar nuestro cliente, por tanto hay preguntas relacionadas con las varitas, los Patronus y las casas mágicas de los personajes. 
+
+El mecanismo por el cuál se obtiene el match mágico del usuario, es a través del filtrado, por tanto, el usuario efectivamente hace un filtrado a través de las respuesta que entrega en cada pregunta, pero este es un filtrado intuitivo, que entrega un resultado en función del instinto del usuario, y no un filtrado racional, que solo arroja un orden predeterminado. 
+
+Por otra parte, cuando el usuario ingresa a la categoría para conocer más sobre los personajes, accede a las fotos de los diferentes personajes, desplegados en la pagina web, las cuales puede ordenar bajo distintos criterios. 
+Al hacer click en cualquiera de las fotos de los personajes, el usuario accede a una ficha técnica con información de cada personaje. 
+
+
+***	
+
+
+<a id="construccion"> :dizzy: 3. CONSTRUCCIÓN DEL PROYECTO :dizzy: </a>
+
+
+
+### El comienzo 
+
+Te invitamos a ver nuestra plataforma de trabajo, donde podrás ver gráficamente todo el proceso de nuestro Proyecto. 
+
+[Ingresa aquí a nuestro Board](https://miro.com/welcomeonboard/5Yy90mCtve1ddMJERFMiUXw5wQrPaYKfvtROmuIpzWqNOF85IgoVaKUB2NicW6vB)
+
+
+Todo comienza con la necesidad de nuestros clientes, por crear una plataforma que potenciara la experiencia de los usuarios de "Harry Potter: Wizards United", implementando soluciones ante las necesidades de los usuarios, descubiertas luego de una investigación UX. 
+
+Si bien lo esencial era implementar el mecanismo de filtrado, y desplegar las fichas de los diferentes personajes, no queríamos ser un simple apéndice enciclopédico para el juego, sino estimular al usuario a partir de una experiencia interactiva, intiutiva y con recompensas. 
+Con esto, la idea de encontrar un Match Mágico y fue una ganadora para nuestro equipo. 
+
+Luego de tener un concepto básico de nuestra aplicación, comenzamos nuestra planificación, para llevar a cabo el proyecto. 
+
+
+### Organización del Proyecto
+
+Nuestra forma de trabajo se basa en la metodología SCRUM de Metodologías Ágiles. 
+
+Comenzamos nuestro proceso de planificación leyendo el readme del proyecto a realizar, y desglosando cada diferente tarea y objetivo en un trello. 
+
+[Visita acá nuestro Desglose del Proyecto](https://trello.com/b/uGPxOAaF/harry-potter)
+
+Con una aproximación más clara de nuestras misiones y objetivos, creamos una calendarización de nuestro proyecto, en la misma plataforma.
+
+[Visita acá nuestro Calendario](https://trello.com/b/x3gtxXLE/calendario-planificaci%C3%B3n-data-lovers)
+
+
+El proceso de planificación se divide en 3 Sprint: 
+
+-Planificación e Investigación
+-Desarrollo
+-Testeo y Afinamiento. 
+
+La idea general de nuestra planificación es setear tareas diarias, para ir resolviendo en equipo. Cada día contamos con un Daily Meeting, que nos servirá para ir constantemente poniéndonos al tanto como equipo, e ir avanzando en conjunto hacia los objetivos diarios. 
+
+Al final de cada Sprint tendremos una Retrospectiva de la semana, donde prepararemos el tablero de Actividades para el siguiente Sprint. 
+
+Con la planificación clara, procedemos a trabajar en nuestro proyecto. 
+
+
+### Desarrollo
+
+Comenzamos el Sprint 1 creando un diagrama de flujo de cómo se sería el flujo de nuestra aplicación. 
+
+![imagen a mostrar](Images/Diagrama1.png)
+
+
+
+
+La primera parte del proceso de investigación consistió en definir las lineas investigativas, en las diversas áreas a trabajar, las cuales són HTML, CSS, JavaScript. 
+
+Acordamos posibles caminos para resolver nuestras interrogantes en cuanto la teoría y aplicación de esta misma, en función de la construcción de nuestro programa. 
+Fuimos dividiendo las temáticas y tareas, y a la vez también trabajando en conjunto y compartiendo las nuevas ideas y conocimientos, para ir paso a paso avanzando en el proyecto. 
+
+Con un marco teórico establecido, continuamos realizando un diagrama, para definir el flujo que tendría nuestra aplicación, y asi tener identificado el paso a paso de las tareas a realizar en el código. 
+
+![imagen a mostrar](IDTELOS-DIAGRAMA-DE-FLUJO.jpg)
+
+Basado en esto creamos un prototipo del programa, el cuál fue testeado en usuarios que cumplieran con el perfil construido. Veremos esto en detalle en nuestra próxima sección. 
+
+Luego de tener un feedback, después de las pruebas de usuario, procedimos a crear una maqueta de nuestro programa, la cuál tuvo un testeo final, y sobre la cuál trabajamos y comenzamos a codear. 
+
+El resultado de nuestro programa, es el punto cúlmine de todo nuestro proceso de trabajo y aprendizaje para la construcción del mismo. Si bien no se logró completar en un 100%, cada paso fue concientemente internalizado y aprendido, ya que implicó nuestro esfuerzo, trabajo y dedicación. 
+
+***
+
+<a id="diseno">  4. DISEÑO UX :iphone: :ok_hand:</a>
+
+
+
+El proceso de Diseño UX fue una pieza clave para el desarrollo de esta aplicación.
+
+Nuestro proyecto, al tener un objetivo que se enfoca en elevar la experiencia de usuario de quienes nos escogen, es vital que tenga un proceso de diseño nutrido y profundo. 
+A continuación vamos a detallar los diferentes pasos que fuimos dando, en el proceso de diseño de la experiencia de usuario. 
+
+
+### Nuestros Usuarios :couple: :two_women_holding_hands: :two_men_holding_hands:
+
+
+Nuestros clientes directos son los moteles pertenecientes a nuestra cadena de colaboradores, quienes buscan incansablemente el bienestar y satisfacción de sus clientes, quienes son a su vez, los usuarios principales de nuestra aplicación. 
+
+Nuestro cliente tiene la necesidad de mejorar la experiencia de usuario ofrecida, para así, no solo fidelizar a su clientela, sino para crear un vínculo indisoluble de confianza, la cuál apunta a transformar por completo la experiencia de sus usuarios. 
+
+Por otra parte, los usuarios de nuestra aplicación, son personas adultas, quienes están en una constante búsqueda por mejorar su experiencia de usuario, por tanto tienen una preferencia por los servicios y productos que eleven su experiencia de usuario; Mientras mejor sea la experiencia, más satisfecho queda este usuario y no tienen problemas en invertir recursos para que así sea. 
+
+Según esto, y según los fines de nuestra aplicación, podemos dividir a nuestros usuarios en los siguientes perfiles. 
+
+
+**PERFIL DE USUARIO**
+
+Tenemos 3 posibles tipos de usuario para esta experiencia.  
+
+:black_medium_small_square:	Usuario que reserva su habitación a través de la web de un motel perteneciente a nuestra red. El usuario es redireccionado a nuestra plataforma, a través de la web del motel, para terminar de confirmar su reserva. 
+
+
+:black_medium_small_square:	Recepcionista del motel, quien recibe a usuario sin reserva previa, pero que desea pagar por sus productos y servicios al final de su estadía. Recepcionista accede a plataforma de manera directa y verifica la identidad del usuario. 
+
+
+:black_medium_small_square:	Usuario indirecto, quien no entra a la plataforma, pero accede al servicio de pagar su cuenta al final. 
+
+
+**Perfil Usuario A:** 
+
+Hombres y mujeres. 
+Mayores de 18 años. 
+Con acceso a una tarjeta de crédito. 
+Con acceso a plataforma web. 
+
+Necesidades Usuario A: 
+
+Nuestro Usuario A, es un hombre o mujer, mayor de edad, con acceso a servicios bancarios. 
+Este usuario suele ir, y disfruta asistiendo, a su motel preferido en la fecha y hora que desee, pero necesita asegurarse que al momento de llegar, la habitación que desea esté disponible. 
+Nuestro usuario está dispuesto a gastar un poco de su tiempo en reservar online, con el fin de tener un experiencia superior, cuando visita motel. Para este usuario, pagar su cuenta al final del servicio, lo hace sentir especial, importante, por ende su experiencia de usuario mejora en comparación a un servicio regular. Siente que el hotel es un espacio donde confían en él, por tanto, su estadía es más agradable y amena. 
+
+Este usuario necesita:
+
+* Una plataforma rápida y sencilla, que le permite hacer el proceso en el menor tiempo posible.
+* Una plataforma con interfaz discreto y neutral. 
+* Un servicio confiable, que no descuente dinero de sus tarjetas. 
+* Un servicio que lo haga sentir que es importante y que confían en él. 
+
+
+***Perfil Usuario B***
+
+Hombres y mujeres trabajadores de los moteles de la red. 
+Mayores de 18 años. 
+Con acceso a plataforma web. 
+
+
+Necesidades Usuario B:
+
+Usuario B accede a plataforma no por sí mismo, sino como parte de su trabajo. 
+Si bien este usuario no tiene una necesidad propia para utilizar esta aplicación, de todas maneras queremos que su experiencia sea buena y no tenga problemas para llevar a cabo su misión, ya que es una de las responsabilidades de su labor, la cuál queremos que sea exitosa, expedita y que no genere problemas. 
+
+Este usuario necesita: 
+
+* Una plataforma rápida y sencilla, que le permita hacer el proceso en el menor tiempo posible.
+* Un servicio que haga fácil su trabajo y que sea agradable cada vez que tiene que acceder a la plataforma.
+
+
+***Perfil Usuario C***
+
+Hombres y mujeres. 
+Mayores de 18 años. 
+Con acceso a una tarjeta de crédito. 
+
+
+Nuestro Usuario C es un usuario pasivo, ya que no ingresa directamente a nuestra plataforma, pero si puede acceder al servicio de pago a posteriori, a través de un tercero, que es el trabajador del motel. De todas maneras, es importante que en este paso, no se vea afectada la experiencia del usuario, por ende es fundamental que sea un servicio rápido, confiable y que aporte al bienestar del cliente. 
+
+Este usuario necesita:
+
+
+* Una plataforma rápida y sencilla, que le permita a un tercero, hacer el proceso en el menor tiempo posible.
+* Un servicio confiable, que no descuente dinero de sus tarjetas. 
+* Un servicio que lo haga sentir que es importante y que confían en él. 
+
+
+
+### Interfaz y Prototipado :memo: :computer:
+
+El proceso de prototipado fue fundamental para el desarrollo de nuestra aplicación. 
+En primer lugar nos sirvió para poder llevar a cabo un acercamiento inicial a la visualidad de nuestro proyecto. Con esto, pudimos comenzar a desarrollarlo y a realizar pruebas de usuarios, donde a partir del feedback recibido, tuvimos la posibilidad de cambiar y hacer mejoras a nuestro proyecto. 
+El prototipado fue la base a partir de la cuál pudimos comenzar a trabajar y hacer crecer nuestro programa. 
+
+A continuación, detallamos el paso a paso de este proceso. 
+
+
+Comenzamos haciendo sketchs a mano, los cuales, luego de varias versiones en borrador,pasamos en limpio. Este Sketch, esta basado en el diagrama de flujo que pudieron ver en la sección anterior. 
+
+![imagen a mostrar](imagen_sketch_1.JPG)
+![imagen a mostrar](imagen_sketch_2.JPG)
+![imagen a mostrar](imagen_sketch_3.JPG)
+
+Un vez listo este sketch a mano, lo digitalizamos con el programa InVision. 
+
+![imagen a mostrar](amano.png)
+
+Con este primer acercamiento digital, procedimos a hacer pequeñas mejoras, y creamos nuestro primer prototipo, también con el programa Invision. En este caso, ya habíamos tomado algunas deciones formales, cómo eliminar la pantalla cancelar, y también utilizar un banner como header. 
+
+![imagen a mostrar](prototipado1.png)
+
+[Visita acá nuestro Prototipado](https://paulatrujillo960530.invisionapp.com/console/IDTELOS_V1-ck8gcwdli01cd014sfep1hncz/ck8gcwuz601fb019ts782857p/play)
+
+Con este prototipo listo, procedimos a hacer pruebas de usuarios. 
+
+Escribimos un guión para pautar la prueba y reunimos a 5 usuarios, mayores de edad, hombres y mujeres, con acceso a tarjeta de créditos y clientes de moteles. 
+
+[Revisa acá nuestro guión](https://docs.google.com/viewerng/viewer?url=https://trello-attachments.s3.amazonaws.com/5e83be034958967708588540/5e83d9a6a291f67798607e0c/ec8a94004080ed7059dbb1c58c36a751/GUION_PRUEBA_DE_USUARIO_PROTOTIPO_IDTELOS.docx)
+
+Acordamos reuniones vía zoom, las cuales grabamos, con autorización y bajo confidencialidad. 
+
+Les dimos acceso a un link, donde pudieron navegar a través del prototipo.
+
+Una vez finalizadas las pruebas, pudimos obtener la siguiente información:
+
+:o: Existen los usuarios perfilados. 
+
+:o: El usuario siempre está en búsqueda de una mejor experiencia de usuario. 
+
+:o: El usuario está dispuesto a invertir diversos recursos, con el fin de acceder a una experiencia superior. 
+
+:o: Al usuario le complacen los servicios ofrecidos por ***ID-TELOS***. 
+
+:o: ***ID-TELOS*** resuelve las necesidades, tanto de los clientes como de los usuarios. 
+
+:o: Al usuario le da confianza que no se descuente dinero de la tarjeta de credito, ni se solicite el código de seguridad de esta.
+
+:o: El usuario prefiere una plataforma rápida, eficaz y sencilla. 
+
+:o: El usuario busca una interfaz simple, discreta y que no haga alusiones directas a moteles. 
+
+:o: Es fundamental tener un buen diseño visual de la interfaz. 
+
+
+Gracias a toda esta información y retroalimentación, reformulamos nuestro proyecto, y creamos un diagrama de flujo nuevo, donde fuera más eficaz el flujo de la aplicación. 
+
+
+![imagen a mostrar](FLUJOFINAL.jpg)
+
+Con esto creamos una maqueta final de nuestra aplicación, con la cual realizamos nuevas pruebas de usuarios. 
+
+![imagen a mostrar](maqueta1.png)
+
+![imagen a mostrar](maqueta2.png)
+
+[Revisa acá nuestra maqueta](https://carladaz131271.invisionapp.com/console/credito-final-ck8xv74aq3ir20154vod1x5zd/ck90gsrig01su01aro7tmqrgm/play)
+
+Luego de estas segundas pruebas pudimos confirmar la información que obtuvimos en las primeras pruebas, y adicionalmente comprobamos que:
+
+:o: Mejoró el flujo de la aplicación.
+
+:o: Es fundamental presentar al usuario un diseño que se acerque a la interfaz real que contendrá a la aplicación, ya que aporta a la concepción del usuario, ver el producto lo más cercano posible a lo que será. 
+
+Dicho todo esto, nuestro producto final se ve así:
+
+![imagen a mostrar](a.png)
+![imagen a mostrar](b.png)
+![imagen a mostrar](c.png)
+![imagen a mostrar](d.png)
+![imagen a mostrar](e.png)
+![imagen a mostrar](f.png)
+
+
+[Revisa acá nuestra web](https://pautrujillo.github.io/SCL013-card-validation/src/index.html)
+
+
+La interfaz fue definida en cuanto a las necesidades de nuestros usuarios. Una plataforma sencilla, rapida y discreta, que no revele a primera vista de que se trata, pero que al mismo tiempo, también refleje la esencia de ***ID-TELOS***.
+ Evitamos las vueltas sin sentido en el programa y nos enfocamos en hacer una plataforma con un buen flujo y un diseño moderno, seductor y eficaz. 
+
+***	
+
+
+
+
+
 
 * [Harry Potter](src/data/potter/potter.json).
   Este set de datos muestra la lista de los personajes del mundo de [Harry Potter: Wizards Unite](https://www.wizardingworld.com/), junto con sus respectivas características mencionadas en la serie de novelas de Harry Potter escrita por la autora británica J.K.Rowling.
   - [Investigación con jugadores de Harry Potter: Wizards Unite](src/data/potter/README.md)
 
-## 3. Objetivos de aprendizaje
 
-El objetivo principal de este proyecto es que, entendiendo las necesidades de tus usuarios, aprendas a diseñar y construir una interfaz web donde se pueda visualizar y manipular data.
-
-Revisa la lista y reflexiona sobre los objetivos que conseguiste en el proyecto anterior. Piensa en eso al decidir tu estrategia de trabajo individual y de equipo.
 
 ### UX
 - [ ] Diseñar la aplicación pensando y entendiendo al usuario.
@@ -457,8 +706,6 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 
 ## 9. Checklist
 
-* [ ] Usa VanillaJS.
-* [ ] No hace uso de `this`.
 * [ ] Pasa linter (`npm run pretest`)
 * [ ] Pasa tests (`npm test`)
 * [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
