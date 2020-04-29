@@ -212,7 +212,7 @@ Necesidades Usuario B:
 * Acceder a una interfaz amigable que se representa la identidad visual de Harry Potter. 
 
 
-![imagen a mostrar](Images/Usuarios-clientes.png)
+![imagen a mostrar](Images/Usuarios-clientes.jpg)
 
 
 
