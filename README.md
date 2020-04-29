@@ -23,7 +23,7 @@ El usuario también tiene acceso la información técnica de cada uno de los per
 
 <a id="informacion">  :boom: 2. Magic Match: Todo lo que necesitas saber	:boom: </a>
 
-***Magic Match*** nace como respuesta ante la necesidad de nuestro cliente, por mejorar la experiencia de usuario de los jugadores de su plataforma "Harry Potter: Wizards United". 
+***Magic Match*** nace como respuesta ante la necesidad de nuestro cliente, por mejorar la experiencia de usuario de los jugadores de su plataforma "Harry Potter: Wizards Unite". 
 
 Luego de sus estudios en usuarios, se dieron cuenta que había ciertas elementos que podría ser util implementar, ya que aportarían a elevar la experiencia de sus usuarios. 
 
@@ -34,15 +34,15 @@ Estos elementos son:
 -Poder acceder a la información de los personajes disponibles en la base de datos. 
 
 
-Bajo este concepto se concibe ***Magic Match***, una plataforma web, cuyo objetivo principal es complementar la experiencia de usuario de los jugadores de "Harry Potter: Wizards United", a través de una aplicación, que les permita participar de dos experiencias de estilo test. Como recompensa, obtendrán sus Match Mágicos dentro de la gama de personajes disponibles, tanto en categoría Pareja, como Enemigo. 
+Bajo este concepto se concibe ***Magic Match***, una plataforma web, cuyo objetivo principal es complementar la experiencia de usuario de los jugadores de "Harry Potter: Wizards Unite", a través de una aplicación, que les permita participar de dos experiencias de estilo test. Como recompensa, obtendrán sus Match Mágicos dentro de la gama de personajes disponibles, tanto en categoría Pareja, como Enemigo. 
 
 El usuario además, puede acceder a una sección de Personajes, donde se encuentra el acceso a las fichas técnicas, de cada uno de los personajes que forman parte de la base de datos dispuesta por nuestro cliente. 
 
-La plataforma ***Magic Match*** es también accesible para usuarios que no son participantes de "Harry Potter: Wizards United", pero que si se sienten atraídos a participar de experiencias relacionadas al mundo de Harry Potter. 
+La plataforma ***Magic Match*** es también accesible para usuarios que no son participantes de "Harry Potter: Wizards Unite", pero que si se sienten atraídos a participar de experiencias relacionadas al mundo de Harry Potter. 
 
 **¿Cómo funciona?**
 
-El usuario entra a nuestra la Plataforma de Magic Match, donde puede escoger entre Descubrir su Pareja Mágica, Descubrir Enemigo Mágico y conocer más sobre los personajes disponibles. 
+El usuario entra a nuestra la Plataforma de ***Magic Match***, donde puede escoger entre Descubrir su Pareja Mágica, Descubrir Enemigo Mágico y conocer más sobre los personajes disponibles. 
 No es necesario registrarse, ni estar vinculado a ninguna otra plataforma para acceder. 
 
 Una vez que entran en las categorías de juego para descubrir pareja o enemigo, se le presenta un set de 5 preguntas, donde el usuario debe escoger su respuesta. 
@@ -68,7 +68,7 @@ Te invitamos a ver nuestra plataforma de trabajo, donde podrás ver gráficament
 ### El comienzo 
 
 
-Todo comienza con la necesidad de nuestros clientes, por crear una plataforma que potenciara la experiencia de los usuarios de "Harry Potter: Wizards United", implementando soluciones ante las necesidades de los usuarios, descubiertas luego de una investigación UX. 
+Todo comienza con la necesidad de nuestros clientes, por crear una plataforma que potenciara la experiencia de los usuarios de "Harry Potter: Wizards Unite", implementando soluciones ante las necesidades de los usuarios, descubiertas luego de una investigación UX. 
 
 Si bien lo esencial era implementar el mecanismo de filtrado, y desplegar las fichas de los diferentes personajes, no queríamos ser un simple apéndice enciclopédico para el juego, sino estimular al usuario a partir de una experiencia interactiva, intiutiva y con recompensas.
 
@@ -76,8 +76,8 @@ Ideamos un primera Diagrama de Flujo de la aplicación, donde se refleja la prim
 
 ![imagen a mostrar](Images/Diagrama1.png)
 
-Con este primer paso, teníamos un punto de partida, pero luego de ir trabajando en nuestra propuesta, y recibiendo feedback, se concibió la idea de lo que hoy es Magic Match: Una aplicación que no solo te muestra tu afín de pareja en el mundo de los Harry Potter, sino también su enemigo. 
-Con esto, Magic Match fue una idea ganadora para nuestro equipo. 
+Con este primer paso, teníamos un punto de partida, pero luego de ir trabajando en nuestra propuesta, y recibiendo feedback, se concibió la idea de lo que hoy es ***Magic Match***: Una aplicación que no solo te muestra tu afín de pareja en el mundo de los Harry Potter, sino también su enemigo. 
+Con esto, ***Magic Match*** fue una idea ganadora para nuestro equipo. 
 
 Luego de tener claro hacia donde nos dirigíamos, comenzamos nuestra planificación, para llevar a cabo el proyecto. 
 
@@ -149,179 +149,118 @@ ACA TENEMOS QUE DESCRIBIR BIEN. DE MANERA CLARA Y SIN ALARGARSE TANTO, TOMANDO E
 
 
 ***
-
-<a id="diseno"> :partly_sunny: 4. DISEÑO UX :partly_sunny: </a>
+ 
+<a id="diseno">  first_quarter_moon: 4. DISEÑO UX first_quarter_moon: </a>
 
 
 El eje central de nuestro trabajo fue el diseño UX. 
 
-Nuestro proceso de construcción del proyecto tiene como objetivo principal exponenciar la experiencia de los usuarios de "Harry Potter: Wizards United", bajo la implementación de mecanismos solicitados como requisito técnico fundamental. 
+Nuestro proceso de construcción del proyecto tiene como objetivo principal exponenciar la experiencia de los usuarios de "Harry Potter: Wizards Unite", bajo la implementación de mecanismos solicitados como requisito técnico fundamental. 
 
 A continuación detallamos paso a paso, toda la construcción del diseño UX de la plataforma Magic Match. 
 
-### Usuarios Plataforma :first_quarter_moon:
+### Usuarios Plataforma 
 
 
 Podemos identificar 2 perfiles de usuario predominantes en nuestra aplicación.
 
 
 
-:black_medium_small_square:	Usuario que reserva su habitación a través de la web de un motel perteneciente a nuestra red. El usuario es redireccionado a nuestra plataforma, a través de la web del motel, para terminar de confirmar su reserva. 
+:black_medium_small_square:	Usuario que juega "Harry Potter: Wizards United". 
 
-
-:black_medium_small_square:	Recepcionista del motel, quien recibe a usuario sin reserva previa, pero que desea pagar por sus productos y servicios al final de su estadía. Recepcionista accede a plataforma de manera directa y verifica la identidad del usuario. 
-
-
-:black_medium_small_square:	Usuario indirecto, quien no entra a la plataforma, pero accede al servicio de pagar su cuenta al final. 
+:black_medium_small_square:	Usuario que no juega "Harry Potter: Wizards United", pero que gusta de involucrarse con el mundo de Harry Potter. 
 
 
 **Perfil Usuario A:** 
 
 Hombres y mujeres. 
-Mayores de 18 años. 
-Con acceso a una tarjeta de crédito. 
+Mayores de 10 años.
+Usuarios de "Harry Potter: Wizards Unite".
 Con acceso a plataforma web. 
 
-Necesidades Usuario A: 
 
-Nuestro Usuario A, es un hombre o mujer, mayor de edad, con acceso a servicios bancarios. 
-Este usuario suele ir, y disfruta asistiendo, a su motel preferido en la fecha y hora que desee, pero necesita asegurarse que al momento de llegar, la habitación que desea esté disponible. 
-Nuestro usuario está dispuesto a gastar un poco de su tiempo en reservar online, con el fin de tener un experiencia superior, cuando visita motel. Para este usuario, pagar su cuenta al final del servicio, lo hace sentir especial, importante, por ende su experiencia de usuario mejora en comparación a un servicio regular. Siente que el hotel es un espacio donde confían en él, por tanto, su estadía es más agradable y amena. 
+Usuario A, es un hombre o mujer, mayor de 10 años, con acceso a plataforma web. 
+Este usuario juega activamente el juego "Harry Potte: Wizards Unite". 
+Este usuario disfruta de utilizar plataformas que lo involucren en el mundo de Harry Potter, especialmente si esa experiencia va a ser un aporte para su experiencia en otras instancias, por ejemplo, al momento de elegir algunas características de su perfil en la plataforma donde juega. 
 
-Este usuario necesita:
+Necesidades Usuario A:
 
-* Una plataforma rápida y sencilla, que le permite hacer el proceso en el menor tiempo posible.
-* Una plataforma con interfaz discreto y neutral. 
-* Un servicio confiable, que no descuente dinero de sus tarjetas. 
-* Un servicio que lo haga sentir que es importante y que confían en él. 
+* Acceso a plataforma relacionada con el mundo Harry Potter
+* Plataforma que potencie su experiencia en relación a "Harry Potter: Wizards Unite". 
+* Poder obtener información sobre los personajes del juego 
+* Conocer información sobre las varitas de los personajes 
+* Poder hacer filtrado de los personajes con distintas categorías, entre ellas: Varita M´gica,    Patronus y Casa Mágica. 
+* Acceder a una interfaz amigable que se representa la identidad visual de Harry Potter. 
+
 
 
 ***Perfil Usuario B***
 
-Hombres y mujeres trabajadores de los moteles de la red. 
-Mayores de 18 años. 
-Con acceso a plataforma web. 
+Hombres y mujeres. 
+Sin rango etario
+Gustan del mundo Harry Potter. 
+Con acceso a una plataforma web
 
+
+Usuario B, es un hombre o mujer, sin rango etario, con acceso a plataforma web. 
+Este usuario gusta del mundo Harry Potter, por tanto disfruta de las instancias que lo relacionen a este. Usuario tiene interés por por las experiencias relacionadas a Harry Potter. 
 
 Necesidades Usuario B:
 
-Usuario B accede a plataforma no por sí mismo, sino como parte de su trabajo. 
-Si bien este usuario no tiene una necesidad propia para utilizar esta aplicación, de todas maneras queremos que su experiencia sea buena y no tenga problemas para llevar a cabo su misión, ya que es una de las responsabilidades de su labor, la cuál queremos que sea exitosa, expedita y que no genere problemas. 
-
-Este usuario necesita: 
-
-* Una plataforma rápida y sencilla, que le permita hacer el proceso en el menor tiempo posible.
-* Un servicio que haga fácil su trabajo y que sea agradable cada vez que tiene que acceder a la plataforma.
+* Acceso a plataforma relacionada con el mundo Harry Potter y que esta sea interesante. 
+* Navegar una aplicación divertida, que lo identifique con el mundo de Harry Potter. 
+* Acceder a una interfaz amigable que se representa la identidad visual de Harry Potter. 
 
 
-***Perfil Usuario C***
+![imagen a mostrar](Images/Usuarios-clientes.png)
 
-Hombres y mujeres. 
-Mayores de 18 años. 
-Con acceso a una tarjeta de crédito. 
-
-
-Nuestro Usuario C es un usuario pasivo, ya que no ingresa directamente a nuestra plataforma, pero si puede acceder al servicio de pago a posteriori, a través de un tercero, que es el trabajador del motel. De todas maneras, es importante que en este paso, no se vea afectada la experiencia del usuario, por ende es fundamental que sea un servicio rápido, confiable y que aporte al bienestar del cliente. 
-
-Este usuario necesita:
-
-
-* Una plataforma rápida y sencilla, que le permita a un tercero, hacer el proceso en el menor tiempo posible.
-* Un servicio confiable, que no descuente dinero de sus tarjetas. 
-* Un servicio que lo haga sentir que es importante y que confían en él. 
 
 
 
 ### Interfaz y Prototipado :memo: :computer:
 
-El proceso de prototipado fue fundamental para el desarrollo de nuestra aplicación. 
-En primer lugar nos sirvió para poder llevar a cabo un acercamiento inicial a la visualidad de nuestro proyecto. Con esto, pudimos comenzar a desarrollarlo y a realizar pruebas de usuarios, donde a partir del feedback recibido, tuvimos la posibilidad de cambiar y hacer mejoras a nuestro proyecto. 
-El prototipado fue la base a partir de la cuál pudimos comenzar a trabajar y hacer crecer nuestro programa. 
+DESCRIBIR PROCESO DE CONSTRUCCION DE INTERFAZ. 
 
-A continuación, detallamos el paso a paso de este proceso. 
+SKETCHS  A MANO Y DIGITALES
+
+PROTOTIPO BAJA
+PRUEBAS DE USUARIO
+
+PROTOTIPO ALTA
+
+GUION PARA PROTOTIPO
+PRUEBAS DE USUARIO - DESCRIPCION. VIDEOS . TRANSCRIPCIONES 
 
 
-Comenzamos haciendo sketchs a mano, los cuales, luego de varias versiones en borrador,pasamos en limpio. Este Sketch, esta basado en el diagrama de flujo que pudieron ver en la sección anterior. 
+CONCLUSIONES 
 
-![imagen a mostrar](imagen_sketch_1.JPG)
-![imagen a mostrar](imagen_sketch_2.JPG)
-![imagen a mostrar](imagen_sketch_3.JPG)
-
-Un vez listo este sketch a mano, lo digitalizamos con el programa InVision. 
-
-![imagen a mostrar](amano.png)
-
-Con este primer acercamiento digital, procedimos a hacer pequeñas mejoras, y creamos nuestro primer prototipo, también con el programa Invision. En este caso, ya habíamos tomado algunas deciones formales, cómo eliminar la pantalla cancelar, y también utilizar un banner como header. 
-
-![imagen a mostrar](prototipado1.png)
-
-[Visita acá nuestro Prototipado](https://paulatrujillo960530.invisionapp.com/console/IDTELOS_V1-ck8gcwdli01cd014sfep1hncz/ck8gcwuz601fb019ts782857p/play)
-
-Con este prototipo listo, procedimos a hacer pruebas de usuarios. 
-
-Escribimos un guión para pautar la prueba y reunimos a 5 usuarios, mayores de edad, hombres y mujeres, con acceso a tarjeta de créditos y clientes de moteles. 
-
-[Revisa acá nuestro guión](https://docs.google.com/viewerng/viewer?url=https://trello-attachments.s3.amazonaws.com/5e83be034958967708588540/5e83d9a6a291f67798607e0c/ec8a94004080ed7059dbb1c58c36a751/GUION_PRUEBA_DE_USUARIO_PROTOTIPO_IDTELOS.docx)
-
-Acordamos reuniones vía zoom, las cuales grabamos, con autorización y bajo confidencialidad. 
-
-Les dimos acceso a un link, donde pudieron navegar a través del prototipo.
-
-Una vez finalizadas las pruebas, pudimos obtener la siguiente información:
+COMO DEFINIMOS INTERFAZ USUSARIO 
 
 :o: Existen los usuarios perfilados. 
 
 :o: El usuario siempre está en búsqueda de una mejor experiencia de usuario. 
 
-:o: El usuario está dispuesto a invertir diversos recursos, con el fin de acceder a una experiencia superior. 
+:o: El usuario disfruta la plataforma. 
 
-:o: Al usuario le complacen los servicios ofrecidos por ***ID-TELOS***. 
+:o: etc
 
-:o: ***ID-TELOS*** resuelve las necesidades, tanto de los clientes como de los usuarios. 
+:o: resolvemos necesidades de Cliente? 
 
-:o: Al usuario le da confianza que no se descuente dinero de la tarjeta de credito, ni se solicite el código de seguridad de esta.
+:o: resolvemos necesidades de ususario? 
 
-:o: El usuario prefiere una plataforma rápida, eficaz y sencilla. 
-
-:o: El usuario busca una interfaz simple, discreta y que no haga alusiones directas a moteles. 
-
-:o: Es fundamental tener un buen diseño visual de la interfaz. 
+:o: 
+¡
+NUEVO PROTOTIPO EN ALTA IMPLEMENTADO EN MAZE (ESTO ESTA PENDIENTE)
 
 
-Gracias a toda esta información y retroalimentación, reformulamos nuestro proyecto, y creamos un diagrama de flujo nuevo, donde fuera más eficaz el flujo de la aplicación. 
+!
+ANALISIS Y RESULTADO 
 
 
-![imagen a mostrar](FLUJOFINAL.jpg)
-
-Con esto creamos una maqueta final de nuestra aplicación, con la cual realizamos nuevas pruebas de usuarios. 
-
-![imagen a mostrar](maqueta1.png)
-
-![imagen a mostrar](maqueta2.png)
-
-[Revisa acá nuestra maqueta](https://carladaz131271.invisionapp.com/console/credito-final-ck8xv74aq3ir20154vod1x5zd/ck90gsrig01su01aro7tmqrgm/play)
-
-Luego de estas segundas pruebas pudimos confirmar la información que obtuvimos en las primeras pruebas, y adicionalmente comprobamos que:
-
-:o: Mejoró el flujo de la aplicación.
-
-:o: Es fundamental presentar al usuario un diseño que se acerque a la interfaz real que contendrá a la aplicación, ya que aporta a la concepción del usuario, ver el producto lo más cercano posible a lo que será. 
-
-Dicho todo esto, nuestro producto final se ve así:
-
-![imagen a mostrar](a.png)
-![imagen a mostrar](b.png)
-![imagen a mostrar](c.png)
-![imagen a mostrar](d.png)
-![imagen a mostrar](e.png)
-![imagen a mostrar](f.png)
+PRODUCTO FINAL  + LINK EN GIT HUB PAGES 
 
 
-[Revisa acá nuestra web](https://pautrujillo.github.io/SCL013-card-validation/src/index.html)
 
-
-La interfaz fue definida en cuanto a las necesidades de nuestros usuarios. Una plataforma sencilla, rapida y discreta, que no revele a primera vista de que se trata, pero que al mismo tiempo, también refleje la esencia de ***ID-TELOS***.
- Evitamos las vueltas sin sentido en el programa y nos enfocamos en hacer una plataforma con un buen flujo y un diseño moderno, seductor y eficaz. 
 
 ***	
 
