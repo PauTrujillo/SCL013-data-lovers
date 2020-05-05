@@ -2,11 +2,38 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Manjari|Metal+Mania&display=swap" rel="stylesheet">
   </head>
+
   <body>
+    <header class="estiloBanner"> 
+    </header> <!--Acá estamos seteando el banner para todos los div-->
+
+<div id="portada" class="imagenPortada"> <!--Imagen portada -->
+  <h1 class="textoPortada">
+    Descubre tu Pareja Mágica, o tu Enemigo Encantado, en el mundo de los personajes de “Harry Potter: Wizards Unite”.
+
+¿Por donde te gustaría comenzar?
+  </h1>
+  <div id="contenedorBotonesPortada">
+  <button id="boton1" class="botones">Conocer Pareja Mágica</button>
+  <button id="boton2" class="botones">Conocer Enemigo Mágico</button>
+  <button id="boton3" class="botones">Conocer Personajes de la Saga</button>
+</div>
+ </div>
+
+ <div id="pareja" class="imagenPareja"></div> <!--Pantalla pareja-->
+ <div id="enemigo" class="imagenEnemigo"></div> <!--Pantalla enemigo-->
+ <div id="personajes" class="imagenPersonaje"></div> <!--Pantalla personajes-->
+
+
+
     <div id="root"></div>
-    <script src="main.js" type="module"></script>
+    <footer class="pie">Copyright by Paula Trujillo & Yosliana Aguilar</footer> <!-- Acá estamos seteando el footer para todo el proyecto-->
+    <script src="main.js" type="module"></script> <!-- Acá se conecta archivo main js, y se hace en tipo módulo --> 
+    <script src="data.js" type="module"></script><!-- Acá se conecta archivo data js, y se hace en tipo módulo-->
   </body>
 </html>

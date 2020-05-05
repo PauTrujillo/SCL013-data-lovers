@@ -74,7 +74,7 @@ Si bien lo esencial era implementar el mecanismo de filtrado, y desplegar las fi
 
 Ideamos un primera Diagrama de Flujo de la aplicación, donde se refleja la primera aproximación a nuestra propuesta.
 
-![imagen a mostrar](Images/Diagrama1.png)
+![imagen a mostrar](Images_readme/Diagrama1.png)
 
 Con este primer paso, teníamos un punto de partida, pero luego de ir trabajando en nuestra propuesta, y recibiendo feedback, se concibió la idea de lo que hoy es ***Magic Match***: Una aplicación que no solo te muestra tu afín de pareja en el mundo de los Harry Potter, sino también su enemigo. 
 Con esto, ***Magic Match*** fue una idea ganadora para nuestro equipo. 
@@ -118,7 +118,7 @@ En paralelo, también nos enfocamos en re definir nuestra aplicación, y setearl
 
 Creamos un nuevo diagrama de flujo, el cuál marca el flujo real con que se desarrolla la aplicación actualmente. 
 
-![imagen a mostrar](Images/Diagrama_Final.png)
+![imagen a mostrar](Images_readme/Diagrama_Final.png)
 
 Esta semana definimos a nuestros Usuarios y sus necesidades. 
 
@@ -212,18 +212,27 @@ Necesidades Usuario B:
 * Acceder a una interfaz amigable que se representa la identidad visual de Harry Potter. 
 
 
-![imagen a mostrar](Images/Usuarios-clientes.jpg)
+![imagen a mostrar](Images_readme/Usuarios-clientes.jpg)
 
 
 
 
 ### Interfaz y Prototipado :memo: :computer:
 
-DESCRIBIR PROCESO DE CONSTRUCCION DE INTERFAZ. 
+Para la construcción de la interfaz de la aplicación, trabajamos en continuas iteraciones de prototipos en baja y alta, con el fin de tener un feedback nutrido en las pruebas de usarios. 
 
-SKETCHS  A MANO Y DIGITALES
+Comenzamos realizando sketchs en lápiz y papel, para luego digitalizarlos y construir un primer prototipo en baja. 
 
-PROTOTIPO BAJA
+La idea era testear si el concepto de nuestra aplicación era bien acogido, y si funcionaba el flujo de la aplicación. 
+
+ACA FOTO DE SKETCH A MANO Y DIGITALIZADO
+
+
+Luego de Feedback, realizamos una iteración en baja, con un primer acercamiento visual. El objetivo era obtener las opiniones de los usuarios, para ver que pensaban de la estética de nuestra aplicación, así como si funcionaba el concepto. 
+
+ACA FOTOS DE PROTOTIPO
+
+Luego de este segundo proceso de iteración y feedback, decidimos crear nuestro primero prototipo en alta, aplicando los cambios sugeridos por los usuarios. 
 PRUEBAS DE USUARIO
 
 PROTOTIPO ALTA
@@ -250,7 +259,7 @@ COMO DEFINIMOS INTERFAZ USUSARIO
 
 :o: 
 ¡
-NUEVO PROTOTIPO EN ALTA IMPLEMENTADO EN MAZE (ESTO ESTA PENDIENTE)
+NUEVO PROTOTIPO EN ALTA IMPLEMENTADO EN MAZE 
 
 
 !
