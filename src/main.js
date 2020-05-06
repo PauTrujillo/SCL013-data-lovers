@@ -1,4 +1,6 @@
 import dataHarryPotter from './data/potter/potter.js' // conecta la data de harry Potter
+import { filterordenaA_Z } from './data.js'
+
 console.log(dataHarryPotter);
 
 
@@ -32,6 +34,9 @@ function flow2() {
   flujo2.style.display = "block";
 }
 
+
+const conteiner = document.getElementById("root");
+
 function flow3() {
   let flujo1 = document.getElementById("pareja");
   let intro = document.getElementById("portada");
@@ -41,4 +46,19 @@ function flow3() {
   intro.style.display = "none";
   flujo2.style.display = "none";
   flujo3.style.display = "block";
+  for (let i = 0; i < dataHarryPotter.length; i++) {
+    let elemen = `<section class="ficha"> <section id="foto"> <img class="imagens" src=${dataHarryPotter[i].image}></section><section id="letras"><p class="seteoFicha">Nombre: ${dataHarryPotter[i].name}<p> <p class="seteoFicha">Especie: ${dataHarryPotter[i].species}<p> <p class="seteoFicha">Genero: ${dataHarryPotter[i].gender}<p> <p class="seteoFicha">Hechizo: ${dataHarryPotter[i].patronus}<p></section></section>`
+    conteiner.innerHTML += elemen;
+  }
 }
+
+const ordenaAZ = document.getElementById("ordenar_Alfabeticamente");
+ordenaAZ.addEventListener("change", () => {
+    let ordena = ordenaAZ.options[ordenaAZ.selectedIndex].text;
+    conteiner.innerHTML = "";
+    let personajesOrdenados = filterordenaA_Z(dataHarryPotter, ordena);
+    for (let c = 0; c < personajesOrdenados.length; c++) {
+        let elemen = `<section class="ficha"> <section id="foto"> <img class="imagens" src=${personajesOrdenados[c].image}></section><section id="letras"><p class="seteoFicha">Nombre: ${personajesOrdenados[c].name}<p> <p class="seteoFicha">Especie: ${personajesOrdenados[c].species}<p> <p class="seteoFicha">Genero: ${personajesOrdenados[c].gender}<p> <p class="seteoFicha">Hechizo: ${personajesOrdenados[c].patronus}<p></section></section>`
+        conteiner.innerHTML += elemen;
+    }
+})

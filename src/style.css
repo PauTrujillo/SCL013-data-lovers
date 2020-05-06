@@ -4,11 +4,14 @@
   text-align: center;
   color: rgb(8, 8, 8);
   background-color: #000000;
+  margin: 0cm;
+  padding: 0cm;
 }
 
 .botones {
   background-color: rgba(255, 252, 62, 0.966);
-  opacity: 0.5;;
+  opacity: 0.5;
+  ;
   width: 20%;
   height: 60px;
   font-family: 'Metal Mania', cursive;
@@ -23,13 +26,13 @@
 }
 
 #contenedorEnemigo {
-    background-color: #000000;
-    opacity: 0.7;
+  background-color: #000000;
+  opacity: 0.7;
 }
 
 #contenedorPareja {
-    background-color: #000000;
-    opacity: 0.5;
+  background-color: #000000;
+  opacity: 0.5;
 }
 
 
@@ -79,27 +82,31 @@
 /* Acá seteamos imagen pantalla ememigo */
 
 .imagenPortada {
-    background-image: url(Images_Proyect/fondo_1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-   height: 600px;
-   margin: 0em 0em 0em 0em;
-   display: block;
-   margin: auto;
-} /* Acá seteamos imagen pantalla portada */
+  background-image: url(Images_Proyect/fondo_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  margin: 0em 0em 0em 0em;
+  display: block;
+  margin: auto;
+}
+
+/* Acá seteamos imagen pantalla portada */
 
 .imagenPareja {
-    background-image: url(Images_Proyect/fondo_amor.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 600px;
-    margin: 0em 0em 0em 0em;
-    display: block;
-    margin: auto;
-    background-color: #000000;
-} /* Acá seteamos imagen pantalla pareja */
+  background-image: url(Images_Proyect/fondo_amor.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  margin: 0em 0em 0em 0em;
+  display: block;
+  margin: auto;
+  background-color: #000000;
+}
+
+/* Acá seteamos imagen pantalla pareja */
 
 #pareja {
   display: none;
@@ -115,11 +122,13 @@
   background-color: rgb(8, 8, 8);
   color: #bdbdbd;
   font-family: 'Metal Mania', cursive;
+  clear: both;
+  text-align: center;
 }
 
 /* Aca seteamos el estilo del footer del proyecto */
 
-.textoSecciones{
+.textoSecciones {
   font-family: 'Metal Mania', cursive;
   font-style: thin;
   color: #828282;
@@ -134,14 +143,37 @@
 }
 
 .textoPregunta {
-    font-family: 'Manjari', sans-serif;
-    color: #FFC107;
-    background-color: transparent;
+  font-family: 'Manjari', sans-serif;
+  color: #FFC107;
+  background-color: transparent;
 }
 
 .textoSelect {
-    font-family: 'Manjari', sans-serif;
-    color: #828282;
-    background-color: transparent;
-    padding: px;
+  font-family: 'Manjari', sans-serif;
+  color: #828282;
+  background-color: transparent;
+  padding: px;
+}
+
+.ficha {
+  width: 180px;
+  height: 230px;
+  padding: 16px;
+  border-radius: 10px;
+  margin: 1% auto;
+  margin-left: 1%;
+  margin-right: 1%;
+  background: grey;
+  float: left;
+
+}
+
+.imagens {
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+}
+
+#root{
+  margin: 1cm;
 }
