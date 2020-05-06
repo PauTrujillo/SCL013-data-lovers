@@ -225,7 +225,7 @@ Necesidades Usuario B:
 
 ### Interfaz y Prototipado :memo: :computer:
 
-Para la construcción de la interfaz de la aplicación, trabajamos en continuas iteraciones de prototipos en baja y alta, con el fin de tener un feedback nutrido en las pruebas de usarios. 
+Para la construcción de la interfaz de la aplicación, trabajamos en continuas iteraciones de prototipos en baja y alta, con el fin de tener un feedback nutrido gracias a las pruebas de usarios. 
 
 Comenzamos realizando sketchs en lápiz y papel, para luego digitalizarlos y construir un primer prototipo en baja. 
 
@@ -234,13 +234,30 @@ La idea era testear si el concepto de nuestra aplicación era bien acogido, y si
 ![imagen a mostrar](Images_readme/Sketchs/1.png)
 ![imagen a mostrar](Images_readme/Sketchs/2.png)
 ![imagen a mostrar](Images_readme/Sketchs/3.png)
+![imagen a mostrar](Images_readme/Sketchs/4.png)
 
 
-Luego de Feedback, realizamos una iteración en baja, con un primer acercamiento visual. El objetivo era obtener las opiniones de los usuarios, para ver que pensaban de la estética de nuestra aplicación, así como si funcionaba el concepto. 
+Luego de estos primeros testeos, pudimos validar que nuestra aplicación tenía buena acogida, pero que era fundamental darle la visualidad de la aplicación. 
 
-ACA FOTOS DE PROTOTIPO
+Realizamos una iteración en baja, con un primer acercamiento visual. El objetivo era obtener feedback sobre la estética de la aplicación, y revalidar el concepto de esta misma. 
+Gracias al feedback recibido, decidimos trasladar el proceso a Figma, para realizar nuestro primer Prototipo en Alta. 
 
-Luego de este segundo proceso de iteración y feedback, decidimos crear nuestro primero prototipo en alta, aplicando los cambios sugeridos por los usuarios. 
+![imagen a mostrar](Images_readme/Sketchs/5.png)
+
+Con este prototipo en Alta listo, hicimos una ronda de feedback, donde aplicamos algunos cambios menores y comenzamos a probar nuestra prueba a mayor escala, a través de entrevistas grabadas y pautadas con guión. 
+
+
+![imagen a mostrar](Images_readme/guion.jpg)
+
+[Entrevista 1](https://trello.com/b/x3gtxXLE/calendario-planificaci%C3%B3n-data-lovers)
+[Entrevista 2](https://trello.com/b/x3gtxXLE/calendario-planificaci%C3%B3n-data-lovers)
+[Entrevista 3](https://trello.com/b/x3gtxXLE/calendario-planificaci%C3%B3n-data-lovers)
+[Entrevista 4](https://trello.com/b/x3gtxXLE/calendario-planificaci%C3%B3n-data-lovers)
+[Entrevista 5](https://trello.com/b/x3gtxXLE/calendario-planificaci%C3%B3n-data-lovers)
+
+
+
+Como resultado final 
 PRUEBAS DE USUARIO
 
 PROTOTIPO ALTA
