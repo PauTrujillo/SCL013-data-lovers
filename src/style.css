@@ -7,7 +7,8 @@
 }
 
 .botones {
-  background-color: #bfbf46;
+  background-color: rgba(255, 252, 62, 0.966);
+  opacity: 0.5;;
   width: 20%;
   height: 60px;
   font-family: 'Metal Mania', cursive;
@@ -20,6 +21,17 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+#contenedorEnemigo {
+    background-color: #000000;
+    opacity: 0.7;
+}
+
+#contenedorPareja {
+    background-color: #000000;
+    opacity: 0.5;
+}
+
 
 #enemigo {
   display: none;
@@ -44,7 +56,6 @@
   background-size: cover;
   width: 100%;
   height: 600px;
-  opacity: 0.3;
   margin: 0em 0em 0em 0em;
   display: block;
   margin: auto;
@@ -59,7 +70,6 @@
   background-size: cover;
   width: 100%;
   height: 600px;
-  opacity: 0.3;
   margin: 0em 0em 0em 0em;
   display: block;
   margin: auto;
@@ -85,7 +95,6 @@
     background-size: cover;
     width: 100%;
     height: 600px;
-    opacity: 0.3;
     margin: 0em 0em 0em 0em;
     display: block;
     margin: auto;
@@ -111,7 +120,8 @@
 /* Aca seteamos el estilo del footer del proyecto */
 
 .textoSecciones{
-  font-family: 'Manjari', sans-serif;
+  font-family: 'Metal Mania', cursive;
+  font-style: thin;
   color: #828282;
   background-color: transparent;
   font-size: 40px;
@@ -121,4 +131,17 @@
   font-family: 'Manjari', sans-serif;
   color: #828282;
   background-color: transparent;
+}
+
+.textoPregunta {
+    font-family: 'Manjari', sans-serif;
+    color: #FFC107;
+    background-color: transparent;
+}
+
+.textoSelect {
+    font-family: 'Manjari', sans-serif;
+    color: #828282;
+    background-color: transparent;
+    padding: px;
 }
