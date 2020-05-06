@@ -14,44 +14,47 @@
 
 <a id="introduccion"> :sparkles: 1. INTRODUCCIÓN A MAGIC MATCH :sparkles: </a>
 
-Magic Match es una plataforma web, basada en el imaginario de Harry Potter, que ofrece a sus usuarios la oportunidad de jugar dos tests, donde podrán encontrar su alma gemela mágica y su enemigo mágico, dentro de los personajes de la Saga.
+Magic Match es una plataforma web basada en el imaginario de Harry Potter, que ofrece a sus usuarios la oportunidad de jugar dos tests, donde podrán encontrar su alma gemela mágica y su enemigo mágico, dentro de los personajes de la Saga.
 
-El usuario también tiene acceso la información técnica de cada uno de los personajes disponibles. 
-
+Adicionalmente, el usuario tiene acceso a la información técnica de cada uno de los personajes disponibles. 
 
 ***
 
 <a id="informacion">  :boom: 2. Magic Match: Todo lo que necesitas saber	:boom: </a>
 
-***Magic Match*** nace como respuesta ante la necesidad de nuestro cliente, por mejorar la experiencia de usuario de los jugadores de su plataforma "Harry Potter: Wizards Unite". 
+***Magic Match*** nace como respuesta ante la necesidad de nuestro cliente, por mejorar la experiencia de usuario de los jugadores de la plataforma: "Harry Potter: Wizards Unite". 
 
-Luego de sus estudios en usuarios, se dieron cuenta que había ciertas elementos que podría ser util implementar, ya que aportarían a elevar la experiencia de sus usuarios. 
+Luego de sus propios estudios en usuarios, se dieron cuenta que había ciertos elementos que podrían ser útiles de implementar, ya que aportarían a mejorar la experiencia  de aquellos usuarios. 
 
 Estos elementos son:
 
--Poder filtrar personajes por sus características, particularmente: Patronus - Varita Mágica - Casa Mágica. 
+-Poder filtrar personajes por sus características, particularmente: 
+
+*Patronus 
+*Varita Mágica 
+*Casa Mágica
+*Profesión
 
 -Poder acceder a la información de los personajes disponibles en la base de datos. 
 
+Bajo este concepto se concibe ***Magic Match***, cuyo objetivo principal es complementar la experiencia de usuario de los jugadores de "Harry Potter: Wizards Unite", a través de una plataforma web, que les permita participar de dos experiencias de estilo test. Como recompensa obtendrán sus Match Mágicos dentro de la gama de personajes disponibles, tanto en categoría Pareja,como Enemigo. 
 
-Bajo este concepto se concibe ***Magic Match***, una plataforma web, cuyo objetivo principal es complementar la experiencia de usuario de los jugadores de "Harry Potter: Wizards Unite", a través de una aplicación, que les permita participar de dos experiencias de estilo test. Como recompensa, obtendrán sus Match Mágicos dentro de la gama de personajes disponibles, tanto en categoría Pareja, como Enemigo. 
+El usuario además puede acceder a una sección de Personajes, donde encontrará las fichas técnicas de cada uno de los personajes que forman parte de la base de datos dispuesta por nuestro cliente. 
 
-El usuario además, puede acceder a una sección de Personajes, donde se encuentra el acceso a las fichas técnicas, de cada uno de los personajes que forman parte de la base de datos dispuesta por nuestro cliente. 
-
-La plataforma ***Magic Match*** es también accesible para usuarios que no son participantes de "Harry Potter: Wizards Unite", pero que si se sienten atraídos a participar de experiencias relacionadas al mundo de Harry Potter. 
+La plataforma ***Magic Match*** también permite el acceso a usuarios que no son participantes de "Harry Potter: Wizards Unite", pero que si se sienten atraídos por las experiencias relacionadas al mundo de Harry Potter. 
 
 **¿Cómo funciona?**
 
-El usuario entra a nuestra la Plataforma de ***Magic Match***, donde puede escoger entre Descubrir su Pareja Mágica, Descubrir Enemigo Mágico y conocer más sobre los personajes disponibles. 
+El usuario entra a la Plataforma de ***Magic Match***, escoge entre Descubrir su Pareja Mágica, su Enemigo Mágico o Conocer más sobre los personajes disponibles. 
 No es necesario registrarse, ni estar vinculado a ninguna otra plataforma para acceder. 
 
-Una vez que entran en las categorías de juego para descubrir pareja o enemigo, se le presenta un set de 5 preguntas, donde el usuario debe escoger su respuesta. 
-Este set de preguntas está relacionado con los elementos que desea implementar nuestro cliente, por tanto hay preguntas relacionadas con las varitas, los Patronus y las casas mágicas de los personajes. 
+Una vez que accede a cualquiera de los dos juegos disponibles, se le presenta un set de 5 preguntas, donde el usuario debe escoger su respuesta. 
+Este set de preguntas está creado a partir de los elementos que desea implementar nuestro cliente, por tanto hay preguntas relacionadas con las varitas, los Patronus y las casas mágicas de los personajes. 
 
-El mecanismo por el cuál se obtiene el match mágico del usuario, es a través del filtrado, por tanto, el usuario efectivamente hace un filtrado a través de las respuesta que entrega en cada pregunta, pero este es un filtrado intuitivo, que entrega un resultado en función del instinto del usuario, y no un filtrado racional, que solo arroja un orden predeterminado. 
+El mecanismo por el cuál se obtiene el match mágico del usuario es a través del filtrado, por tanto, el usuario efectivamente cumple con el objetivo técnico de filtrar, y lo hace a través de las respuestas que va entregando en cada pregunta, pero este es un filtrado intuitivo que entrega un resultado en función del instinto del usuario, y no un filtrado racional que solo arroja un orden predeterminado. 
 
-Por otra parte, cuando el usuario ingresa a la categoría para conocer más sobre los personajes, accede a las fotos de los diferentes personajes, desplegados en la pagina web, las cuales puede ordenar bajo distintos criterios. 
-Al hacer click en cualquiera de las fotos de los personajes, el usuario accede a una ficha técnica con información de cada personaje. 
+Por otra parte, cuando el usuario ingresa a la categoría para conocer más sobre los personajes, puede ver las fotos de cada uno de ellos en la pagina web, las cuales puede ordenar bajo distintos criterios, como alfabéticamente y por relevancia. 
+Al hacer click en cualquiera de las fotos disponibles, el usuario accede a una ficha técnica con información del personaje seleccionado. 
 
 
 ***	
@@ -59,25 +62,25 @@ Al hacer click en cualquiera de las fotos de los personajes, el usuario accede a
 
 <a id="construccion"> :dizzy: 3. CONSTRUCCIÓN DEL PROYECTO :dizzy: </a>
 
-Te invitamos a ver nuestra plataforma de trabajo, donde podrás ver gráficamente todo el proceso de nuestro Proyecto. 
+Te invitamos a acceder nuestra plataforma de trabajo, donde podrás ver gráficamente todo el proceso de este Proyecto. 
 
-[Ingresa aquí a nuestro Board](https://miro.com/welcomeonboard/5Yy90mCtve1ddMJERFMiUXw5wQrPaYKfvtROmuIpzWqNOF85IgoVaKUB2NicW6vB)
+[Ingresa aquí a nuestro Board en Miro](https://miro.com/welcomeonboard/5Yy90mCtve1ddMJERFMiUXw5wQrPaYKfvtROmuIpzWqNOF85IgoVaKUB2NicW6vB)
 
 
 
 ### El comienzo 
 
 
-Todo comienza con la necesidad de nuestros clientes, por crear una plataforma que potenciara la experiencia de los usuarios de "Harry Potter: Wizards Unite", implementando soluciones ante las necesidades de los usuarios, descubiertas luego de una investigación UX. 
+Todo empieza cuando nuestro cliente plantea la necesidad de crear una plataforma que potenciara la experiencia de los usuarios de "Harry Potter: Wizards Unite", implementando soluciones a las necesidades descubiertas luego de investigaciones UX. 
 
-Si bien lo esencial era implementar el mecanismo de filtrado, y desplegar las fichas de los diferentes personajes, no queríamos ser un simple apéndice enciclopédico para el juego, sino estimular al usuario a partir de una experiencia interactiva, intiutiva y con recompensas.
+Si bien lo esencial era implementar el mecanismo de filtrado, y desplegar las fichas de los diferentes personajes, no queríamos simplemente ser un apéndice enciclopédico para el juego, sino estimular al usuario a partir de una experiencia interactiva, intiutiva y con recompensas.
 
-Ideamos un primera Diagrama de Flujo de la aplicación, donde se refleja la primera aproximación a nuestra propuesta.
+Ideamos un primer Diagrama de Flujo de la aplicación, donde se refleja la primera aproximación a nuestra propuesta.
 
 ![imagen a mostrar](Images_readme/Diagrama1.png)
 
-Con este primer paso, teníamos un punto de partida, pero luego de ir trabajando en nuestra propuesta, y recibiendo feedback, se concibió la idea de lo que hoy es ***Magic Match***: Una aplicación que no solo te muestra tu afín de pareja en el mundo de los Harry Potter, sino también su enemigo. 
-Con esto, ***Magic Match*** fue una idea ganadora para nuestro equipo. 
+Con este primer paso teníamos un punto de partida, pero luego de ir trabajando en nuestra propuesta y recibiendo feedback, se concibió la idea de lo que hoy es ***Magic Match***: Una aplicación que no solo muestra al usuario su afín de pareja en el mundo de Harry Potter, sino también su enemigo. 
+Con esto, ***Magic Match*** se convirtió en una idea ganadora para nuestro equipo. 
 
 Luego de tener claro hacia donde nos dirigíamos, comenzamos nuestra planificación, para llevar a cabo el proyecto. 
 
@@ -95,32 +98,35 @@ Con una aproximación más clara de nuestras misiones y objetivos, creamos una c
 [Visita acá nuestro Calendario](https://trello.com/b/x3gtxXLE/calendario-planificaci%C3%B3n-data-lovers)
 
 
-El proceso de planificación se divide en 3 Sprint: 
+El proceso de planificación se dividió en 4 Sprint: 
 
 -Planificación e Investigación
 -Desarrollo
+-Codeo
 -Testeo y Afinamiento. 
 
-La idea general de nuestra planificación es setear tareas diarias, para ir resolviendo en equipo. Cada día contamos con un Daily Meeting, que nos servirá para ir constantemente poniéndonos al tanto como equipo, e ir avanzando en conjunto hacia los objetivos diarios. 
+La idea general de nuestra planificación fue setear tareas diarias, para ir resolviendo en equipo.
 
-Al final de cada Sprint tendremos una Retrospectiva de la semana, donde prepararemos el tablero de Actividades para el siguiente Sprint. 
+Cada día realizamos un Daily Meeting, que nos sirvió para ir poniéndonos al tanto como equipo, e ir avanzando en conjunto hacia los objetivos diarios. 
 
-Con la planificación clara, procedemos a trabajar en nuestro proyecto. 
+Al final de cada Sprint tuvimos una Retrospectiva de la semana, donde preparamos el tablero de Actividades para el siguiente Sprint. 
+
+Con la planificación clara, procedimos a trabajar en nuestro proyecto. 
 
 
 ### Desarrollo
 
 SPRINT :one:
 
-Comenzamos el Sprint tomando dos lineas principales de trabajo. La primera de Investigación, donde durante la semana se estudió constantemente las distintas temáticas a aplicarse en nuestro proyecto desde las distintas perspectivas desde donde debe ser construido. 
+Comenzamos el Sprint tomando dos lineas principales de trabajo. La primera fue Investigación, donde se estudió constantemente las distintas temáticas a aplicarse en nuestro proyecto, desde las diferentes perspectivas desde donde debe ser construido. 
 
-En paralelo, también nos enfocamos en re definir nuestra aplicación, y setearla como lo que actualmente proponemos como Magic Match. 
+En paralelo, tuvimos el proceso de búsqueda para definir y redefinir la aplicación, y setearla como lo que actualmente proponemos como Magic Match. 
 
 Creamos un nuevo diagrama de flujo, el cuál marca el flujo real con que se desarrolla la aplicación actualmente. 
 
 ![imagen a mostrar](Images_readme/Diagrama_Final.png)
 
-Esta semana definimos a nuestros Usuarios y sus necesidades. 
+Tambien definimos a nuestros Usuarios y sus necesidades. 
 
 Hicimos Sketchs del proyecto y creamos protitpos de baja, los cuales fueron probados e hicimos iteraciones, según el feedback obtenido. 
 
@@ -166,9 +172,9 @@ Podemos identificar 2 perfiles de usuario predominantes en nuestra aplicación.
 
 
 
-:black_medium_small_square:	Usuario que juega "Harry Potter: Wizards United". 
+:black_medium_small_square:	Usuario que juega "Harry Potter: Wizards Unite". 
 
-:black_medium_small_square:	Usuario que no juega "Harry Potter: Wizards United", pero que gusta de involucrarse con el mundo de Harry Potter. 
+:black_medium_small_square:	Usuario que no juega "Harry Potter: Wizards Unite", pero que gusta de involucrarse con el mundo de Harry Potter. 
 
 
 **Perfil Usuario A:** 
@@ -180,7 +186,7 @@ Con acceso a plataforma web.
 
 
 Usuario A, es un hombre o mujer, mayor de 10 años, con acceso a plataforma web. 
-Este usuario juega activamente el juego "Harry Potte: Wizards Unite". 
+Este usuario juega activamente el juego "Harry Potter: Wizards Unite". 
 Este usuario disfruta de utilizar plataformas que lo involucren en el mundo de Harry Potter, especialmente si esa experiencia va a ser un aporte para su experiencia en otras instancias, por ejemplo, al momento de elegir algunas características de su perfil en la plataforma donde juega. 
 
 Necesidades Usuario A:
@@ -189,7 +195,7 @@ Necesidades Usuario A:
 * Plataforma que potencie su experiencia en relación a "Harry Potter: Wizards Unite". 
 * Poder obtener información sobre los personajes del juego 
 * Conocer información sobre las varitas de los personajes 
-* Poder hacer filtrado de los personajes con distintas categorías, entre ellas: Varita M´gica,    Patronus y Casa Mágica. 
+* Poder hacer filtrado de los personajes con distintas categorías, entre ellas: Varita Mágica,    Patronus y Casa Mágica. 
 * Acceder a una interfaz amigable que se representa la identidad visual de Harry Potter. 
 
 
@@ -203,13 +209,13 @@ Con acceso a una plataforma web
 
 
 Usuario B, es un hombre o mujer, sin rango etario, con acceso a plataforma web. 
-Este usuario gusta del mundo Harry Potter, por tanto disfruta de las instancias que lo relacionen a este. Usuario tiene interés por por las experiencias relacionadas a Harry Potter. 
+Este usuario gusta del mundo Harry Potter, por tanto disfruta y tiene interés en las instancias que lo relacionen a este. 
 
 Necesidades Usuario B:
 
 * Acceso a plataforma relacionada con el mundo Harry Potter y que esta sea interesante. 
-* Navegar una aplicación divertida, que lo identifique con el mundo de Harry Potter. 
-* Acceder a una interfaz amigable que se representa la identidad visual de Harry Potter. 
+* Navegar en una aplicación divertida, que lo identifique con el mundo de Harry Potter. 
+* Acceder a una interfaz amigable que se represente la identidad visual de Harry Potter. 
 
 
 ![imagen a mostrar](Images_readme/Usuarios-clientes.jpg)
@@ -225,7 +231,9 @@ Comenzamos realizando sketchs en lápiz y papel, para luego digitalizarlos y con
 
 La idea era testear si el concepto de nuestra aplicación era bien acogido, y si funcionaba el flujo de la aplicación. 
 
-ACA FOTO DE SKETCH A MANO Y DIGITALIZADO
+![imagen a mostrar](Images_readme/Sketchs/1.png)
+![imagen a mostrar](Images_readme/Sketchs/2.png)
+![imagen a mostrar](Images_readme/Sketchs/3.png)
 
 
 Luego de Feedback, realizamos una iteración en baja, con un primer acercamiento visual. El objetivo era obtener las opiniones de los usuarios, para ver que pensaban de la estética de nuestra aplicación, así como si funcionaba el concepto. 
