@@ -2,8 +2,6 @@
 ![imagen a mostrar](src/Images_proyect/Banner.png)
 
 
-:zap: MAGIC MATCH :zap:
-
 ### INDICE
 
 * [1. INTRODUCCIÓN A MAGIC MATCH](#introduccion)
@@ -18,7 +16,7 @@
 
 
 
-<a id="introduccion"> :sparkles: 1. INTRODUCCIÓN A MAGIC MATCH :sparkles: </a>
+<a id="introduccion"> :zap: 1. INTRODUCCIÓN A MAGIC MATCH :zap: </a>
 
 Magic Match es una plataforma web basada en el imaginario de Harry Potter, que ofrece a sus usuarios la oportunidad de jugar dos tests, donde podrán encontrar su alma gemela mágica y su enemigo mágico, dentro de los personajes de la Saga.
 
@@ -28,7 +26,7 @@ Adicionalmente, el usuario tiene acceso a la información técnica de cada uno d
 ***
 
 
-<a id="informacion">  :boom: 2. Magic Match: Todo lo que necesitas saber	:boom: </a>
+<a id="informacion"> :sparkles: 2. Magic Match: Todo lo que necesitas saber :sparkles: </a>
 
 ***Magic Match*** nace como respuesta ante la necesidad de nuestro cliente, por mejorar la experiencia de usuario de los jugadores de la plataforma: "Harry Potter: Wizards Unite". 
 
@@ -164,7 +162,7 @@ ACA TENEMOS QUE DESCRIBIR BIEN. DE MANERA CLARA Y SIN ALARGARSE TANTO, TOMANDO E
 
 ***
  
-<a id="diseno">  first_quarter_moon: 4. DISEÑO UX first_quarter_moon: </a>
+<a id="diseno">   :boom:  4. DISEÑO UX  :boom:  </a>
 
 
 El eje central de nuestro trabajo fue el diseño UX. 
@@ -227,7 +225,6 @@ Necesidades Usuario B:
 
 
 ![imagen a mostrar](Images_readme/Usuarios-clientes.jpg)
-
 
 
 
