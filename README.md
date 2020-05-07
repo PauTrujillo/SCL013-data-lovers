@@ -34,16 +34,19 @@ Luego de sus propios estudios en usuarios, se dieron cuenta que había ciertos e
 
 Estos elementos son:
 
--Poder filtrar personajes por sus características, particularmente: 
+:black_circle: Poder filtrar personajes por sus características, particularmente: 
 
-*Patronus 
-*Varita Mágica 
-*Casa Mágica
-*Profesión
+-Patronus 
 
--Poder acceder a la información de los personajes disponibles en la base de datos. 
+-Varita Mágica 
 
-Bajo este concepto se concibe ***Magic Match***, cuyo objetivo principal es complementar la experiencia de usuario de los jugadores de "Harry Potter: Wizards Unite", a través de una plataforma web, que les permita participar de dos experiencias de estilo test. Como recompensa obtendrán sus Match Mágicos dentro de la gama de personajes disponibles, tanto en categoría Pareja,como Enemigo. 
+-Casa Mágica
+
+-Profesión
+
+:black_circle: Poder acceder a la información de los personajes disponibles en la base de datos. 
+
+Bajo este concepto se concibe ***Magic Match***, cuyo objetivo principal es complementar la experiencia de usuario de los jugadores de "Harry Potter: Wizards Unite", a través de una plataforma web, que les permita participar de dos experiencias de estilo test. Como recompensa obtendrán sus Match Mágicos dentro de la gama de personajes disponibles, tanto en categoría Pareja, como Enemigo. 
 
 El usuario además puede acceder a una sección de Personajes, donde encontrará las fichas técnicas de cada uno de los personajes que forman parte de la base de datos dispuesta por nuestro cliente. 
 
@@ -51,11 +54,11 @@ La plataforma ***Magic Match*** también permite el acceso a usuarios que no son
 
 **¿Cómo funciona?**
 
-El usuario entra a la Plataforma de ***Magic Match***, escoge entre Descubrir su Pareja Mágica, su Enemigo Mágico o Conocer más sobre los personajes disponibles. 
+El usuario entra a la Plataforma de ***Magic Match*** y escoge entre Descubrir su Pareja Mágica, su Enemigo Mágico o Conocer más sobre los personajes disponibles. 
 No es necesario registrarse, ni estar vinculado a ninguna otra plataforma para acceder. 
 
-Una vez que accede a cualquiera de los dos juegos disponibles, se le presenta un set de 5 preguntas, donde el usuario debe escoger su respuesta. 
-Este set de preguntas está creado a partir de los elementos que desea implementar nuestro cliente, por tanto hay preguntas relacionadas con las varitas, los Patronus y las casas mágicas de los personajes. 
+Una vez que el usuario accede a cualquiera de los dos juegos disponibles, se le presenta un set de 5 preguntas, donde debe escoger su respuesta. 
+Este set de preguntas está creado a partir de los elementos que desea implementar nuestro cliente, por tanto hay preguntas relacionadas con las varitas mágicas, los Patronus y las casas mágicas de los personajes. 
 
 El mecanismo por el cuál se obtiene el match mágico del usuario es a través del filtrado, por tanto, el usuario efectivamente cumple con el objetivo técnico de filtrar, y lo hace a través de las respuestas que va entregando en cada pregunta, pero este es un filtrado intuitivo que entrega un resultado en función del instinto del usuario, y no un filtrado racional que solo arroja un orden predeterminado. 
 
@@ -70,7 +73,7 @@ Al hacer click en cualquiera de las fotos disponibles, el usuario accede a una f
 
 Te invitamos a acceder nuestra plataforma de trabajo, donde podrás ver gráficamente todo el proceso de este Proyecto. 
 
-[Ingresa aquí a nuestro Board en Miro](https://miro.com/welcomeonboard/5Yy90mCtve1ddMJERFMiUXw5wQrPaYKfvtROmuIpzWqNOF85IgoVaKUB2NicW6vB)
+[Ingresa aquí a nuestro Board en Miro](https://miro.com/app/board/o9J_ktGidAY=/)
 
 
 
@@ -122,7 +125,7 @@ Con la planificación clara, procedimos a trabajar en nuestro proyecto.
 
 ### Desarrollo
 
-SPRINT :one:
+**SPRINT 1** :one:
 
 Comenzamos el Sprint tomando dos lineas principales de trabajo. La primera fue Investigación, donde se estudió constantemente las distintas temáticas a aplicarse en nuestro proyecto, desde las diferentes perspectivas desde donde debe ser construido. 
 
@@ -132,31 +135,37 @@ Creamos un nuevo diagrama de flujo, el cuál marca el flujo real con que se desa
 
 ![imagen a mostrar](Images_readme/Diagrama_Final.png)
 
-Tambien definimos a nuestros Usuarios y sus necesidades. 
+Con esto comenzamos a trabajar en llevar a cabo los distintos procesos de Diseño Ux, y también trabajamos en escribir historias de Usuarios y practicar Java Script. 
 
-Hicimos Sketchs del proyecto y creamos protitpos de baja, los cuales fueron probados e hicimos iteraciones, según el feedback obtenido. 
+Finalmente, integramos todos los elementos y documentos necesarios para nuestro trabajo, en la plataforma Miro. Es el link presentado al principio de esta categoría, pero puedes encontrarlo nuevamente aquí. 
 
-Se creó un prototipo de Alta en Figma.
-
-Se escribieron Pruebas de usuario y Criterios de Aceptación. 
-
-Se hicieron pruebas de usuario con el protipo en Alta. 
-
-En paralelo, estuvimos investigando y practicando Java Script para aplicar en la plataforma. 
-
-Finalmente, integramos en la plataforma Miro, todos los documentos de nuestro proyecto, que es el link presentado el inicio de esta Categoría. 
+[Ingresa aquí a nuestro Board en Miro](https://miro.com/app/board/o9J_ktGidAY=/)
 
 Terminamos la semana con una retrospectiva, y reformulamos el Tablero de Actividades del Sprint 2, incluyendo las historias de Usuarios. 
 
-Sprint 2. 
+**Sprint 2** :two:
+
+Este segundo Sprint fue enfocado en Iteraciones de Pruebas de usuario, y trabajo en el material que se utilizaría en la plataforma. 
+
+Se trabajó en los textos finales a utilizar, y se hizo una nueva búsqueda de elementos que aportasen a la construcción de la identidad visual de la aplicación, ya que era un punto fundamental a mejorar. 
 
 
-Sprint 3. 
+También continuamos practicando Java Script, según las necesidades que teníamos para el código del proyecto y se trabajó en el Readme que actualmente están visualizando. 
+
+Tuvimos la restrospectiva final de la semana, y replanteamos nuestro tablero de actividades para el Sprint 3. 
 
 
+**Sprint 3** :three:
 
-ACA TENEMOS QUE DESCRIBIR BIEN. DE MANERA CLARA Y SIN ALARGARSE TANTO, TOMANDO EN CUENTA QUE TENEMOS QUE DESCRIBIR BIEN EL PROCESO UX. 
+El punto de partida de este Sprint, fue comenzar a escribir el código de nuestra aplicación, en función de la maqueta que fue aprobada. 
 
+Reformulamos nuestra planificación, ya que el deadline de entrega, fue posterior a lo que originalmente teníamos contemplado, por tanto pudimos re organizarnos y distribuir de mejor manera las actividades que nos quedaban por llevar a cabo. 
+
+Por completar esta parte al final de Sprint 3. 
+
+**Sprint 4** :four:
+
+Por completar en Sprint 4. 
 
 
 
