@@ -14,7 +14,11 @@ botonParaFlow2.addEventListener("click", flow2);
 const botonParaFlow3 = document.getElementById("boton3");
 botonParaFlow3.addEventListener("click", flow3);
 
+const botonAtrasPareja = document.getElementById("volverPareja");
+botonAtrasPareja.addEventListener("click", regresarPareja);
 
+const botonAtrasEnemigo = document.getElementById("volverEnemigo");
+botonAtrasEnemigo.addEventListener("click", regresarEnemigo);
 
 //FUNCIONES PARA BOTONES//
 
@@ -33,6 +37,28 @@ function flow2() {
   intro.style.display = "none";
   flujo2.style.display = "block";
 }
+
+function regresarPareja() {
+    let flujo1 = document.getElementById("pareja");
+    let intro = document.getElementById("portada");
+    let flujo2 = document.getElementById("enemigo");
+    let regresoPareja = document.getElementById("portada");
+    flujo1.style.display = "none";
+    intro.style.display = "none";
+    flujo2.style.display = "none";
+    regresoPareja.style.display ="block";
+  }
+
+  function regresarEnemigo() {
+    let flujo1 = document.getElementById("pareja");
+    let intro = document.getElementById("portada");
+    let flujo2 = document.getElementById("enemigo");
+    let regresoEnemigo = document.getElementById("portada");
+    flujo1.style.display = "none";
+    intro.style.display = "none";
+    flujo2.style.display = "none";
+    regresoEnemigo.style.display ="block";
+  }
 
 
 const conteiner = document.getElementById("root");
