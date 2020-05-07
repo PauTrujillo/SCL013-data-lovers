@@ -1,5 +1,5 @@
 import dataHarryPotter from './data/potter/potter.js' // conecta la data de harry Potter
-import { filterordenaA_Z } from './data.js'
+import { filterordenaA_Z, filterData } from './data.js'
 
 console.log(dataHarryPotter);
 
@@ -88,3 +88,14 @@ ordenaAZ.addEventListener("change", () => {
         conteiner.innerHTML += elemen;
     }
 })
+
+const filtraGenero = document.getElementById("pregunta1Amor"); // se crea constante
+filtraGenero.addEventListener("change", () => {
+    let genero = filtraGenero.options[filtraGenero.selectedIndex].value; // Se crea variable donde se almacena la opcion elegida por el usuario
+    conteiner.innerHTML = "";
+    let generoFiltrado = filterData(dataHarryPotter, genero);
+    for (let a = 0; a < generoFiltrado.length; a++) {
+        let elemen = `<section class="ficha"> <section id="foto"> <img class="imagens" src=${generoFiltrado[a].image}></section><section id="letras"><p class="seteoFicha">Nombre: ${generoFiltrado[a].name}<p> <p class="seteoFicha">Especie: ${generoFiltrado[a].species}<p> <p class="seteoFicha">Genero: ${generoFiltrado[a].gender}<p> <p class="seteoFicha">Hechizo: ${generoFiltrado[a].patronus}<p></section></section>`
+        conteiner.innerHTML += elemen;
+      }
+    })
