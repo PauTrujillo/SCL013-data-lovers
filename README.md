@@ -14,6 +14,9 @@
 * [6. AGRADECIMIENTOS](#agradecimientos)	
 
 
+***
+
+
 
 <a id="introduccion"> :sparkles: 1. INTRODUCCIÓN A MAGIC MATCH :sparkles: </a>
 
@@ -21,7 +24,9 @@ Magic Match es una plataforma web basada en el imaginario de Harry Potter, que o
 
 Adicionalmente, el usuario tiene acceso a la información técnica de cada uno de los personajes disponibles. 
 
+
 ***
+
 
 <a id="informacion">  :boom: 2. Magic Match: Todo lo que necesitas saber	:boom: </a>
 
@@ -262,64 +267,93 @@ Links para revisar entrevistas a Usuarios:
 
 Como resultado de estas entrevistas, pudimos inferir lo siguiente:
 
+:black_circle: Existen los usuarios perfilados :+1:
+
 :black_circle: Usuarios aprueban la aplicación en general. :+1:
+
 :black_circle: Usuarios disfrutan de los juegos de la aplicación. :+1:
+
 :black_circle: Usuarios prefieren las preguntas técnicas que los relacionan a los personajes. :+1:
+
+:black_circle: Algunos usuarios si ocuparían la Data al momento de tomar deciciones en otras plataformas ligadas al mundo Harry Potter, y otros no. :+1::-1:
+
 :black_circle: Usuarios encuentran incongruencias en Data. :-1:
+
+:black_circle: No toda la data entregada es relevante para el usuario.  :-1:
+
 :black_circle: Usuarios necesitan una mejora en la visualidad, que sea más cercana a Harry Potter. :-1:
+
 :black_circle: Usuarios no disfrutan de preguntas relacionadas a rasgos físicos de los personajes. :-1:
 
 
+Con estos resultados, realizamos una última iteración de nuestro Prototipo en Alta, el cuál se convirtió en nuestra maqueta final desde la cuál comenzamos a codear el proyecto. 
 
-CONCLUSIONES 
+[MAQUETA FINAL PROYECTO](https://www.figma.com/proto/OeNXAYKwT5D1xtDiRVn63F/HARRY-POTTER-3-DATA-LOVERS?node-id=8%3A1&viewport=355%2C236%2C0.03604096546769142&scaling=min-zoom)
 
-COMO DEFINIMOS INTERFAZ USUSARIO 
+Una vez lista la maqueta, esta fue implementada en Maze, para hacer nuevas pruebas finales. Estas pruebas iban específicamente enfocadas a confirmar la mejora, en las distintas áreas que resultaron con resultados mas bajos en las pruebas anteriores, por tanto buscamos:
 
-:o: Existen los usuarios perfilados. 
+-Mejorar visualidad. Acercarla más a Mundo Harry Potter. 
 
-:o: El usuario siempre está en búsqueda de una mejor experiencia de usuario. 
+-Mejorar calidad de preguntas. 
 
-:o: El usuario disfruta la plataforma. 
+-Entregar data de personajes que no tenga incongruencias con el imaginario de Harry Potter. 
 
-:o: etc
+-Confirmar que el usuario gusta de la aplicación. 
 
-:o: resolvemos necesidades de Cliente? 
+[Revisa Resultados de Pruebas en Maze Aquí](https://maze.design/projects/10762980/mazes/10762981/results)
 
-:o: resolvemos necesidades de ususario? 
-
-:o: 
-¡
-NUEVO PROTOTIPO EN ALTA IMPLEMENTADO EN MAZE 
+[Revisa Informe de Pruebas en Maze Aquí](https://maze.design/r/7c89ck7xk9pa69nb#mission-1)
 
 
-!
-ANALISIS Y RESULTADO 
+Luego de realizar las pruebas en Maze a 12 usuarios, podemos concluir lo siquiente:
+
+:black_circle: Existieron problemas técnicos en la implementación de la maqueta en Maze, lo cuál incide en los porcentajes obtenidos en el Reporte que nos entrega la plataforma de testeo. Esto afectó el porcentaje de usabilidad de la aplicación, así como fue parte de los comentarios de los usuarios. 
+
+:black_circle: A pesar de los problemas técnicos, el usuario fue capaz de entender la aplicación y de contestar las preguntas directas que se solicitaban, para así obtener una respuesta en cuanto a las inquietudes que Buscábamos resolver resolver a través de estos testeos. 
+
+:black_circle: Usuarios disfrutan de la aplicación. 
+
+:black_circle: Usarios encuentran las preguntas pertinentes, y valoran las preguntas ténicas. 
+
+:black_circle: Usuarios confirman que la identidad visual de Harry Potter es alcanzada. 
+
+:black_circle: Usuarios no tienen reparos en cuanto a la data desplegada. 
 
 
-PRODUCTO FINAL  + LINK EN GIT HUB PAGES 
+Con estos resultados, decidimos que era el momento de comenzar a trabajar en la aplicación real, basándonos en la maqueta testeada, ya que cumple con las expectativas que deseamos, para así cumplir con los objetivos expuestos. 
 
 
+
+
+Por completar al principio de Sprint 4: 
+
+PRUEBAS DE USUARIO PRODUCTO FINAL. TBC
+
+PRODUCTO FINAL + LINK EN GIT HUB PAGES 
 
 
 ***	
 
 <a id="conclusiones"> :first_quarter_moon_with_face:  5. CONCLUSIONES Y REFLEXIONES :first_quarter_moon_with_face:</a>
 
+:o: El usuario siempre está en búsqueda de una mejor experiencia de usuario. 
 
-COMENTAR COMO FUE NUESTRO PROCESO. COMO SE AFRONTÓ Y COMO SE DESARROLLO. 
+Por completar al principio de Sprint 4:
 
-VER LAS COSAS QUE SE NOS HICIERON DIFICILES
+Resolvemos necesidades de Cliente? 
 
-VER LAS COSAS QUE SE NOS HICIERON FACILES O DISFRUTAMOS MAS
+Resolvemos necesidades de usuario? 
 
+Qué se nos hizo difícil?
 
+Qué se nos hizo fácil?
 
-COMENTAR SI CUMPLIMOS CON OBJETIVOS DEL PROYECTO. REFLEXION AL RESPECTO 
+Cuplimos Objetivos? Reflexión al respecto. 
 
+Como podemos mejorar? 
 
-COMO PODEMOS MEJORAR EN EL FUTURO. 
+Reflexión conclusiva. 
 
-FIN DE CONCLUSIONES. REFLEXION FINAL
 
 ***	
 
@@ -327,7 +361,7 @@ FIN DE CONCLUSIONES. REFLEXION FINAL
 <a id="agradecimientos"> :sun_with_face: 6. AGRADECIMIENTOS  :sun_with_face: </a>
 
 
-Se Escribirá esta parte en la semana final del proyecto. 
+Por completar al principio de Sprint 4. 
 
 
 
