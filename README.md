@@ -247,7 +247,7 @@ Gracias al feedback recibido, decidimos trasladar el proceso a Figma, para reali
 Con este prototipo en Alta listo, hicimos una ronda de feedback, donde aplicamos algunos cambios menores y comenzamos a probar nuestra prueba a mayor escala, a través de entrevistas grabadas y pautadas con guión. 
 
 
-![imagen a mostrar](Images_readme/guion.jpg)
+![imagen a mostrar](Images_readme/GUION.jpg)
 
 [Entrevista 1](https://trello.com/b/x3gtxXLE/calendario-planificaci%C3%B3n-data-lovers)
 [Entrevista 2](https://trello.com/b/x3gtxXLE/calendario-planificaci%C3%B3n-data-lovers)
