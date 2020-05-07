@@ -18,7 +18,7 @@
 
 <a id="introduccion"> :zap: 1. INTRODUCCIÓN A MAGIC MATCH :zap: </a>
 
-Magic Match es una plataforma web basada en el imaginario de Harry Potter, que ofrece a sus usuarios la oportunidad de jugar dos tests, donde podrán encontrar su alma gemela mágica y su enemigo mágico, dentro de los personajes de la Saga.
+Magic Match es una plataforma web basada en el imaginario de Harry Potter, que ofrece a sus usuarios la oportunidad de jugar dos tests, donde podrán encontrar su alma gemela mágica y su enemigo mágico, dentro de los personajes de esta misma Saga.
 
 Adicionalmente, el usuario tiene acceso a la información técnica de cada uno de los personajes disponibles. 
 
@@ -26,7 +26,7 @@ Adicionalmente, el usuario tiene acceso a la información técnica de cada uno d
 ***
 
 
-<a id="informacion"> :sparkles: 2. Magic Match: Todo lo que necesitas saber :sparkles: </a>
+<a id="informacion"> :sparkles: 2. MAGIC MATCH: TODO LO QUE NECESITAS SABER :sparkles: </a>
 
 ***Magic Match*** nace como respuesta ante la necesidad de nuestro cliente, por mejorar la experiencia de usuario de los jugadores de la plataforma: "Harry Potter: Wizards Unite". 
 
@@ -45,6 +45,7 @@ Estos elementos son:
 -Profesión
 
 :black_circle: Poder acceder a la información de los personajes disponibles en la base de datos. 
+
 
 Bajo este concepto se concibe ***Magic Match***, cuyo objetivo principal es complementar la experiencia de usuario de los jugadores de "Harry Potter: Wizards Unite", a través de una plataforma web, que les permita participar de dos experiencias de estilo test. Como recompensa obtendrán sus Match Mágicos dentro de la gama de personajes disponibles, tanto en categoría Pareja, como Enemigo. 
 
@@ -82,7 +83,7 @@ Te invitamos a acceder nuestra plataforma de trabajo, donde podrás ver gráfica
 
 Todo empieza cuando nuestro cliente plantea la necesidad de crear una plataforma que potenciara la experiencia de los usuarios de "Harry Potter: Wizards Unite", implementando soluciones a las necesidades descubiertas luego de investigaciones UX. 
 
-Si bien lo esencial era implementar el mecanismo de filtrado, y desplegar las fichas de los diferentes personajes, no queríamos simplemente ser un apéndice enciclopédico para el juego, sino estimular al usuario a partir de una experiencia interactiva, intiutiva y con recompensas.
+Si bien lo esencial era implementar el mecanismo de filtrado, y desplegar las fichas de los diferentes personajes, no queríamos simplemente ser un apéndice enciclopédico para el juego, sino estimular al usuario a partir de una experiencia interactiva, intiutiva y con recompensas, con una interfaz amigable, sencilla y que represente la ideantidad de Harry Potter. 
 
 Ideamos un primer Diagrama de Flujo de la aplicación, donde se refleja la primera aproximación a nuestra propuesta.
 
@@ -109,10 +110,13 @@ Con una aproximación más clara de nuestras misiones y objetivos, creamos una c
 
 El proceso de planificación se dividió en 4 Sprint: 
 
--Planificación e Investigación
--Desarrollo
--Codeo
--Testeo y Afinamiento. 
+:black_circle: Planificación e Investigación
+
+:black_circle: Desarrollo
+
+:black_circle: Codeo
+
+:black_circle: Testeo y Afinamiento. 
 
 La idea general de nuestra planificación fue setear tareas diarias, para ir resolviendo en equipo.
 
@@ -125,9 +129,9 @@ Con la planificación clara, procedimos a trabajar en nuestro proyecto.
 
 ### Desarrollo
 
-**SPRINT 1** :one:
+**SPRINT** :one:
 
-Comenzamos el Sprint tomando dos lineas principales de trabajo. La primera fue Investigación, donde se estudió constantemente las distintas temáticas a aplicarse en nuestro proyecto, desde las diferentes perspectivas desde donde debe ser construido. 
+Comenzamos el Sprint tomando dos lineas principales de trabajo. La primera fue Investigación, donde se estudió constantemente las distintas temáticas a aplicarse en nuestro proyecto, desde las diferentes perspectivas desde donde se construye. 
 
 En paralelo, tuvimos el proceso de búsqueda para definir y redefinir la aplicación, y setearla como lo que actualmente proponemos como Magic Match. 
 
@@ -135,19 +139,17 @@ Creamos un nuevo diagrama de flujo, el cuál marca el flujo real con que se desa
 
 ![imagen a mostrar](Images_readme/Diagrama_Final.png)
 
-Con esto comenzamos a trabajar en llevar a cabo los distintos procesos de Diseño Ux, y también trabajamos en escribir historias de Usuarios y practicar Java Script. 
+Con esto comenzamos a llevar a cabo los distintos procesos de Diseño Ux, y también trabajamos en escribir historias de Usuarios y practicar Java Script. 
 
-Finalmente, integramos todos los elementos y documentos necesarios para nuestro trabajo, en la plataforma Miro. Es el link presentado al principio de esta categoría, pero puedes encontrarlo nuevamente aquí. 
-
-[Ingresa aquí a nuestro Board en Miro](https://miro.com/app/board/o9J_ktGidAY=/)
+Finalmente, integramos todos los elementos y documentos necesarios para nuestro trabajo, en la plataforma Miro. Es el link presentado al principio de esta categoría, pero puedes encontrarlo nuevamente [aquí.](https://miro.com/app/board/o9J_ktGidAY=/)
 
 Terminamos la semana con una retrospectiva, y reformulamos el Tablero de Actividades del Sprint 2, incluyendo las historias de Usuarios. 
 
-**Sprint 2** :two:
+**Sprint** :two:
 
-Este segundo Sprint fue enfocado en Iteraciones de Pruebas de usuario, y trabajo en el material que se utilizaría en la plataforma. 
+Este segundo Sprint fue enfocado en Iteraciones de Pruebas de usuario, y trabajar en el material que se utilizaría en la plataforma. 
 
-Se trabajó en los textos finales a utilizar, y se hizo una nueva búsqueda de elementos que aportasen a la construcción de la identidad visual de la aplicación, ya que era un punto fundamental a mejorar. 
+Se re escribieron los textos finales a utilizar, y se hizo una nueva búsqueda de elementos que aportasen a la construcción de la identidad visual de la aplicación, ya que era un punto fundamental a mejorar. 
 
 
 También continuamos practicando Java Script, según las necesidades que teníamos para el código del proyecto y se trabajó en el Readme que actualmente están visualizando. 
@@ -155,7 +157,7 @@ También continuamos practicando Java Script, según las necesidades que teníam
 Tuvimos la restrospectiva final de la semana, y replanteamos nuestro tablero de actividades para el Sprint 3. 
 
 
-**Sprint 3** :three:
+**Sprint** :three:
 
 El punto de partida de este Sprint, fue comenzar a escribir el código de nuestra aplicación, en función de la maqueta que fue aprobada. 
 
@@ -163,7 +165,7 @@ Reformulamos nuestra planificación, ya que el deadline de entrega, fue posterio
 
 Por completar esta parte al final de Sprint 3. 
 
-**Sprint 4** :four:
+**Sprint** :four:
 
 Por completar en Sprint 4. 
 
@@ -176,7 +178,7 @@ Por completar en Sprint 4.
 
 El eje central de nuestro trabajo fue el diseño UX. 
 
-Nuestro proceso de construcción del proyecto tiene como objetivo principal exponenciar la experiencia de los usuarios de "Harry Potter: Wizards Unite", bajo la implementación de mecanismos solicitados como requisito técnico fundamental. 
+Nuestro proceso de construcción del proyecto tiene como objetivo exponenciar la experiencia de los usuarios de "Harry Potter: Wizards Unite", bajo la implementación de mecanismos solicitados como requisitos técnicos fundamentales, en una Interfaz amigable y sencilla de navegar, que refleje la identidad visual de Harry Potter. 
 
 A continuación detallamos paso a paso, toda la construcción del diseño UX de la plataforma Magic Match. 
 
@@ -195,8 +197,11 @@ Podemos identificar 2 perfiles de usuario predominantes en nuestra aplicación.
 **Perfil Usuario A:** 
 
 Hombres y mujeres. 
+
 Mayores de 10 años.
+
 Usuarios de "Harry Potter: Wizards Unite".
+
 Con acceso a plataforma web. 
 
 
@@ -211,15 +216,18 @@ Necesidades Usuario A:
 * Poder obtener información sobre los personajes del juego 
 * Conocer información sobre las varitas de los personajes 
 * Poder hacer filtrado de los personajes con distintas categorías, entre ellas: Varita Mágica,    Patronus y Casa Mágica. 
-* Acceder a una interfaz amigable que se representa la identidad visual de Harry Potter. 
+* Acceder a una interfaz amigable que representa la identidad visual de Harry Potter. 
 
 
 
 ***Perfil Usuario B***
 
 Hombres y mujeres. 
+
 Sin rango etario
+
 Gustan del mundo Harry Potter. 
+
 Con acceso a una plataforma web
 
 
@@ -231,6 +239,8 @@ Necesidades Usuario B:
 * Acceso a plataforma relacionada con el mundo Harry Potter y que esta sea interesante. 
 * Navegar en una aplicación divertida, que lo identifique con el mundo de Harry Potter. 
 * Acceder a una interfaz amigable que se represente la identidad visual de Harry Potter. 
+
+Cliquea en la imagen, para agrandar nuestro diagrama de "Cliente, Usuarios y Necesidades". 
 
 
 ![imagen a mostrar](Images_readme/Usuarios-clientes.jpg)
@@ -251,29 +261,36 @@ La idea era testear si el concepto de nuestra aplicación era bien acogido, y si
 ![imagen a mostrar](Images_readme/Sketchs/4.png)
 
 
-Luego de estos primeros testeos, pudimos validar que nuestra aplicación tenía buena acogida, pero que era fundamental darle la visualidad de la aplicación. 
+Luego de estos primeros testeos, pudimos validar que nuestra aplicación tenía buena acogida, pero que era fundamental darle la visualidad que queríamos implementar. 
 
 Realizamos una iteración en baja, con un primer acercamiento visual. El objetivo era obtener feedback sobre la estética de la aplicación, y revalidar el concepto de esta misma. 
 Gracias al feedback recibido, decidimos trasladar el proceso a Figma, para realizar nuestro primer Prototipo en Alta. 
 
 ![imagen a mostrar](Images_readme/Sketchs/5.png)
 
-Con este prototipo en Alta listo, hicimos una ronda de feedback, donde aplicamos algunos cambios menores y comenzamos a probar nuestra prueba a mayor escala, a través de entrevistas grabadas y pautadas con guión. 
+Con este prototipo en Alta listo, hicimos una ronda de feedback. Gracias a este, aplicamos algunos cambios menores y comenzamos a probar nuestro prototipo a mayor escala, a través de entrevistas grabadas y pautadas con guión. 
 
 
 ![imagen a mostrar](Images_readme/GUION.jpg)
 
+
 Links para revisar entrevistas a Usuarios:
 
+
 [Video Entrevista 1](https://drive.google.com/file/d/11MZlOLxsLa-VkMGXeKXGdflFkwX8qnmx/view)
+
 [Video Entrevista 2](https://drive.google.com/file/d/1cU3r69QLSarrMsbWBaNo1wlmIoBlWi-x/view)
+
 [Video Entrevista 3](https://drive.google.com/file/d/1HsBQL7ww3gaurUcJOdQYaGdWNRkHDOk9/view)
+
 [Video Entrevista 4](https://drive.google.com/file/d/1Js4NyYOjZX99aLpa1UTmV7DEBiIzf141/view)
+
 [Video Entrevista 5](https://drive.google.com/file/d/1PB58zlhh5eSOttcKoR1hffN3Kukv-H5d/view)
+
 
 Como resultado de estas entrevistas, pudimos inferir lo siguiente:
 
-:black_circle: Existen los usuarios perfilados :+1:
+:black_circle: Existen los usuarios perfilados. :+1:
 
 :black_circle: Usuarios aprueban la aplicación en general. :+1:
 
@@ -294,11 +311,22 @@ Como resultado de estas entrevistas, pudimos inferir lo siguiente:
 
 Con estos resultados, realizamos una última iteración de nuestro Prototipo en Alta, el cuál se convirtió en nuestra maqueta final desde la cuál comenzamos a codear el proyecto. 
 
-[MAQUETA FINAL PROYECTO](https://www.figma.com/proto/OeNXAYKwT5D1xtDiRVn63F/HARRY-POTTER-3-DATA-LOVERS?node-id=8%3A1&viewport=355%2C236%2C0.03604096546769142&scaling=min-zoom)
+[REVISA MAQUETA FINAL PROYECTO](https://www.figma.com/proto/OeNXAYKwT5D1xtDiRVn63F/HARRY-POTTER-3-DATA-LOVERS?node-id=8%3A1&viewport=355%2C236%2C0.03604096546769142&scaling=min-zoom)
 
-Una vez lista la maqueta, esta fue implementada en Maze, para hacer nuevas pruebas finales. Estas pruebas iban específicamente enfocadas a confirmar la mejora, en las distintas áreas que resultaron con resultados mas bajos en las pruebas anteriores, por tanto buscamos:
 
--Mejorar visualidad. Acercarla más a Mundo Harry Potter. 
+![imagen a mostrar](Images_readme/Sketchs/6.png)
+
+
+Una vez lista la maqueta, esta fue implementada en Maze, para llevar a cabo nuevas pruebas de usuario.
+
+[Revisa Resultados de Pruebas en Maze Aquí](https://maze.design/projects/10762980/mazes/10762981/results)
+
+[Revisa Informe de Pruebas en Maze Aquí](https://maze.design/r/7c89ck7xk9pa69nb#mission-1)
+
+Estas pruebas de usuaron se enfocaron en confirmar la mejora en las distintas áreas que obtuvieron resultados mas bajos en las pruebas de usuario anteriores, y que tuvimos que re construir. 
+Las áreas a trabajar fueron:
+
+-Mejorar visualidad y acercarla más a Mundo Harry Potter. 
 
 -Mejorar calidad de preguntas. 
 
@@ -306,16 +334,14 @@ Una vez lista la maqueta, esta fue implementada en Maze, para hacer nuevas prueb
 
 -Confirmar que el usuario gusta de la aplicación. 
 
-[Revisa Resultados de Pruebas en Maze Aquí](https://maze.design/projects/10762980/mazes/10762981/results)
 
-[Revisa Informe de Pruebas en Maze Aquí](https://maze.design/r/7c89ck7xk9pa69nb#mission-1)
 
 
 Luego de realizar las pruebas en Maze a 12 usuarios, podemos concluir lo siquiente:
 
 :black_circle: Existieron problemas técnicos en la implementación de la maqueta en Maze, lo cuál incide en los porcentajes obtenidos en el Reporte que nos entrega la plataforma de testeo. Esto afectó el porcentaje de usabilidad de la aplicación, así como fue parte de los comentarios de los usuarios. 
 
-:black_circle: A pesar de los problemas técnicos, el usuario fue capaz de entender la aplicación y de contestar las preguntas directas que se solicitaban, para así obtener una respuesta en cuanto a las inquietudes que Buscábamos resolver resolver a través de estos testeos. 
+:black_circle: A pesar de los problemas técnicos, el usuario fue capaz de entender la aplicación y de contestar las preguntas directas que se solicitaban, para así obtener una respuesta en cuanto a las inquietudes que buscábamos resolver resolver a través de estos testeos. 
 
 :black_circle: Usuarios disfrutan de la aplicación. 
 
@@ -331,7 +357,7 @@ Con estos resultados, decidimos que era el momento de comenzar a trabajar en la 
 
 
 
-Por completar al principio de Sprint 4: 
+Por completar al principio de Sprint 4 
 
 PRUEBAS DE USUARIO PRODUCTO FINAL. TBC
 
