@@ -20,3 +20,12 @@ export const filterordenaA_Z = (data, ordena) => {
   console.log(personajes_ordena_alfa)
   return personajes_ordena_alfa
 }
+
+
+export const filterData = (data, genero) => {
+  let selecciona_genero = data.filter(function (filtragenero) {
+    return (filtragenero.gender === (genero));
+  });
+  //console.log(selecciona_genero);
+  return selecciona_genero
+}
