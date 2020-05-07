@@ -139,11 +139,13 @@ Creamos un nuevo diagrama de flujo, el cuál marca el flujo real con que se desa
 
 ![imagen a mostrar](Images_readme/Diagrama_Final.png)
 
+Definimos el Backlog del Proyecto y también del Sprint. 
+
 Con esto comenzamos a llevar a cabo los distintos procesos de Diseño Ux, y también trabajamos en escribir historias de Usuarios y practicar Java Script. 
 
 Finalmente, integramos todos los elementos y documentos necesarios para nuestro trabajo, en la plataforma Miro. Es el link presentado al principio de esta categoría, pero puedes encontrarlo nuevamente [aquí.](https://miro.com/app/board/o9J_ktGidAY=/)
 
-Terminamos la semana con una retrospectiva, y reformulamos el Tablero de Actividades del Sprint 2, incluyendo las historias de Usuarios. 
+Terminamos la semana con una retrospectiva, y reformulamos el Backlog del Sprint 2,  Tablero de Actividades de este Sprint, incluyendo las historias de Usuarios. 
 
 **Sprint** :two:
 
@@ -154,7 +156,7 @@ Se re escribieron los textos finales a utilizar, y se hizo una nueva búsqueda d
 
 También continuamos practicando Java Script, según las necesidades que teníamos para el código del proyecto y se trabajó en el Readme que actualmente están visualizando. 
 
-Tuvimos la restrospectiva final de la semana, y replanteamos nuestro tablero de actividades para el Sprint 3. 
+Tuvimos la restrospectiva final de la semana, y replanteamos nuestro Backlog del Sprint 3, en el tablero de actividades para este Sprint. 
 
 
 **Sprint** :three:
@@ -311,7 +313,7 @@ Como resultado de estas entrevistas, pudimos inferir lo siguiente:
 
 Con estos resultados, realizamos una última iteración de nuestro Prototipo en Alta, el cuál se convirtió en nuestra maqueta final desde la cuál comenzamos a codear el proyecto. 
 
-[REVISA MAQUETA FINAL PROYECTO](https://www.figma.com/proto/OeNXAYKwT5D1xtDiRVn63F/HARRY-POTTER-3-DATA-LOVERS?node-id=8%3A1&viewport=355%2C236%2C0.03604096546769142&scaling=min-zoom)
+[Revisa Maqueta final del Proyecto Aquí](https://www.figma.com/proto/OeNXAYKwT5D1xtDiRVn63F/HARRY-POTTER-3-DATA-LOVERS?node-id=8%3A1&viewport=355%2C236%2C0.03604096546769142&scaling=min-zoom)
 
 
 ![imagen a mostrar](Images_readme/Sketchs/6.png)
