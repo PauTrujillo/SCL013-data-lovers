@@ -20,6 +20,8 @@ export default [
     actor: 'Daniel Radcliffe',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/harry.jpg',
+    categories: 65, 
+    personalInfo: "";
   },
   {
     name: 'Hermione Granger',
@@ -42,6 +44,7 @@ export default [
     actor: 'Emma Watson',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/hermione.jpeg',
+    categories: 45,
   },
   {
     name: 'Ron Weasley',
@@ -64,6 +67,7 @@ export default [
     actor: 'Rupert Grint',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/ron.jpg',
+    categories: 44,
   },
   {
     name: 'Draco Malfoy',
@@ -86,6 +90,7 @@ export default [
     actor: 'Tom Felton',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/draco.jpg',
+    categories: 33,
   },
   {
     name: 'Minerva McGonagall',
@@ -108,6 +113,7 @@ export default [
     actor: 'Dame Maggie Smith',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/mcgonagall.jpg',
+    categories: 29,
   },
   {
     name: 'Cedric Diggory',
@@ -130,6 +136,7 @@ export default [
     actor: 'Robert Pattinson',
     alive: false,
     image: 'http://hp-api.herokuapp.com/images/cedric.png',
+    categories: 24,
   },
   {
     name: 'Cho Chang',
@@ -152,6 +159,7 @@ export default [
     actor: 'Katie Leung',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/cho.jpg',
+    categories: 19,
   },
   {
     name: 'Severus Snape',
@@ -174,6 +182,7 @@ export default [
     actor: 'Alan Rickman',
     alive: false,
     image: 'http://hp-api.herokuapp.com/images/snape.jpg',
+    categories: 43,
   },
   {
     name: 'Rubeus Hagrid',
@@ -196,6 +205,7 @@ export default [
     actor: 'Robbie Coltrane',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/hagrid.png',
+    categories: 26,
   },
   {
     name: 'Neville Longbottom',
@@ -218,6 +228,7 @@ export default [
     actor: 'Matthew Lewis',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/neville.jpg',
+    categories: 22,
   },
   {
     name: 'Luna Lovegood',
@@ -240,6 +251,7 @@ export default [
     actor: 'Evanna Lynch',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/luna.jpg',
+    categories: 27,
   },
   {
     name: 'Ginny Weasley',
@@ -262,6 +274,7 @@ export default [
     actor: 'Bonnie Wright',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/ginny.jpg',
+    categories: 36,
   },
   {
     name: 'Sirius Black',
@@ -284,6 +297,7 @@ export default [
     actor: 'Gary Oldman',
     alive: false,
     image: 'http://hp-api.herokuapp.com/images/sirius.JPG',
+    categories: 26,
   },
   {
     name: 'Remus Lupin',
@@ -306,6 +320,7 @@ export default [
     actor: 'David Thewlis',
     alive: false,
     image: 'http://hp-api.herokuapp.com/images/lupin.jpg',
+    categories: 30,
   },
   {
     name: 'Arthur Weasley',
@@ -328,6 +343,7 @@ export default [
     actor: 'Mark Williams',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/arthur.jpg',
+    categories: 22,
   },
   {
     name: 'Bellatrix Lestrange',
@@ -350,6 +366,7 @@ export default [
     actor: 'Helena Bonham Carter',
     alive: false,
     image: 'http://hp-api.herokuapp.com/images/bellatrix.jpg',
+    çcategories: 30,
   },
   {
     name: 'Lord Voldemort',
@@ -372,6 +389,7 @@ export default [
     actor: 'Ralph Fiennes',
     alive: false,
     image: 'http://hp-api.herokuapp.com/images/voldemort.jpg',
+    categories: 51,
   },
   {
     name: 'Horace Slughorn',
@@ -394,6 +412,7 @@ export default [
     actor: 'Jim Broadbent',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/slughorn.JPG',
+    categories: 17,
   },
   {
     name: 'Kingsley Shacklebolt',
@@ -416,6 +435,7 @@ export default [
     actor: 'George Harris',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/kingsley.jpg',
+    categories: 14,
   },
   {
     name: 'Dolores Umbridge',
@@ -438,6 +458,7 @@ export default [
     actor: 'Imelda Staunton',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/umbridge.jpg',
+    categories: 22,
   },
   {
     name: 'Lucius Malfoy',
@@ -460,6 +481,7 @@ export default [
     actor: 'Jason Isaacs',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/lucius.jpg',
+    categories: 28,
   },
   {
     name: 'Vincent Crabbe',
@@ -482,6 +504,7 @@ export default [
     actor: 'Jamie Waylett',
     alive: false,
     image: 'http://hp-api.herokuapp.com/images/crabbe.jpg',
+    categories: 21,
   },
   {
     name: 'Gregory Goyle',
@@ -504,6 +527,7 @@ export default [
     actor: 'Josh Herdman',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/goyle.jpg',
+    categories: 14,
   },
   {
     name: 'Mrs Norris',
@@ -526,6 +550,7 @@ export default [
     actor: 'Maxime, Alanis and Tommy the cats',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/norris.JPG',
+    categories: 7,
   },
   {
     name: 'Argus Filch',
@@ -548,5 +573,6 @@ export default [
     actor: 'David Bradley',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/filch.jpg',
+    categories: 7,
   },
 ];
