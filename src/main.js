@@ -103,7 +103,7 @@ let dataTerceraPregunta = [];
 let dataCuartaPregunta = [];
 let dataQuintaPregunta = [];
 let resultadoAmor = [];
-const conteiner = document.getElementById("root");
+
 
 const filtraGenero = document.getElementById("pregunta1Amor"); // se crea constante
 filtraGenero.addEventListener("change", () => {
@@ -160,7 +160,7 @@ botonAceptarPareja.addEventListener('click', () => {
   console.log("resultado", resultadoAmor)
   conteiner.innerHTML = "";
   for (let b = 0; b < resultadoAmor.length; b++) {
-    let elemen = `<section class="ficha"> <section id="foto"> <img class="imagens" src=${resultadoAmor[b].image}></section><section id="letras"><p class="seteoFicha">Nombre: ${resultadoAmor[b].name}<p> <p class="seteoFicha">Especie: ${resultadoAmor[b].species}<p> <p class="seteoFicha">Genero: ${resultadoAmor[b].gender}<p> <p class="seteoFicha">Hechizo: ${resultadoAmor[b].patronus}<p></section></section>`
+    let elemen = `<section class="ficha"> <section id="foto"> <img class="imagens" src=${resultadoAmor[b].image}></section> <section id="letras"> <p class="seteoFicha">Nombre: ${resultadoAmor[b].name}<p> <p class="seteoFicha">Especie: ${resultadoAmor[b].species}<p> <p class="seteoFicha">Genero: ${resultadoAmor[b].gender}<p> <p class="seteoFicha">Hechizo: ${resultadoAmor[b].patronus}<p></section></section>`
     conteiner.innerHTML += elemen;
   }
 })
