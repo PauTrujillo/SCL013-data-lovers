@@ -125,6 +125,7 @@ let resultado = [];
 
 // FUNCIONES PAREJA MAGICA
 
+
 const filtraGenero = document.getElementById("pregunta1Amor"); // se crea constante
 filtraGenero.addEventListener("change", () => {
   document.getElementById('pregunta2Amor').removeAttribute('disabled');
@@ -177,6 +178,7 @@ filtraMadera.addEventListener("change", () => {
 const botonAceptarPareja = document.getElementById("aceptarPareja");
 botonAceptarPareja.addEventListener('click', () => {
   ocultarPreguntasAmor.style.display = 'none';
+
    conteiner.innerHTML = "";
   for (let b = 0; b < resultado.length; b++) {
     let elemen = `<section class="ficha"> <section id="foto"> <img class="imagens" src=${resultado[b].image}></section><section id="letras"><p class="seteoFicha">Nombre: ${resultado[b].name}<p> <p class="seteoFicha">Especie: ${resultado[b].species}<p> <p class="seteoFicha">Genero: ${resultado[b].gender}<p> <p class="seteoFicha">Hechizo: ${resultado[b].patronus}<p></section></section>`
