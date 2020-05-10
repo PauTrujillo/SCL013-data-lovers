@@ -51,6 +51,16 @@
   margin: 0em 0em 0em 0em;
 }
 
+.fichaResultado {
+    background-color: #FFC107;
+    font-family: 'Manjari', sans-serif;
+}
+
+#letrasResutado {
+    color: aqua;
+    font-family: 'Manjari', sans-serif;
+}
+
 /* Acá seteamos el estilo del banner del proyecto */
 
 .imagenEnemigo {

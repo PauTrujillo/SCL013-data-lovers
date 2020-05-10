@@ -181,7 +181,7 @@ botonAceptarPareja.addEventListener('click', () => {
 
    conteiner.innerHTML = "";
   for (let b = 0; b < resultado.length; b++) {
-    let elemen = `<section class="ficha"> <section id="foto"> <img class="imagens" src=${resultado[b].image}></section><section id="letras"><p class="seteoFicha">Nombre: ${resultado[b].name}<p> <p class="seteoFicha">Especie: ${resultado[b].species}<p> <p class="seteoFicha">Genero: ${resultado[b].gender}<p> <p class="seteoFicha">Hechizo: ${resultado[b].patronus}<p></section></section>`
+    let elemen = `<section class="fichaResultado"> <section id="letrasResultado"><p class="seteoFichaResultado">${resultado[b].name}<p> <section id="fotoResultado"> <img class="imagensResultado" src=${resultado[b].image}></section> <p class="seteoFichaResultado">${resultado[b].personalInfo}<p></section></section>`
     conteiner.innerHTML += elemen;
   }
 })
@@ -238,7 +238,7 @@ botonAceptarEnemigo.addEventListener('click', () => {
   ocultarPreguntasEnemigo.style.display = 'none';
    conteiner.innerHTML = "";
   for (let b = 0; b < resultado.length; b++) {
-    let elemen = `<section class="ficha"> <section id="foto"> <img class="imagens" src=${resultado[b].image}></section><section id="letras"><p class="seteoFicha">Nombre: ${resultado[b].name}<p> <p class="seteoFicha">Especie: ${resultado[b].species}<p> <p class="seteoFicha">Genero: ${resultado[b].gender}<p> <p class="seteoFicha">Hechizo: ${resultado[b].patronus}<p></section></section>`
+    let elemen = `<div class="fichaResultado"> <div id="letrasResultado"><p class="seteoFichaResultado">${resultado[b].name}<p> <div id="fotoResultado"> <img class="imagensResultado" src=${resultado[b].image}></div> <p class="seteoFichaResultado">${resultado[b].personalInfo}<p></div></div>`
     console.log ("resultado", resultado)
     conteiner.innerHTML += elemen;
   }
