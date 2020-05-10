@@ -22,7 +22,6 @@ export default [
     image: 'http://hp-api.herokuapp.com/images/harry.jpg',
     categories: 65, 
     personalInfo: 'De sangre Mestiza, pero corazón valiente, leal y puro, es uno de los magos más famosos de la historia, ya que venció a Lord Voldemort y ha sido el único sobreviviente de la Maldición Asesina, Avada Kedavra. Perteneciente a la casa de Gryffindor, el sombrero seleccionador tuvo dudas de donde enviarlo, ya que también lo veía bien en Slytherin. Fue el único “Maestro de la Muerte” conocido en la historia, al haber reunido las tres reliquias de la muerte (Varita de Sauco, Capa de invisibilidad y la Piedra de la Resurrección), a los 17 años. Excelente jugador de Quidditch y capitán de su casa, se convirtió en el buscador más joven en más de un siglo, alcanzando el puesto en su primer año en Hogwarts. Cuando tenía solo un año recibió su primera escoba por parte de su padrino Sirius, aprendiendo a volar a muy temprana edad. Su primera varita mágica tenía núcleo de pluma de Fénix, la cuál pertenecía  a Fawkes, el fénix de Dumbledore. Esta varita tenía una gemela, pero hecha de tejo, la cuál pertenecía a Tom Riddle. Fue maltratado por sus tíos en la infancia, quienes detestaban el hecho que fuera un brujo, lo cuál Harry nunca supo, sino hasta los 11 años, cuando recibió su carta de invitación para ir a Hogwarts. En su vida adulta  se casó con Ginny Weasley, hermana de su mejor amigo, Ron. Se convirtió en Auror, jefe del departamento de Aurores en el Ministerio, e incluso llegó a enseñar defensa contra las Artes Oscuras en Hogwarts. Se convirtió en padrino de Teddy Lupin, e hizo las paces con su primo Dursley. Con Draco Malfoy lograron tener una relación civilizada y en paz, pero no llegaron a ser cercanos. Cuando Voldemort mata a Harry Potter en el bosque prohibido, Harry pierde la habilidad de hablar Parsel, una vez que resucita.',
-    
   },
   {
     name: 'Hermione Granger',
@@ -370,7 +369,7 @@ export default [
     actor: 'Helena Bonham Carter',
     alive: false,
     image: 'http://hp-api.herokuapp.com/images/bellatrix.jpg',
-    çcategories: 30,
+    categories: 30,
   },
   {
     name: 'Lord Voldemort',

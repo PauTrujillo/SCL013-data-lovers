@@ -1,13 +1,4 @@
-/* estas funciones son de ejemplo
-
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-}; */
-
+//FUNCIONES PERSONAJES
 
 export const filterordenaA_Z = (data, ordena) => {
   const personajes_ordena_alfa = data.sort((per1, per2) => {
@@ -16,11 +7,24 @@ export const filterordenaA_Z = (data, ordena) => {
     } else {
       return (per1.name > per2.name) ? -1 : 1
     }
-  })
- // console.log(personajes_ordena_alfa)
+  });
   return personajes_ordena_alfa
 }
 
+export const filterRelevancia = (data, categoria) => {
+  let personajesRelevancia = data.sort((ascen, desce) => {
+    if (categoria === "Ascendente") {
+      return (ascen.categories < desce.categories) ? -1 : 1;
+    }
+    else {
+      return (ascen.categories > desce.categories) ? -1 : 1;
+    }
+  })
+  return personajesRelevancia
+}
+
+
+//FUNCIONES PAREJA
 
 export const filterData = (data, genero) => {
   let selecciona_genero = data.filter(function (filtragenero) {
@@ -35,7 +39,6 @@ export const filterCasa = (data, casa) => {
   let selecciona_casa = data.filter(function (filtracasa) {
     return (filtracasa.house === (casa));
   });
- //console.log(selecciona_casa)
   return selecciona_casa
 }
 
@@ -61,4 +64,43 @@ export const filterAncestro = (data, ancestro) => {
     return (filtraAncestros.ancestry === (ancestro));
   });
   return selecciona_ancestro
+}
+
+
+//FUNCIONES SECCION ENEMIGOS
+
+export const filterNucleo = (data, nucleo) => {
+  let selecciona_nucleo = data.filter(function (filtraNucleo) {
+    return (filtraNucleo.wand.core === (nucleo));
+  });
+  return selecciona_nucleo
+}
+
+export const filterCasaEnemigo = (data, casaEnemigo) => {
+
+  let selecciona_casaEnemigo = data.filter(function (filtracasaEnemigo) {
+    return (filtracasaEnemigo.house === (casaEnemigo));
+  });
+  return selecciona_casaEnemigo
+}
+
+export const filterAncestroEnemigo = (data, ancestroEnemigo) => {
+  let selecciona_ancestroEnemigo = data.filter(function (filtraAncestrosEnemigo) {
+    return (filtraAncestrosEnemigo.ancestry === (ancestroEnemigo));
+  });
+  return selecciona_ancestroEnemigo
+}
+
+export const filterEspecie = (data, especie) => {
+  let selecciona_Especie = data.filter(function (filtraEspecie) {
+    return (filtraEspecie.species === (especie));
+  });
+  return selecciona_Especie
+}
+
+export const filterHechizoEnemigo = (data, hechizoEnemigo) => {
+  let selecciona_hechizoEnemigo = data.filter(function (filtraHechizoEnemigo) {
+    return (filtraHechizoEnemigo.patronus === (hechizoEnemigo));
+  });
+  return selecciona_hechizoEnemigo
 }

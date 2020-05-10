@@ -170,8 +170,8 @@
 } 
 
 .imagens {
-  width: 50%;
-  height: 50%;
+  width: 90px;
+  height: 130px;
   border-radius: 10px;
 }
 
@@ -179,3 +179,4 @@
 #root{
   margin: 1cm;
 }
+
