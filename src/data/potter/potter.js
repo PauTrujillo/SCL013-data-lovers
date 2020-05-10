@@ -20,8 +20,8 @@ export default [
     actor: 'Daniel Radcliffe',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/harry.jpg',
-    categories: 65, 
-    personalInfo: "";
+    categories: 65,
+    personalInfo: "",
   },
   {
     name: 'Hermione Granger',
@@ -366,7 +366,7 @@ export default [
     actor: 'Helena Bonham Carter',
     alive: false,
     image: 'http://hp-api.herokuapp.com/images/bellatrix.jpg',
-    çcategories: 30,
+    categories: 30,
   },
   {
     name: 'Lord Voldemort',
