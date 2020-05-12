@@ -165,11 +165,18 @@ El punto de partida de este Sprint, fue comenzar a escribir el código de nuestr
 
 Reformulamos nuestra planificación, ya que el deadline de entrega, fue posterior a lo que originalmente teníamos contemplado, por tanto pudimos re organizarnos y distribuir de mejor manera las actividades que nos quedaban por llevar a cabo. 
 
-Por completar esta parte al final de Sprint 3. 
+Escribimos el código de la aplicación, y trabajamos en aportar nueva información a la base de datos, ya que era relevante para nuestros usuarios. 
+
+Realizamos una nueva investigación para poder dar un orden de relevancia a los personajes de la aplicación. 
+Luego de una búsqueda exhaustiva, decidimos basarnos en la pagina web [Harry Potter Fandom](https://harrypotter.fandom.com/), la cuál posee información fidedigna y con fuentes verificadas, en relación a diferentes ámbitos del mundo de harry Potter. 
+Dentro de todas la nueva información a la que accedimos, encontramos que la página tiene una sección de categorías para cada personaje, esto quiere decir, que muestra todas las categorías a las cuales esta relacionada un personaje de la saga, por tanto, mientras más categorías se le puedan asignar, mayor es su protagonismo en la historia. Según esto, le dimos a cada peresonaje un valor, según la cantidad de categorías que tiene, y según esto, se le pudo dar un orden de relevancia objetivo y con una fuente fidedigna. 
+
+Desde esta misma fuente, pudimos obtener la información para crear una breve biografía de cada personaje, idealmente con datos menos conocidos de los que usualmente sabría un usuario. Esto lo hicimos en vista que el usuario nos solicitó tener mayor información sobre los personajes, y esta recompensa es más interesante que un texto relacionado al usuario. 
 
 **Sprint** :four:
 
-Por completar en Sprint 4. 
+Estamos trabajando en CSS y en Testeos. 
+
 
 
 
