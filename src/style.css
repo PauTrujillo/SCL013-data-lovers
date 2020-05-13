@@ -53,7 +53,7 @@
 }
 
 .estiloBanner {
-  background-image: url(Images_proyect/Banner.png);
+  background-image: url("./Images_proyect/Banner.png");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100vw;
