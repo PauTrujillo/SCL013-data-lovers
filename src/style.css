@@ -81,7 +81,7 @@
 /* Acá seteamos el estilo del banner del proyecto */
 
 .imagenEnemigo {
-  background-image: url(Images_Proyect/fondo_enemigo.png);
+  background-image: url("./Images_proyect/fondo_enemigo.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -95,7 +95,7 @@
 /* Acá seteamos imagen pantalla ememigo */
 
 .imagenPersonaje {
-  background-image: url(Images_Proyect/fondo_general.jpg);
+  background-image: url("./Images_proyect/fondo_general.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   display: block;
@@ -108,7 +108,7 @@
 /* Acá seteamos imagen pantalla ememigo */
 
 .imagenPortada {
-  background-image: url(Images_Proyect/fondo_1.png);
+  background-image: url("./Images_proyect/fondo_1.png");
   background-repeat: no-repeat;
   background-size: 100%;
   display: block;
@@ -123,7 +123,7 @@
 /* Acá seteamos imagen pantalla portada */
 
 .imagenPareja {
-  background-image: url(Images_Proyect/fondo_amor.png);
+  background-image: url("./Images_proyect/fondo_amor.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
