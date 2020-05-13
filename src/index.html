@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Manjari|Metal+Mania&display=swap" rel="stylesheet">
@@ -17,15 +17,16 @@
   <!--Portada -->
   <div id='portada' class='imagenPortada'>
     <h2 class='textoPortada'>
+  
       Descubre tu Pareja Mágica o tu Enemigo Encantado, en el mundo de los personajes de “Harry Potter: Wizards Unite”.
 
       ¿Por dónde te gustaría comenzar?
     </h2>
-    <div id='contenedorBotonesPortada'>
+    <section class='contenedorBotones'>
       <button id='boton1' class='botones'>Conocer Pareja Mágica</button>
       <button id='boton2' class='botones'>Conocer Enemigo Mágico</button>
       <button id='boton3' class='botones'>Conocer Personajes de la Saga</button>
-    </div>
+    </section>
   </div>
 
   <!--Pantalla pareja-->
@@ -33,7 +34,7 @@
     <h2 class='textoSecciones'>Ya no necesitarás pociones de amor. Contesta algunas preguntas y sabrás que personaje de
       la Saga, es tu pareja mágica ideal.</h2>
 
-    <div id='contenedorPareja'>
+    <div class='contenedorPreguntas'>
 
       <h3 class='textoPregunta'>1. ¿Qué tipo de pareja buscas?</h3>
       <select id='pregunta1Amor' class='textoSelect'>
@@ -103,16 +104,19 @@
         <option value='willow'>Bosque de Sauces</option>
         <option value=''>No me gustaría estar en un Bosque</option>
       </select>
+
+      <section class='contenedorBotones'>
+      <button class='botones' id="volverPareja">Atras</button>
+      <button class='botones' id="aceptarPareja">Aceptar</button>
+     </section>
     </div>
-    <button class='botones' id="volverPareja">Atras</button>
-    <button class='botones' id="aceptarPareja">Aceptar</button>
   </div>
 
   <!--Pantalla enemigo-->
   <div id='enemigo' class='imagenEnemigo'>
     <h1 class='textoSecciones'>Si lo tuyo es el combate, aquí encontrarás a tu enemigo encantado perfecto.
       Contesta algunas preguntas y tendrás la respuesta.</h1>
-    <div id='contenedorEnemigo'>
+    <div class='contenedorPreguntas'>
 
       <h3 class='textoPregunta'>1. ¿Con cuál de estas criaturas mágicas te gustaría enfrentarte?</h3>
       <select id='pregunta1Enemigo' class='textoSelect'>
@@ -173,31 +177,34 @@
         <option value='tabby cat'>Gato atigrado</option>
         <option value=''>Ninguno de los anteriores</option>
       </select>
-    </div>
-    <button class='botones' id='volverEnemigo'>Atras</button>
-    <button class='botones' id='aceptarEnemigo'>Aceptar</button>
 
+      <section class='contenedorBotones'>
+      <button class='botones' id='volverEnemigo'>Atras</button>
+      <button class='botones' id='aceptarEnemigo'>Aceptar</button>
+      </section>
+    </div>
+  
   </div>
 
   <!--Pantalla personajes-->
   <div id='personajes' class='imagenPersonaje'>
-    <div id='contenedorBotonesPersonajes'>
+    
       <h1 class='textoSecciones'>Clickea sobre la foto que quieras, para obtener más información.
         Esperamos que encuentres lo que buscas...</h1>
-      <p>Ordena Alfabeticamente</p>
-      <Select id='ordenar_Alfabeticamente'class='textoSelect'>
-        <option disabled selected>--Ordena Alfabeticamente--</option>
-        <option>Ordena Ascendente</option>
-        <option>Ordena Descendente</option>
-      </Select>
-      <p>Ordena por Relevancia</p>
-      <Select id='ordenar_Relevancia'class='textoSelect'>
-        <option disabled selected>--Ordena por Relevancia--</option>
-        <option>Ascendente</option>
-        <option>Descendente</option>
-      </Select>
 
-    </div>
+      <section class='selectoresOrden'>
+      <Select id='ordenar_Alfabeticamente'class='textoSelect'>
+        <option disabled selected>--Ordenar Alfabeticamente--</option>
+        <option>Ordenar A-Z</option>
+        <option>Ordenar Z-A</option>
+      </Select>
+      <Select id='ordenar_Relevancia'class='textoSelect'>
+        <option disabled selected>--Ordenar por Relevancia--</option>
+        <option>Mayor Relevancia</option>
+        <option>Menor Relevancia</option>
+      </Select>
+    </section>
+
 
   </div>
 

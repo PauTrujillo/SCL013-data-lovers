@@ -2,7 +2,7 @@
 
 export const filterordenaA_Z = (data, ordena) => {
   const personajes_ordena_alfa = data.sort((per1, per2) => {
-    if (ordena === "Ordena Ascendente") {
+    if (ordena === "Ordenar A-Z") {
       return (per1.name < per2.name) ? -1 : 1
     } else {
       return (per1.name > per2.name) ? -1 : 1
@@ -13,7 +13,7 @@ export const filterordenaA_Z = (data, ordena) => {
 
 export const filterRelevancia = (data, categoria) => {
   let personajesRelevancia = data.sort((ascen, desce) => {
-    if (categoria === "Ascendente") {
+    if (categoria === "Menor Relevancia") {
       return (ascen.categories < desce.categories) ? -1 : 1;
     }
     else {
