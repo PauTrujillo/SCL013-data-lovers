@@ -89,7 +89,7 @@ function flow3() {
   flujo2.style.display = "none";
   flujo3.style.display = "block";
   for (let i = 0; i < dataHarryPotter.length; i++) {
-    let elemen = `<section class="ficha"> <section id="foto"> <img class="imagens" src=${dataHarryPotter[i].image}></section><section id="letras"><p class="seteoFicha">Nombre: ${dataHarryPotter[i].name}<p> <p class="seteoFicha">Especie: ${dataHarryPotter[i].species}<p> <p class="seteoFicha">Genero: ${dataHarryPotter[i].gender}<p> <p class="seteoFicha">Hechizo: ${dataHarryPotter[i].patronus}<p></section></section>`
+    let elemen = `<div id="contenedorFichas"> <div class="ficha"><img class="imagens" src=${dataHarryPotter[i].image}><p class="seteoFicha">${dataHarryPotter[i].name}<p></div></div>`
     conteiner.innerHTML += elemen;
   }
 }
