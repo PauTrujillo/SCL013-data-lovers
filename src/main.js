@@ -234,6 +234,7 @@ botonAceptarPareja.addEventListener('click', () => {
       <img class="imagens" src="${resultado[i].image}" id="${resultado[i].name}">
       <p class="seteoFicha">${resultado[i].name}<p>
       <p class="seteoFicha">${resultado[i].house}<p>
+      <p class="seteoFicha">${resultado[i].personalInfo}<p>
     </div>
   </div>`
     conteiner.innerHTML += elemen;
@@ -264,7 +265,7 @@ filtraCasaEnemigo.addEventListener("change", () => {
   let casaEnemigo = filtraCasaEnemigo.options[filtraCasaEnemigo.selectedIndex].value;
   let casaFiltradaEnemigo = filterCasaEnemigo(dataSegundaPregunta, casaEnemigo);
   dataTerceraPregunta = casaFiltradaEnemigo;
-  //onsole.log("casa", dataTerceraPregunta);
+  //console.log("casa", dataTerceraPregunta);
 })
 
 const filtraAncestroEnemigo = document.getElementById("pregunta3Enemigo"); // se crea constante
@@ -304,6 +305,7 @@ botonAceptarEnemigo.addEventListener('click', () => {
       <img class="imagens" src="${resultado[i].image}" id="${resultado[i].name}">
       <p class="seteoFicha">${resultado[i].name}<p>
       <p class="seteoFicha">${resultado[i].house}<p>
+      <p class="seteoFicha">${resultado[i].personalInfo}<p>
     </div>
   </div>`
     conteiner.innerHTML += elemen;
