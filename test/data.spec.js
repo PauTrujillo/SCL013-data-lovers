@@ -1,6 +1,32 @@
-import {filterMadera , filterNucleo} from '../src/data.js';
+import {filterData, 
+  filterCasa, 
+  filterMadera, 
+  filterHechizo, 
+  filterAncestro, 
+  filterNucleo, 
+  filterCasaEnemigo,
+  filterAncestroEnemigo,
+  filterEspecie,
+  filterHechizoEnemigo} from '../src/data.js';
 
+//creando constantes para la data a testear//
 
+//constante para filterData//
+const dataData = [
+  {
+    "name": 'Ron Weasley',
+    "gender": 'male',
+    }
+]
+
+//constante para filterData//
+const dataCasa = [{
+  "name": "Gregory Goyle",
+  "house": "Slytherin",
+}
+]
+
+//constante para filterMadera//
 const dataMadera = [{
   "name": "Hermione Granger",
   "wand": {
@@ -9,6 +35,21 @@ const dataMadera = [{
   }
 ]
 
+//constante para filterHechizo//
+const dataHechizo = [{
+  "name": 'Cho Chang',
+    "patronus": 'swan',
+  }
+]
+
+//constante para filterAncestro//
+const dataAncestro = [{
+  "name": 'Severus Snape',
+    "ancestry": 'half-blood',
+  }
+]
+
+//constante para filterNucleo//
 const dataNucleo = [{
   "name": "Harry Potter",
   "wand": {
@@ -17,6 +58,66 @@ const dataNucleo = [{
   }
 ]
 
+//constante para filterCasaEnemigo//
+const dataCasaEnemigo = [{
+  "name": "Neville Longbottom",
+  "house": "Gryffindor",
+  }
+]
+
+//constante para filterAncestroEnemigo//
+const dataAncestroEnemigo = [{
+  "name": "Ginny Weasley",
+  "ancestry": "pure-blood",
+  }
+]
+
+//constante para filterEspecia//
+const dataEspecie = [{
+  "name": "Mrs Norris",
+  "species": "cat",
+  }
+]
+
+//constante para filterHechizoEnemigo//
+const dataHechizoEnemigo = [{
+  "name": "Dolores Umbridge",
+  "patronus": "persian cat",
+  }
+]
+
+
+
+//testeando funcion de filtra genero//
+describe('filterData', () => {
+  test('is a function', () => {
+    expect(typeof filterData).toBe('function');
+  });
+
+  test('should return "male" for filter "gender"', () => {
+    expect(filterData(dataData, "male" )).toEqual([
+      {
+        "name": 'Ron Weasley',
+        "gender": 'male',
+        }
+    ]);
+  });
+});
+
+//testeando funcion de filtra casa//
+describe('filterCasa', () => {  
+  test('is a function', () => {    
+    expect(typeof filterCasa).toBe('function'); 
+     }); 
+     
+     test('should return "Slytherin" for filter "house"', () => {
+          expect(filterCasa(dataCasa, "Slytherin")).toEqual([{  
+            "name": "Gregory Goyle",
+            "house": "Slytherin",
+          }
+          ]);
+        });
+      });
 
 //testeando funcion de filtra madera varita//
 describe('filterMadera', () => {
@@ -35,6 +136,35 @@ describe('filterMadera', () => {
   });
 });
 
+//testeando funcion de filtra hechizo//
+describe('filterHechizo', () => {
+  test('is a function', () => {
+    expect(typeof filterHechizo).toBe('function');
+  });
+
+  test('should return "swan" for filter "patronus"', () => {
+    expect(filterHechizo(dataHechizo, "swan" )).toEqual([{
+      "name": "Cho Chang",
+      "patronus": "swan",
+      }
+    ]);
+  });
+});
+
+//testeando funcion de filtra ancestro//
+describe('filterAncestro', () => {
+  test('is a function', () => {
+    expect(typeof filterAncestro).toBe('function');
+  });
+
+  test('should return "half-blood" for filter "ancestry"', () => {
+    expect(filterAncestro(dataAncestro, "half-blood" )).toEqual([{
+      "name": 'Severus Snape',
+      "ancestry": 'half-blood',
+      }
+    ]);
+  });
+});
 
 //testeando funcion de filtra nucleo varita//
 describe('filterNucleo', () => {
@@ -53,6 +183,69 @@ describe('filterNucleo', () => {
   });
 });
 
+
+//testeando funcion de filtra casa Enemigo//
+describe('filterCasaEnemigo', () => {
+  test('is a function', () => {
+    expect(typeof filterCasaEnemigo).toBe('function');
+  });
+
+  test('should return "Gryffindor" for filter "house"', () => {
+    expect(filterCasaEnemigo(dataCasaEnemigo, "Gryffindor" )).toEqual([{
+      "name": 'Neville Longbottom',
+      "house": 'Gryffindor',
+      }
+    ]);
+  });
+});
+
+
+//testeando funcion de filtra ancestro Enemigo//
+describe('filterAncestroEnemigo', () => {
+  test('is a function', () => {
+    expect(typeof filterAncestroEnemigo).toBe('function');
+  });
+
+  test('should return "pure-blood" for filter "ancestry"', () => {
+    expect(filterAncestroEnemigo(dataAncestroEnemigo, "pure-blood" )).toEqual([{
+      "name": 'Ginny Weasley',
+      "ancestry": 'pure-blood',
+      }
+    ]);
+  });
+});
+
+
+//testeando funcion de filtra especie//
+describe('filterEspecie', () => {
+  test('is a function', () => {
+    expect(typeof filterEspecie).toBe('function');
+  });
+
+  test('should return "cat" for filter "species"', () => {
+    expect(filterEspecie(dataEspecie, "cat" )).toEqual([{
+      "name": 'Mrs Norris',
+      "species": 'cat',
+      }
+    ]);
+  });
+});
+
+
+//testeando funcion de hechizo enemigo//
+describe('filterHechizoEnemigo', () => {
+  test('is a function', () => {
+    expect(typeof filterHechizoEnemigo).toBe('function');
+  });
+
+  test('should return "persian cat" for filter "patronus"', () => {
+    expect(filterHechizoEnemigo(dataHechizoEnemigo, "persian cat" )).toEqual([{
+      "name": 'Dolores Umbridge',
+      "patronus": 'persian cat',
+      }
+    ]);
+  });
+});
 
 
 /*describe('anotherExample', () => {
