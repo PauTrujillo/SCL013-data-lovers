@@ -102,6 +102,12 @@ function flow3() {
     conteiner.innerHTML += elemen;
 
   }
+  for (let i = 0; i < dataFoto.length; i++){
+    let recorrido = dataFoto[i];
+    //console.log("muestra", recorrido);
+    recorrido.addEventListener('click', modalImprimir)
+  }
+  modalImprimir
 }
 
 
@@ -126,6 +132,12 @@ ordenaAZ.addEventListener("change", () => {
 
     conteiner.innerHTML += elemen;
   }
+  for (let i = 0; i < dataFoto.length; i++){
+    let recorrido = dataFoto[i];
+    //console.log("muestra", recorrido);
+    recorrido.addEventListener('click', modalImprimir)
+  }
+  modalImprimir
 })
 
 const ordenaRelevanciaAZ = document.getElementById("ordenar_Relevancia");
@@ -143,6 +155,12 @@ ordenaRelevanciaAZ.addEventListener("change", () => {
     </div>`
     conteiner.innerHTML += elemen;
   }
+  for (let i = 0; i < dataFoto.length; i++){
+    let recorrido = dataFoto[i];
+   // console.log("muestra", recorrido);
+    recorrido.addEventListener('click', modalImprimir)
+  }
+  modalImprimir
 })
 
 let dataSegundaPregunta = [];
@@ -220,6 +238,12 @@ botonAceptarPareja.addEventListener('click', () => {
   </div>`
     conteiner.innerHTML += elemen;
   }
+  for (let i = 0; i < dataFoto.length; i++){
+    let recorrido = dataFoto[i];
+ //   console.log("muestra", recorrido);
+    recorrido.addEventListener('click', modalImprimir)
+  }
+  modalImprimir
 })
 
 // FUNCIONES ENEMIGO MAGICO
@@ -284,29 +308,34 @@ botonAceptarEnemigo.addEventListener('click', () => {
   </div>`
     conteiner.innerHTML += elemen;
   }
+  for (let i = 0; i < dataFoto.length; i++){
+    let recorrido = dataFoto[i];
+   // console.log("muestra", recorrido);
+    recorrido.addEventListener('click', modalImprimir)
+  }
+  modalImprimir
 })
 
 
 let modal = document.getElementById("modal")
 let dataFoto = document.getElementsByClassName("imagens")
-console.log(dataFoto);
+//console.log(dataFoto);
 
 for (let i = 0; i < dataFoto.length; i++){
   let recorrido = dataFoto[i];
-  console.log("muestra", recorrido);
+  //console.log("muestra", recorrido);
   recorrido.addEventListener('click', modalImprimir)
 }
 
 
 function modalImprimir(event) {
   modal.innerHTML = "";
-  console.log("event.target", event.target);
+  //console.log("event.target", event.target);
   const pensonajesEncontrados =dataHarryPotter.find(function (personaje) {
     return (personaje.name === event.target.id)
   })
 
-
- console.log("pensonajesEncontrados",pensonajesEncontrados);
+ //console.log("pensonajesEncontrados",pensonajesEncontrados);
     modal.innerHTML +=
     `<section id="tarjetaModal">
         <section id="letras">
