@@ -1,18 +1,61 @@
-import {filterData} from '../src/data.js';
+import {filterMadera , filterNucleo} from '../src/data.js';
 
 
-describe('filterData', () => {
+const dataMadera = [{
+  "name": "Hermione Granger",
+  "wand": {
+    "wood": "vine",
+  }
+  }
+]
+
+const dataNucleo = [{
+  "name": "Harry Potter",
+  "wand": {
+    "core": "phoenix feather",
+  }
+  }
+]
+
+
+//testeando funcion de filtra madera varita//
+describe('filterMadera', () => {
   test('is a function', () => {
-    expect(typeof filterData).toBe('function');
+    expect(typeof filterMadera).toBe('function');
   });
 
-  test('should return "male" for filter "type"', () => {
-    expect(example()).toBe('example');
+  test('should return "vine" for filter "wand.wood"', () => {
+    expect(filterMadera(dataMadera, "vine" )).toEqual([{
+      "name": "Hermione Granger",
+      "wand": {
+        "wood": "vine",
+      }
+      }
+    ]);
   });
 });
 
 
-describe('anotherExample', () => {
+//testeando funcion de filtra nucleo varita//
+describe('filterNucleo', () => {
+  test('is a function', () => {
+    expect(typeof filterNucleo).toBe('function');
+  });
+
+  test('should return "phoenix feather" for filter "wand.core"', () => {
+    expect(filterNucleo(dataNucleo, "phoenix feather" )).toEqual([{
+      "name": "Harry Potter",
+      "wand": {
+        "core": "phoenix feather",
+      }
+      }
+    ]);
+  });
+});
+
+
+
+/*describe('anotherExample', () => {
   test('is a function', () => {
     expect(typeof anotherExample).toBe('function');
   });
@@ -20,7 +63,7 @@ describe('anotherExample', () => {
   test('returns `anotherExample`', () => {
     expect(anotherExample()).toBe('OMG');
   });
-});
+});*/
 
 
 

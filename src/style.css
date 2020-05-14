@@ -23,8 +23,8 @@
 .botones {
   background-color: rgba(255, 252, 62, 0.966);
   opacity: 0.7;
-  width: 20%;
-  height: 60px;
+  width: 20vh;
+  height: 2em;
   border: 0.2em solid grey;
   font-family: 'Metal Mania', cursive;
   font-size: calc(1em + 0.5vw);
