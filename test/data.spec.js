@@ -138,7 +138,7 @@ describe('filterordenaA_Z', () => {
         });
       });
 
-      describe('filterordenaA_Z', () => {
+    /*  describe('filterordenaA_Z', () => {
 
           test('should return "Ordenar Z-A" for order "ordena"', () => {
             expect(filterordenaA_Z(dataOrdenarAZ,"ordena","Ordenar Z-A"))===([{
@@ -152,7 +152,7 @@ describe('filterordenaA_Z', () => {
               "categories": 30,   
                   }].reverse());
                 });
-              });
+              }); */
 
 
 //testeando funcion de ordena relevancia/
@@ -176,7 +176,7 @@ describe('filterRelevancia', () => {
         });
       });
 
-      describe('filterordenaA_Z', () => {
+      /*describe('filterordenaA_Z', () => {
 
           test('should return "Ordenar Z-A" for order "ordena"', () => {
             expect(filterordenaA_Z(dataOrdenarRelevancia,"categoria","Mayor Relevancia"))===([{
@@ -190,7 +190,7 @@ describe('filterRelevancia', () => {
               "categories": 22,   
                   }].reverse());
                 });
-              });
+              }); */
 
 
 
