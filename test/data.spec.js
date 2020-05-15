@@ -1,4 +1,6 @@
-import {filterData, 
+import {filterordenaA_Z,
+  filterRelevancia,
+  filterData, 
   filterCasa, 
   filterMadera, 
   filterHechizo, 
@@ -11,6 +13,34 @@ import {filterData,
 
 //creando constantes para la data a testear//
 
+//constante para filterOrdenarAZ/
+const dataOrdenarAZ = [
+  {
+    "name": 'Draco Malfoy',
+      "categories": 33,
+          }, {
+       "name": 'Remus Lupin',
+       "categories": 30,  
+          }, {
+       "name": 'Lord Voldemort',
+       "categories": 51,
+    }]
+
+
+//constante para filterOrdenarRelevancia/
+const dataOrdenarRelevancia = [
+  {
+    "name": 'Arthur Weasley',
+      "categories": 22,
+          }, {
+       "name": 'Horace Slughorn',
+       "categories": 17,  
+          }, {
+       "name": 'Lucius Malfoy',
+       "categories": 18,
+    }]
+
+    
 //constante para filterData//
 const dataData = [
   {
@@ -85,6 +115,83 @@ const dataHechizoEnemigo = [{
   "patronus": "persian cat",
   }
 ]
+
+
+//testeando funcion de ordena a-z y z-a/
+describe('filterordenaA_Z', () => {
+  
+  test('is a function', () => {
+    expect(typeof filterordenaA_Z).toBe('function');
+   });
+
+   test('should return "Ordenar A-Z" for order "ordena"', () => {
+    expect(filterordenaA_Z(dataOrdenarAZ,"ordena","Ordenar A-Z"))===([{
+      "name": 'Draco Malfoy',
+      "categories": 33,
+          }, {
+      "name": 'Lord Voldemort',
+      "categories": 51,
+          }, {
+       "name": 'Remus Lupin',
+      "categories": 30,   
+          }]);
+        });
+      });
+
+      describe('filterordenaA_Z', () => {
+
+          test('should return "Ordenar Z-A" for order "ordena"', () => {
+            expect(filterordenaA_Z(dataOrdenarAZ,"ordena","Ordenar Z-A"))===([{
+              "name": 'Draco Malfoy',
+              "categories": 33,
+                  }, {
+              "name": 'Lord Voldemort',
+              "categories": 51,
+                  }, {
+               "name": 'Remus Lupin',
+              "categories": 30,   
+                  }].reverse());
+                });
+              });
+
+
+//testeando funcion de ordena relevancia/
+describe('filterRelevancia', () => {
+  
+  test('is a function', () => {
+    expect(typeof filterRelevancia).toBe('function');
+   });
+
+   test('should return "Menor Relevancia" for order "categoria"', () => {
+    expect(filterRelevancia(dataOrdenarRelevancia,"categoria","Menor Relevancia"))===([{
+      "name": 'Horace Slughorn',
+      "categories": 17,
+           }, {
+      "name": 'Lucius Malfoy',
+      "categories": 18,
+           }, {
+       "name": 'Arthur Weasley',
+       "categories": 22,   
+          }]);
+        });
+      });
+
+      describe('filterordenaA_Z', () => {
+
+          test('should return "Ordenar Z-A" for order "ordena"', () => {
+            expect(filterordenaA_Z(dataOrdenarRelevancia,"categoria","Mayor Relevancia"))===([{
+              "name": 'Horace Slughorn',
+              "categories": 17,
+                  }, {
+              "name": 'Lucius Malfoy',
+              "categories": 18,
+                  }, {
+               "name": 'Arthur Weasley',
+              "categories": 22,   
+                  }].reverse());
+                });
+              });
+
 
 
 
