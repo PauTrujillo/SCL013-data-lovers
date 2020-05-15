@@ -1,7 +1,11 @@
 /* Contenedor Universal */
 * {
+  font-family: 'Lato', sans-serif;
   font-family: 'Manjari', sans-serif;
+  font-family: 'Merriweather', serif;
   font-family: 'Metal Mania', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   color: rgb(8, 8, 8);
   background-color: #000000;
@@ -23,20 +27,20 @@
 .botones {
   background-color: rgba(255, 252, 62, 0.966);
   opacity: 0.7;
-  width: 20vh;
-  height: 2em;
-  border: 0.2em solid grey;
+  width: 20vw;
+  height: 10vh;
+  border: 0.2em solid #aa9d9de5;
   font-family: 'Metal Mania', cursive;
-  font-size: calc(1em + 0.5vw);
+  font-size: calc(0.7em + 0.8vw);
   border-radius: 20%;
-  display: inline
 }
 
 /* Contenedor para Botones */
 .contenedorBotones {
   background-color: transparent;
-  margin-top: 8vh;
+  margin-top: 6vh;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
 }
@@ -49,6 +53,14 @@
 /* Contenedor para Preguntas */
 .contenedorPreguntas {
   background-color: transparent;
+  padding-top: 3vh;
+  padding-left: 3vw;
+  padding-bottom: 7vh;
+  padding-right: 3vw;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 /* Para ocultar pantalla enemigo */
@@ -109,54 +121,67 @@
   background-color: #000000;
 }
 
+/* Acá seteamos imagen pantalla pareja*/
+.imagenPareja {
+    background-image: url("./Images_proyect/fondo_amor.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-size: 100%;*/
+    display: block;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    margin: 0em 0em 0em 0em;
+    background-color: #000000;
+  }
+  
+
 /* Acá seteamos pantalla fondo personaje */
 .imagenPersonaje {
   background-image: url("./Images_proyect/fondo_general.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  /*background-size: 100%;*/
   display: block;
   margin: auto;
-  width: 100%;
-  height: 40em;
+  width: 100vw;
+  height: 100vh;
   margin: 0em 0em 0em 0em;
+  
 }
 
 /* Acá seteamos imagen pantalla portada */
 .imagenPortada {
   background-image: url("./Images_proyect/fondo_1.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  /*background-size: 100%;*/
   display: block;
   margin: auto;
-  width: 100%;
-  height: 40em;
+  width: 100vw;
+  height: 100vh;
   margin: 0em 0em 0em 0em;
   padding-top: 6%;
-
 }
 
-/* Acá seteamos imagen pantalla pareja*/
-.imagenPareja {
-  background-image: url("./Images_proyect/fondo_amor.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 600px;
-  margin: 0em 0em 0em 0em;
-  display: block;
-  margin: auto;
-  background-color: #000000;
-}
+
+.imagens {
+    width: 12vw;
+    height: 100%;
+    border-radius: 10px;
+  }
 
 /* Acá ocultamos pantalla pareja*/
 #pareja {
   display: none;
 }
 
+
 /* Acá ocultamos pantalla personajes*/
 #personajes {
   display: none;
 }
+
 
 /* Aca seteamos el estilo del footer del proyecto */
 .pie {
@@ -176,58 +201,22 @@
 }
 
 
-/* Texto de los encabezados de las páginas Enemigo, Pareja y Personajes */
-.textoSecciones {
-  width: 100%;
-  padding-top: 5%;
-  padding-bottom: 0.5em;
-  background-color: transparent;
-  opacity: 1;
-  font-family: 'Metal Mania', cursive;
-  font-style: thin;
-  color: #aa9d9de5;
-  font-size: calc(1.5em + 0.7vw);
-}
-
-.textoPortada {
-  font-family: 'Manjari', sans-serif;
-  color: #828282;
-  background-color: transparent;
-  margin: 0em 1em 3em 1em;
-}
-
-.textoPregunta {
-  font-family: 'Manjari', sans-serif;
-  color: #FFC107;
-  background-color: transparent;
-}
-
-.textoSelect {
-  font-family: 'Manjari', sans-serif;
-  color: #828282;
-  background-color: transparent;
-  padding: 0;
-}
-
-
-
-.imagens {
-  width: 12vw;
-  height: 100%;
-  border-radius: 10px;
-}
-
 .pie {
-  background-color: fuchsia;
+  background-color:black;
+  font-family: 'Merriweather', serif;
+  font-size: calc(1vh + 1vw);
+  color: #aa9d9de5;
+  margin-top: 0em;
 }
 
-#root {
-  margin: 1cm;
-}
 
 #personajes {
   display: none;
 }
+
+#root {
+    margin: 1cm;
+  }
 
 .selectoresOrden {
   background-color: transparent;
@@ -246,3 +235,47 @@
   color: #FFC107;
   font-size: 1.5em;
 }
+
+/* Texto de los encabezados de las páginas Enemigo, Pareja y Personajes */
+.textoSecciones {
+    padding-top: 5vh;
+    padding-right: 5vw;
+    padding-bottom: 2vh;
+    padding-left: 5vw;
+    background-color: transparent;
+    opacity: 1;
+    font-family: 'Metal Mania', cursive;
+    color: #aa9d9de5;
+    font-size: calc(2.5vh + 1vw);
+  }
+  
+  .textoPortada {
+    font-family: 'Merriweather', serif;
+    color: #aa9d9de5;
+    font-size: calc(2.5vh + 0.7vw);
+    background-color: transparent;
+    margin: 0em 1em 2.5em 1em;
+  }
+  
+  .textoPregunta {
+    font-family: 'Merriweather', serif;
+    color: #FFC107;
+    background-color: transparent;
+    font-size: calc(1.5vh + 0.7vw);
+    padding-bottom: 2.5vh;
+    padding-top: 2.5vh;
+    align-self: center
+  }
+  
+  .textoSelect {
+    font-family: 'Manjari', sans-serif;
+    font-size: calc(1vh + 0.5vw);
+    color: #aa9d9de5;
+    background-color: transparent;
+    width: 30vw;
+    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    align-self: center
+  }
+  
