@@ -439,16 +439,16 @@ botonAceptarEnemigo.addEventListener('click', () => {
         modal.innerHTML +=
           `<section id="tarjetaModal">
         <section id="letras">
-        <img src= "${pensonajesEncontrados.image}" class="imagens">
-        <p>Nombre: ${pensonajesEncontrados.name}<p>
-        <p>Especie: ${pensonajesEncontrados.species}<p>
-        <p>Género: ${pensonajesEncontrados.gender}<p>
-        <p>Casa Mágica: ${pensonajesEncontrados.house}<p>
-        <p>Linaje: ${pensonajesEncontrados.ancestry}<p>
-        <p>Patronus: ${pensonajesEncontrados.patronus}<p>
-        <p>Madera de varita: ${pensonajesEncontrados.wand.wood}<p>
-        <p>Nucleo de varita: ${pensonajesEncontrados.wand.core}<p>
-        <p>Longuitud de varita: ${pensonajesEncontrados.wand.length}<p>
+        <img src= "${pensonajesEncontrados.image}" class="imagensModal">
+        <p class="letras" >Nombre: ${pensonajesEncontrados.name}<p>
+        <p class="letras" >Especie: ${pensonajesEncontrados.species}<p>
+        <p class="letras" >Género: ${pensonajesEncontrados.gender}<p>
+        <p class="letras" >Casa Mágica: ${pensonajesEncontrados.house}<p>
+        <p class="letras" >Linaje: ${pensonajesEncontrados.ancestry}<p>
+        <p class="letras" >Patronus: ${pensonajesEncontrados.patronus}<p>
+        <p class="letras" >Madera de varita: ${pensonajesEncontrados.wand.wood}<p>
+        <p class="letras" >Nucleo de varita: ${pensonajesEncontrados.wand.core}<p>
+        <p class="letras" >Longuitud de varita: ${pensonajesEncontrados.wand.length}<p>
        </section>
     </section>`
 
