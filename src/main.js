@@ -17,7 +17,7 @@ import {
 //console.log(dataHarryPotter);
 
 
-//BOTONES //
+//BOTONES DESDE HTML//
 const botonParaFlow1 = document.getElementById("boton1");
 botonParaFlow1.addEventListener("click", flow1);
 
@@ -36,18 +36,14 @@ botonAtrasEnemigo.addEventListener("click", regresarEnemigo);
 const ocultarPreguntasAmor = document.getElementById('pareja');
 const ocultarPreguntasEnemigo = document.getElementById('enemigo');
 
-let botonInicioPareja = document.createElement("button");
-let nombreBotonPareja = document.createTextNode("Inicio");
-//let botonVuelvePareja = document.getElementById("vuelvePareja")
-//botonVuelvePareja.addEventListener("click", vuelveAmor);
+const botonInicioPareja = document.createElement("button");//se crea boton desde js
+const nombreBotonPareja = document.createTextNode("Inicio"); //se asigna nombre de boton
 
 let botonConocerMasPareja = document.createElement("button");
 let nombreBotonConocerMasPareja = document.createTextNode("Quiero Saber Mas");
 
 let botonInicioEnemigo = document.createElement("button");
 let nombreBotonEnemigo = document.createTextNode("Inicio");
-//let botonVuelveEnemigo = document.getElementById("vuelveEnemigo")
-//botonVuelveEnemigo.addEventListener("click", vuelveEnemigo);
 
 let botonConocerMasEnemigo = document.createElement("button");
 let nombreBotonConocerMasEnemigo = document.createTextNode("Quiero Saber Mas");
@@ -63,8 +59,8 @@ let intro = document.getElementById("portada");
 let flujo2 = document.getElementById("enemigo");
 let flujo3 = document.getElementById("personajes")
 
-//FUNCIONES PARA BOTONES//
 
+//FUNCIONES PARA BOTONES//
 
 // FUNCION PAREJA MAGICA
 function flow1() {
@@ -85,7 +81,7 @@ function regresarPareja() {
 
   // let regresoPareja = document.getElementById("portada");
   flujo1.style.display = "none"; //Oculta seccion de pareja magica
-  intro.style.display = "block"; //Oculta seccion de pantalla principal
+  intro.style.display = "block"; //Muestra seccion de pantalla principal
   flujo2.style.display = "none"; // Oculta seccion de enemigo magico
   // regresoPareja.style.display = "block";
 }
@@ -278,14 +274,15 @@ botonAceptarPareja.addEventListener('click', () => {
     botonConocerMasPareja.setAttribute("id", "quieroConocerPareja")
     botonConocerMasPareja.setAttribute("class", "botones")
     botonConocerMasPareja.appendChild(nombreBotonConocerMasPareja);
-    document.body.appendChild(botonConocerMasPareja);
+    conteiner.appendChild(botonConocerMasPareja);
 
 
     botonInicioPareja.setAttribute("id", "vuelvePareja")
     botonInicioPareja.setAttribute("class", "botones")
     botonInicioPareja.appendChild(nombreBotonPareja);
-    document.body.appendChild(botonInicioPareja);
-
+    conteiner.appendChild(botonInicioPareja);
+    const botonVuelvePareja = document.getElementById("vuelvePareja") //id de boton
+    botonVuelvePareja.addEventListener("click", () => {location.reload()});
 
 
 
@@ -365,13 +362,15 @@ botonAceptarEnemigo.addEventListener('click', () => {
   botonConocerMasEnemigo.setAttribute("id", "quieroConocerEnemigo")
   botonConocerMasEnemigo.setAttribute("class", "botones")
   botonConocerMasEnemigo.appendChild(nombreBotonConocerMasEnemigo);
-  document.body.appendChild(botonConocerMasEnemigo);
+  conteiner.appendChild(botonConocerMasEnemigo);
 
 
   botonInicioEnemigo.setAttribute("id", "vuelveEnemigo")
   botonInicioEnemigo.setAttribute("class", "botones")
   botonInicioEnemigo.appendChild(nombreBotonEnemigo);
-  document.body.appendChild(botonInicioEnemigo);
+  conteiner.appendChild(botonInicioEnemigo);
+  const botonVuelveEnemigo = document.getElementById("vuelveEnemigo") //id de boton
+  botonVuelveEnemigo.addEventListener("click", () => {location.reload()});
 
   for (let i = 0; i < dataFoto.length; i++){
     let recorrido = dataFoto[i];
