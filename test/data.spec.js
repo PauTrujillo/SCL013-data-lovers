@@ -1,11 +1,11 @@
 import {filterordenaA_Z,
   filterRelevancia,
-  filterData, 
-  filterCasa, 
-  filterMadera, 
-  filterHechizo, 
-  filterAncestro, 
-  filterNucleo, 
+  filterData,
+  filterCasa,
+  filterMadera,
+  filterHechizo,
+  filterAncestro,
+  filterNucleo,
   filterCasaEnemigo,
   filterAncestroEnemigo,
   filterEspecie,
@@ -20,7 +20,7 @@ const dataOrdenarAZ = [
       "categories": 33,
           }, {
        "name": 'Remus Lupin',
-       "categories": 30,  
+       "categories": 30,
           }, {
        "name": 'Lord Voldemort',
        "categories": 51,
@@ -34,13 +34,13 @@ const dataOrdenarRelevancia = [
       "categories": 22,
           }, {
        "name": 'Horace Slughorn',
-       "categories": 17,  
+       "categories": 17,
           }, {
        "name": 'Lucius Malfoy',
        "categories": 18,
     }]
 
-    
+
 //constante para filterData//
 const dataData = [
   {
@@ -119,7 +119,7 @@ const dataHechizoEnemigo = [{
 
 //testeando funcion de ordena a-z y z-a/
 describe('filterordenaA_Z', () => {
-  
+
   test('is a function', () => {
     expect(typeof filterordenaA_Z).toBe('function');
    });
@@ -133,7 +133,7 @@ describe('filterordenaA_Z', () => {
       "categories": 51,
           }, {
        "name": 'Remus Lupin',
-      "categories": 30,   
+      "categories": 30,
           }]);
         });
       });
@@ -149,7 +149,7 @@ describe('filterordenaA_Z', () => {
               "categories": 51,
                   }, {
                "name": 'Remus Lupin',
-              "categories": 30,   
+              "categories": 30,
                   }].reverse());
                 });
               }); */
@@ -157,7 +157,7 @@ describe('filterordenaA_Z', () => {
 
 //testeando funcion de ordena relevancia/
 describe('filterRelevancia', () => {
-  
+
   test('is a function', () => {
     expect(typeof filterRelevancia).toBe('function');
    });
@@ -171,7 +171,7 @@ describe('filterRelevancia', () => {
       "categories": 18,
            }, {
        "name": 'Arthur Weasley',
-       "categories": 22,   
+       "categories": 22,
           }]);
         });
       });
@@ -187,7 +187,7 @@ describe('filterRelevancia', () => {
               "categories": 18,
                   }, {
                "name": 'Arthur Weasley',
-              "categories": 22,   
+              "categories": 22,
                   }].reverse());
                 });
               }); */
@@ -212,13 +212,13 @@ describe('filterData', () => {
 });
 
 //testeando funcion de filtra casa//
-describe('filterCasa', () => {  
-  test('is a function', () => {    
-    expect(typeof filterCasa).toBe('function'); 
-     }); 
-     
+describe('filterCasa', () => {
+  test('is a function', () => {
+    expect(typeof filterCasa).toBe('function');
+     });
+
      test('should return "Slytherin" for filter "house"', () => {
-          expect(filterCasa(dataCasa, "Slytherin")).toEqual([{  
+          expect(filterCasa(dataCasa, "Slytherin")).toEqual([{
             "name": "Gregory Goyle",
             "house": "Slytherin",
           }
