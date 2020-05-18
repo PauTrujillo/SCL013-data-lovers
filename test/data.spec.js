@@ -49,7 +49,7 @@ const dataData = [
     }
 ]
 
-//constante para filterData//
+//constante para filterCasa//
 const dataCasa = [{
   "name": "Gregory Goyle",
   "house": "Slytherin",
