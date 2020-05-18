@@ -36,31 +36,53 @@ botonAtrasEnemigo.addEventListener("click", regresarEnemigo);
 const ocultarPreguntasAmor = document.getElementById('pareja');
 const ocultarPreguntasEnemigo = document.getElementById('enemigo');
 
+let botonInicioPareja = document.createElement("button");
+let nombreBotonPareja = document.createTextNode("Inicio");
+//let botonVuelvePareja = document.getElementById("vuelvePareja")
+//botonVuelvePareja.addEventListener("click", vuelveAmor);
+
+let botonConocerMasPareja = document.createElement("button");
+let nombreBotonConocerMasPareja = document.createTextNode("Quiero Saber Mas");
+
+let botonInicioEnemigo = document.createElement("button");
+let nombreBotonEnemigo = document.createTextNode("Inicio");
+//let botonVuelveEnemigo = document.getElementById("vuelveEnemigo")
+//botonVuelveEnemigo.addEventListener("click", vuelveEnemigo);
+
+let botonConocerMasEnemigo = document.createElement("button");
+let nombreBotonConocerMasEnemigo = document.createTextNode("Quiero Saber Mas");
+
+
+let botonInicioPersonajes = document.createElement("button");
+let nombreBotonPersonajes = document.createTextNode("Inicio");
+//let botonVuelvePersonajes = document.getElementById("vuelvePersonajes");
+
+
+let flujo1 = document.getElementById("pareja");
+let intro = document.getElementById("portada");
+let flujo2 = document.getElementById("enemigo");
+let flujo3 = document.getElementById("personajes")
+
 //FUNCIONES PARA BOTONES//
 
 
 // FUNCION PAREJA MAGICA
 function flow1() {
-  let flujo1 = document.getElementById("pareja");
-  let intro = document.getElementById("portada");
+
   flujo1.style.display = "block"; //Muestra seccion de pareja magica
   intro.style.display = "none"; //Oculta seccion de pantalla principal
 }
 
 // FUNCION ENEMIGO MAGICO
 function flow2() {
-  let flujo1 = document.getElementById("pareja");
-  let intro = document.getElementById("portada");
-  let flujo2 = document.getElementById("enemigo");
+
   flujo1.style.display = "none"; //Oculta seccion de pareja magica
   intro.style.display = "none"; //Oculta seccion de pantalla principal
   flujo2.style.display = "block"; // Muestra seccion de enemigo magico
 }
 
 function regresarPareja() {
-  let flujo1 = document.getElementById("pareja");
-  let intro = document.getElementById("portada");
-  let flujo2 = document.getElementById("enemigo");
+
   // let regresoPareja = document.getElementById("portada");
   flujo1.style.display = "none"; //Oculta seccion de pareja magica
   intro.style.display = "block"; //Oculta seccion de pantalla principal
@@ -69,9 +91,7 @@ function regresarPareja() {
 }
 
 function regresarEnemigo() {
-  let flujo1 = document.getElementById("pareja");
-  let intro = document.getElementById("portada");
-  let flujo2 = document.getElementById("enemigo");
+
   //let regresoEnemigo = document.getElementById("portada");
   flujo1.style.display = "none"; //Oculta seccion de pareja magica
   intro.style.display = "block"; //Oculta seccion de pantalla principal
@@ -79,14 +99,25 @@ function regresarEnemigo() {
   //regresoEnemigo.style.display = "block";
 }
 
+//function vuelveAmor (){
+  //intro.style.display = "block";
+//}
+
+//function vuelveEnemigo(){
+  //intro.style.display = "block";
+
+//}
+
+//botonVuelvePersonajes.addEventListener("click", vuelvePersonajes);
+//function vuelvePersonajes (){
+ // intro.style.display = "block";
+//}
+
 
 const conteiner = document.getElementById("root");
 
 function flow3() {
-  let flujo1 = document.getElementById("pareja");
-  let intro = document.getElementById("portada");
-  let flujo2 = document.getElementById("enemigo");
-  let flujo3 = document.getElementById("personajes")
+
   flujo1.style.display = "none"; //Oculta seccion de pareja magica
   intro.style.display = "none"; //Oculta seccion de pantalla principal
   flujo2.style.display = "none"; //Oculta seccion de enemigo magico
@@ -100,8 +131,15 @@ function flow3() {
       </div>
     </div>`
     conteiner.innerHTML += elemen;
-
   }
+
+  botonInicioPersonajes.setAttribute("id", "vuelvePersonajes")
+  botonInicioPersonajes.setAttribute("class", "botones")
+  botonInicioPersonajes.appendChild(nombreBotonPersonajes);
+  document.body.appendChild(botonInicioPersonajes);
+
+
+
   for (let i = 0; i < dataFoto.length; i++){
     let recorrido = dataFoto[i];
     //console.log("muestra", recorrido);
@@ -109,9 +147,6 @@ function flow3() {
   }
   modalImprimir
 }
-
-
-
 
 
 
@@ -239,6 +274,22 @@ botonAceptarPareja.addEventListener('click', () => {
   </div>`
     conteiner.innerHTML += elemen;
   }
+
+    botonConocerMasPareja.setAttribute("id", "quieroConocerPareja")
+    botonConocerMasPareja.setAttribute("class", "botones")
+    botonConocerMasPareja.appendChild(nombreBotonConocerMasPareja);
+    document.body.appendChild(botonConocerMasPareja);
+
+
+    botonInicioPareja.setAttribute("id", "vuelvePareja")
+    botonInicioPareja.setAttribute("class", "botones")
+    botonInicioPareja.appendChild(nombreBotonPareja);
+    document.body.appendChild(botonInicioPareja);
+
+
+
+
+
   for (let i = 0; i < dataFoto.length; i++){
     let recorrido = dataFoto[i];
  //   console.log("muestra", recorrido);
@@ -310,6 +361,18 @@ botonAceptarEnemigo.addEventListener('click', () => {
   </div>`
     conteiner.innerHTML += elemen;
   }
+
+  botonConocerMasEnemigo.setAttribute("id", "quieroConocerEnemigo")
+  botonConocerMasEnemigo.setAttribute("class", "botones")
+  botonConocerMasEnemigo.appendChild(nombreBotonConocerMasEnemigo);
+  document.body.appendChild(botonConocerMasEnemigo);
+
+
+  botonInicioEnemigo.setAttribute("id", "vuelveEnemigo")
+  botonInicioEnemigo.setAttribute("class", "botones")
+  botonInicioEnemigo.appendChild(nombreBotonEnemigo);
+  document.body.appendChild(botonInicioEnemigo);
+
   for (let i = 0; i < dataFoto.length; i++){
     let recorrido = dataFoto[i];
    // console.log("muestra", recorrido);
