@@ -23,6 +23,12 @@
 } */
 
 
+body {
+  background-color: #FFC107;
+  padding-top: 0em;
+}
+
+
 /* Clase para Botones */
 .botones {
   background-color: rgba(255, 252, 62, 0.966);
@@ -45,9 +51,16 @@
   align-items: flex-end;
 }
 
-/* Contenedor fichas, pero no esta funcionando */
-#contenedorFichas {
-  background-color:blue;
+/* Contenedor fichas */
+.contenedorFichasPersonajes {
+  background-image: url("./Images_proyect/fondo_general.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+  margin: 0em 0em 0em 0em;
+  display: block;
+  margin: auto;
 }
 
 /* Contenedor para Preguntas */
@@ -145,7 +158,7 @@
   display: block;
   margin: auto;
   width: 100vw;
-  height: 100vh;
+  height: 30vh;
   margin: 0em 0em 0em 0em;
   
 }
@@ -228,7 +241,7 @@
   justify-content: space-around;
   border-radius: 10px;
   padding-top: 2.5em;
-  padding-bottom: 0;
+  padding-bottom: 0vh;
   height: 5vh;
 }
 

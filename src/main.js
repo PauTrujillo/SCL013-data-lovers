@@ -120,7 +120,7 @@ function flow3() {
   flujo3.style.display = "block"; //Muestra Seccion de Personajes Magicos
   for (let i = 0; i < dataHarryPotter.length; i++) {
     let elemen =
-      `<div id="contenedorFichas">
+      `<div id="contenedorFichas" class="contenedorFichasPersonajes">
       <div class="ficha">
         <img class="imagens" src="${dataHarryPotter[i].image}" id="${dataHarryPotter[i].name}">
         <p class="seteoFicha">${dataHarryPotter[i].name}<p>
