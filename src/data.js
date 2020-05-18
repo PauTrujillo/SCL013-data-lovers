@@ -1,6 +1,6 @@
 //FUNCIONES PERSONAJES
 
-export const filterordenaA_Z = (data, ordena) => {
+export const filterordenaA_Z = (data, ordena) => { // Se crea funcion filterordenaA_Z con los parametros data y ordena
   const personajes_ordena_alfa = data.sort((per1, per2) => {
     if (ordena === "Ordenar A-Z") {
       return (per1.name < per2.name) ? -1 : 1
@@ -15,8 +15,7 @@ export const filterRelevancia = (data, categoria) => {
   let personajesRelevancia = data.sort((ascen, desce) => {
     if (categoria === "Menor Relevancia") {
       return (ascen.categories < desce.categories) ? -1 : 1;
-    }
-    else {
+    } else {
       return (ascen.categories > desce.categories) ? -1 : 1;
     }
   })
