@@ -81,12 +81,10 @@ body {
 /* Banner para todo el proyecto*/
 #estiloBanner {
   background-image: url("./Images_proyect/Banner.png");
-  background-color: transparent;
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100vw;
   height: 25vh;
-  background-color: #000000;
   margin: 0em 0em 0em 0em;
   display: block;
   margin: 0;
