@@ -247,6 +247,12 @@ botonAceptarPareja.addEventListener('click', () => {
   ocultarPreguntasAmor.style.display = 'none';
 
   conteiner.innerHTML = "";
+  if (resultado.length === 0) {
+    conteiner.innerHTML = `<h1 class="mensajeNoMatch">No tienes Mach Magico, intenta con otras Selecciones</h1>`
+  }
+  else{
+
+
   for (let i = 0; i < resultado.length; i++) {
     let elemen =
       `<div id="contenedorFichas">
@@ -260,6 +266,7 @@ botonAceptarPareja.addEventListener('click', () => {
   </div>`
     conteiner.innerHTML += elemen;
   }
+}
 
   botonConocerMasPareja.setAttribute("id", "quieroConocerPareja")
   botonConocerMasPareja.setAttribute("class", "botones")
@@ -351,7 +358,12 @@ const botonAceptarEnemigo = document.getElementById("aceptarEnemigo");
 botonAceptarEnemigo.addEventListener('click', () => {
   ocultarPreguntasEnemigo.style.display = 'none';
   conteiner.innerHTML = "";
-  for (let i = 0; i < resultado.length; i++) {
+  console.log("resultado", resultado);
+if (resultado.length === 0) {
+  conteiner.innerHTML = `<h1 class="mensajeNoMatch">No tienes Mach Magico, intenta con otras Selecciones</h1>`
+}
+else{
+    for (let i = 0; i < resultado.length; i++) {
     let elemen =
       `<div id="contenedorFichas">
     <div class="ficha">
@@ -363,7 +375,7 @@ botonAceptarEnemigo.addEventListener('click', () => {
   </div>`
     conteiner.innerHTML += elemen;
   }
-
+}
   botonConocerMasEnemigo.setAttribute("id", "quieroConocerEnemigo")
   botonConocerMasEnemigo.setAttribute("class", "botones")
   botonConocerMasEnemigo.appendChild(nombreBotonConocerMasEnemigo);
