@@ -14,8 +14,6 @@ import {
   filterHechizoEnemigo
 } from './data.js'
 
-//console.log(dataHarryPotter);
-
 
 //BOTONES DESDE HTML//
 const botonParaFlow1 = document.getElementById("boton1");
@@ -53,56 +51,52 @@ const botonInicioPersonajes = document.createElement("button");
 const nombreBotonPersonajes = document.createTextNode("Inicio");
 
 const conteiner = document.getElementById("root");
+const botonesJS = document.getElementById("botonesJS");
+const quieroMas = document.getElementById("quieroMas");
 
+let dataSegundaPregunta = [];
+let dataTerceraPregunta = [];
+let dataCuartaPregunta = [];
+let dataQuintaPregunta = [];
+let resultado = [];
 
 
 let flujo1 = document.getElementById("pareja");
 let intro = document.getElementById("portada");
 let flujo2 = document.getElementById("enemigo");
-let flujo3 = document.getElementById("personajes")
+let flujo3 = document.getElementById("personajes");
 
-
+let modal = document.getElementById("modal");
+let dataFoto = document.getElementsByClassName("imagens");
 
 //FUNCIONES PARA BOTONES//
 
 // FUNCION PAREJA MAGICA
-
-
 function flow1() {
-
   flujo1.style.display = "block"; //Muestra seccion de pareja magica
   intro.style.display = "none"; //Oculta seccion de pantalla principal
 }
 
 // FUNCION ENEMIGO MAGICO
 function flow2() {
-
   flujo1.style.display = "none"; //Oculta seccion de pareja magica
   intro.style.display = "none"; //Oculta seccion de pantalla principal
   flujo2.style.display = "block"; // Muestra seccion de enemigo magico
 }
 
 function regresarPareja() {
-
-
   flujo1.style.display = "none"; //Oculta seccion de pareja magica
   intro.style.display = "block"; //Muestra seccion de pantalla principal
   flujo2.style.display = "none"; // Oculta seccion de enemigo magico
-
 }
 
 function regresarEnemigo() {
-
-
   flujo1.style.display = "none"; //Oculta seccion de pareja magica
   intro.style.display = "block"; //Oculta seccion de pantalla principal
   flujo2.style.display = "none"; // Oculta seccion de enemigo magico
 }
 
-const botonesJS= document.getElementById("botonesJS")
-
 function flow3() {
-
   flujo1.style.display = "none"; //Oculta seccion de pareja magica
   intro.style.display = "none"; //Oculta seccion de pantalla principal
   flujo2.style.display = "none"; //Oculta seccion de enemigo magico
@@ -117,9 +111,6 @@ function flow3() {
     </div>`
     conteiner.innerHTML += elemen;
   }
-
-  
-
   botonInicioPersonajes.setAttribute("id", "vuelvePersonajes")
   botonInicioPersonajes.setAttribute("class", "botonesPantallaPersonajes")
   botonInicioPersonajes.appendChild(nombreBotonPersonajes);
@@ -135,8 +126,6 @@ function flow3() {
   modalImprimir
 }
 
-
-
 const ordenaAZ = document.getElementById("ordenar_Alfabeticamente");
 ordenaAZ.addEventListener("change", () => {
   let ordena = ordenaAZ.options[ordenaAZ.selectedIndex].text;
@@ -150,8 +139,6 @@ ordenaAZ.addEventListener("change", () => {
         <p class="seteoNombresPantallaPersonajes">${personajesOrdenados[i].name}<p>
       </div>
     </div>`
-
-
     conteiner.innerHTML += elemen;
   }
   for (let i = 0; i < dataFoto.length; i++) {
@@ -181,14 +168,7 @@ ordenaRelevanciaAZ.addEventListener("change", () => {
     recorrido.addEventListener('click', modalImprimir);
   }
   modalImprimir
-})
-
-let dataSegundaPregunta = [];
-let dataTerceraPregunta = [];
-let dataCuartaPregunta = [];
-let dataQuintaPregunta = [];
-let resultado = [];
-
+});
 
 // FUNCIONES PAREJA MAGICA
 
@@ -199,8 +179,6 @@ filtraGenero.addEventListener("change", () => {
   let genero = filtraGenero.options[filtraGenero.selectedIndex].value; // Se crea variable donde se almacena la opcion elegida por el usuario
   let generoFiltrado = filterData(dataHarryPotter, genero);
   dataSegundaPregunta = generoFiltrado;
-
-
 })
 
 
@@ -245,34 +223,27 @@ botonAceptarPareja.addEventListener('click', () => {
   conteiner.innerHTML = "";
   if (resultado.length === 0) {
     conteiner.innerHTML = `<h1 class="mensajeNoMatch">No tienes Mach Magico, intenta con otras Selecciones</h1>`
-  }
-  else{
-
-
-  for (let i = 0; i < resultado.length; i++) {
-    let elemen =
-      `<div id="contenedorFichas">
-
+  } else {
+    for (let i = 0; i < resultado.length; i++) {
+      let elemen =
+        `<div id="contenedorFichas">
     <div class="fichaResultado">
     <p class="seteoNombresPantallaPersonajes">${resultado[i].name}<p>
      <div class="imagenParaResultados"> <img class="imagensResultado" src="${resultado[i].image}" id="${resultado[i].name}"></div>
       <p id="bioResultado" class="seteoFicha">${resultado[i].personalInfo}<p>
-
     </div>
   </div>`
-    conteiner.innerHTML += elemen;
+      conteiner.innerHTML += elemen;
+    }
   }
-}
 
   botonConocerMasPareja.setAttribute("id", "quieroConocerPareja")
   botonConocerMasPareja.setAttribute("class", "botones")
   botonConocerMasPareja.appendChild(nombreBotonConocerMasPareja);
-  conteiner.appendChild(botonConocerMasPareja);
+  quieroMas.appendChild(botonConocerMasPareja);
   const botonMasPareja = document.getElementById("quieroConocerPareja") //id de boton
   botonMasPareja.addEventListener("click", () => {
-
     conteiner.innerHTML = "";
-
     for (let i = 0; i < resultado.length; i++) {
       let elemen =
         `<div id="contenedorFichas">
@@ -296,7 +267,7 @@ botonAceptarPareja.addEventListener('click', () => {
   botonInicioPareja.setAttribute("id", "vuelvePareja")
   botonInicioPareja.setAttribute("class", "botones")
   botonInicioPareja.appendChild(nombreBotonPareja);
-  document.body.appendChild(botonInicioPareja);
+  botonesJS.appendChild(botonInicioPareja);
   const botonVuelvePareja = document.getElementById("vuelvePareja") //id de boton
   botonVuelvePareja.addEventListener("click", () => {
     location.reload();
@@ -311,8 +282,6 @@ filtraNucleo.addEventListener("change", () => {
   let nucleo = filtraNucleo.options[filtraNucleo.selectedIndex].value; // Se crea variable donde se almacena la opcion elegida por el usuario
   let nucleoFiltrado = filterNucleo(dataHarryPotter, nucleo);
   dataSegundaPregunta = nucleoFiltrado;
-
-
 })
 
 const filtraCasaEnemigo = document.getElementById("pregunta2Enemigo"); // se crea constante
@@ -321,7 +290,6 @@ filtraCasaEnemigo.addEventListener("change", () => {
   let casaEnemigo = filtraCasaEnemigo.options[filtraCasaEnemigo.selectedIndex].value;
   let casaFiltradaEnemigo = filterCasaEnemigo(dataSegundaPregunta, casaEnemigo);
   dataTerceraPregunta = casaFiltradaEnemigo;
-
 })
 
 const filtraAncestroEnemigo = document.getElementById("pregunta3Enemigo"); // se crea constante
@@ -330,7 +298,6 @@ filtraAncestroEnemigo.addEventListener("change", () => {
   let ancestroEnemigo = filtraAncestroEnemigo.options[filtraAncestroEnemigo.selectedIndex].value;
   let ancestroFiltradaEnemigo = filterAncestroEnemigo(dataTerceraPregunta, ancestroEnemigo);
   dataCuartaPregunta = ancestroFiltradaEnemigo
-
 })
 
 const filtraEspecie = document.getElementById("pregunta4Enemigo"); // se crea constante
@@ -339,7 +306,6 @@ filtraEspecie.addEventListener("change", () => {
   let especie = filtraEspecie.options[filtraEspecie.selectedIndex].value;
   let especieFiltrada = filterEspecie(dataCuartaPregunta, especie);
   dataQuintaPregunta = especieFiltrada
-
 })
 
 const filtraHechizoEnemigo = document.getElementById("pregunta5Enemigo"); // se crea constante
@@ -347,38 +313,34 @@ filtraHechizoEnemigo.addEventListener("change", () => {
   let hechizoEnemigo = filtraHechizoEnemigo.options[filtraHechizoEnemigo.selectedIndex].value;
   let hechizoFiltradaEnemigo = filterHechizoEnemigo(dataCuartaPregunta, hechizoEnemigo);
   resultado = hechizoFiltradaEnemigo
-
 })
 
 const botonAceptarEnemigo = document.getElementById("aceptarEnemigo");
 botonAceptarEnemigo.addEventListener('click', () => {
   ocultarPreguntasEnemigo.style.display = 'none';
   conteiner.innerHTML = "";
-  console.log("resultado", resultado);
-if (resultado.length === 0) {
-  conteiner.innerHTML = `<h1 class="mensajeNoMatch">No tienes Mach Magico, intenta con otras Selecciones</h1>`
-}
-else{
+  if (resultado.length === 0) {
+    conteiner.innerHTML = `<h1 class="mensajeNoMatch">No tienes Mach Magico, intenta con otras Selecciones</h1>`
+  } else {
     for (let i = 0; i < resultado.length; i++) {
-    let elemen =
-      `<div id="contenedorFichas">
+      let elemen =
+        `<div id="contenedorFichas">
     <div class="ficha">
       <img class="imagens" src="${resultado[i].image}" id="${resultado[i].name}">
       <p class="seteoNombresPantallaPersonajes">${resultado[i].name}<p>
       <p id="bioResultado" class="seteoFicha">${resultado[i].personalInfo}<p>
     </div>
   </div>`
-    conteiner.innerHTML += elemen;
+      conteiner.innerHTML += elemen;
+    }
   }
-}
   botonConocerMasEnemigo.setAttribute("id", "quieroConocerEnemigo")
   botonConocerMasEnemigo.setAttribute("class", "botones")
   botonConocerMasEnemigo.appendChild(nombreBotonConocerMasEnemigo);
-  conteiner.appendChild(botonConocerMasEnemigo);
+  quieroMas.appendChild(botonConocerMasEnemigo);
   const botonMasEnemigo = document.getElementById("quieroConocerEnemigo") //id de boton
   botonMasEnemigo.addEventListener("click", () => {
     conteiner.innerHTML = "";
-
     for (let i = 0; i < resultado.length; i++) {
       let elemen =
         `<div id="contenedorFichas">
@@ -396,19 +358,17 @@ else{
         </div>
       </div>`
       conteiner.innerHTML += elemen;
-
     }
   })
 
   botonInicioEnemigo.setAttribute("id", "vuelveEnemigo")
   botonInicioEnemigo.setAttribute("class", "botones")
   botonInicioEnemigo.appendChild(nombreBotonEnemigo);
-  document.body.appendChild(botonInicioEnemigo);
+  botonesJS.appendChild(botonInicioEnemigo);
   const botonVuelveEnemigo = document.getElementById("vuelveEnemigo") //id de boton
   botonVuelveEnemigo.addEventListener("click", () => {
     location.reload()
   });
-
   for (let i = 0; i < dataFoto.length; i++) {
     let recorrido = dataFoto[i];
     recorrido.addEventListener('click', modalImprimir)
@@ -417,24 +377,17 @@ else{
 })
 
 
-let modal = document.getElementById("modal")
-let dataFoto = document.getElementsByClassName("imagens")
-
-
 for (let i = 0; i < dataFoto.length; i++) {
   let recorrido = dataFoto[i];
-
   recorrido.addEventListener('click', modalImprimir)
 }
 
 
 function modalImprimir(event) {
   modal.innerHTML = "";
-
   const pensonajesEncontrados = dataHarryPotter.find(function (personaje) {
     return (personaje.name === event.target.id)
   })
-
   modal.innerHTML +=
     `<section id="tarjetaModal">
         <section id="letras">
@@ -450,7 +403,6 @@ function modalImprimir(event) {
         <p class="letras" >Longuitud de varita: ${pensonajesEncontrados.wand.length}<p>
        </section>
     </section>`
-
   modal.classList.add('modal--show')
   modal.addEventListener("click", (e) => {
     if (e.target.classList.contains('modal')) modal.classList.remove('modal--show')
