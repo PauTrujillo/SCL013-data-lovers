@@ -201,7 +201,7 @@ body {
     height: 30vh;
     border-radius: 2em;
     border: 0.3em solid rgba(24, 22, 22, 0.897);
-    background-image: url("./Images_proyect/fondo_general.jpg"); 
+    background-image: url("./Images_proyect/fondo_general.jpg");
   }
 
   .imagensResultado {
@@ -438,10 +438,14 @@ body {
     align-self: center
   }
 
-  
+
   .imagenParaResultados {
     width: 20vw;
     height: 30vh;
     background-image: url("./Images_proyect/fondo_general.jpg");
   }
 
+.mensajeNoMatch{
+  font-family: 'Manjari', sans-serif;
+  color: #FFC107;
+}
