@@ -17,10 +17,11 @@
 #bioResultado {
   background-image: url("./Images_proyect/fondo_general.jpg");
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-self: flex-end;
   justify-self: right;
+  font-size: calc(0.8em + 0.9vw);
 }
 
 /*Es el cuerpo general del documento. Define el fondo general */
@@ -114,13 +115,12 @@ body {
 
 /* Ficha resultado, pero no estoy segura si esta funcionando*/
 .fichaResultado {
-  background-color: fuchsia;
-  font-family: 'Manjari', sans-serif;
+  background-image: url("./Images_proyect/fondo_general.jpg");
   background-color: transparent;
   width: 90vw;
   height: 100vh;
   display: flex;
-  align-self: flex-end;
+  align-self: flex-start;
   justify-self: right;
 
 }
@@ -137,6 +137,10 @@ body {
   margin-right: 1%;
   background: transparent;
   float: left;
+}
+
+.fichaBio {
+  background-color: transparent;
 }
 
 /* Acá seteamos pantalla fondo enemigo */
@@ -204,13 +208,37 @@ body {
   background-image: url("./Images_proyect/fondo_general.jpg");
 }
 
+/*Imagen resultado juegos*/
 .imagensResultado {
-  width: 100%;
-  height: 30vh;
+  width: 20vw;
+  height: 15%;
   border-radius: 2em;
   border: 0.3em solid rgba(24, 22, 22, 0.897);
-  background-image: url("./Images_proyect/fondo_general.jpg");
 }
+
+/*contenedor imagen resultado juegos*/
+.contenedorImagenBio {
+background-color: transparent;
+}
+
+/*Ver si elimnamos*/
+/*.imagenParaResultados {
+  width: 20vw;
+  height: 30vh;
+  background-image: url("./Images_proyect/fondo_general.jpg");
+}*/
+
+
+
+
+
+/*Seteo letras mensaje no match*/
+.mensajeNoMatch {
+  font-family: 'Merriweather', serif;
+  color: #FFC107;
+  background-color: transparent;
+}
+
 
 /*acá inicia el estilo del modal*/
 /*Imagen dentro del modal*/
@@ -327,9 +355,10 @@ body {
   font-family: 'Merriweather', serif;
   font-size: calc(1vh + 1vw);
   color: #aa9d9de5;
-  margin-top: 0em;
+  margin-top: 4em;
   background-image: url("./Images_proyect/fondo_general.jpg");
-  flex-shrink: 0;
+ flex-shrink: 0;
+ justify-self: flex-end;
 }
 
 
@@ -439,27 +468,15 @@ body {
 }
 
 
-.imagenParaResultados {
-  width: 20vw;
-  height: 30vh;
-  background-image: url("./Images_proyect/fondo_general.jpg");
+
+/*Seteo de contenedor botones quiero mas enemigo, pareja e inicio enemigo, pareja y personajes*/
+#botonesJS {
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 5em;
+  margin-bottom: 1em;
 }
 
-.mensajeNoMatch {
-  font-family: 'Manjari', sans-serif;
-  color: #FFC107;
-  background-color: transparent;
-}
-
-#botonesJs {
-  font-family: 'Metal Mania', cursive;
-  background: rgba(255, 252, 62, 0.966);
-  border-radius: 20%;
-}
-
-#quieroMas {
-  font-family: 'Metal Mania', cursive;
-  background: rgba(255, 252, 62, 0.966);
-  border-radius: 20%;
-}
 

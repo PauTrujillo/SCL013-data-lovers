@@ -52,7 +52,6 @@ const nombreBotonPersonajes = document.createTextNode("Inicio");
 
 const conteiner = document.getElementById("root");
 const botonesJS = document.getElementById("botonesJS");
-const quieroMas = document.getElementById("quieroMas");
 
 let dataSegundaPregunta = [];
 let dataTerceraPregunta = [];
@@ -222,16 +221,16 @@ botonAceptarPareja.addEventListener('click', () => {
 
   conteiner.innerHTML = "";
   if (resultado.length === 0) {
-    conteiner.innerHTML = `<h1 class="mensajeNoMatch">No tienes Mach Magico, intenta con otras Selecciones</h1>`
+    conteiner.innerHTML = `<h1 class="mensajeNoMatch">¡No tienes Match Mágico¡ <br> Intenta nuevamente con otras selecciones. </h1>`
   } else {
     for (let i = 0; i < resultado.length; i++) {
       let elemen =
-        `<div id="contenedorFichas">
-    <div class="fichaResultado">
+        `<div class="fichaBio" id="contenedorFichas">
+    
     <p class="seteoNombresPantallaPersonajes">${resultado[i].name}<p>
-     <div class="imagenParaResultados"> <img class="imagensResultado" src="${resultado[i].image}" id="${resultado[i].name}"></div>
+     <div class="contenedorImagenBio"> <img class="imagensResultado" src="${resultado[i].image}" ></div>
       <p id="bioResultado" class="seteoFicha">${resultado[i].personalInfo}<p>
-    </div>
+
   </div>`
       conteiner.innerHTML += elemen;
     }
@@ -240,7 +239,7 @@ botonAceptarPareja.addEventListener('click', () => {
   botonConocerMasPareja.setAttribute("id", "quieroConocerPareja")
   botonConocerMasPareja.setAttribute("class", "botones")
   botonConocerMasPareja.appendChild(nombreBotonConocerMasPareja);
-  quieroMas.appendChild(botonConocerMasPareja);
+  botonesJS.appendChild(botonConocerMasPareja);
   const botonMasPareja = document.getElementById("quieroConocerPareja") //id de boton
   botonMasPareja.addEventListener("click", () => {
     conteiner.innerHTML = "";
@@ -320,14 +319,14 @@ botonAceptarEnemigo.addEventListener('click', () => {
   ocultarPreguntasEnemigo.style.display = 'none';
   conteiner.innerHTML = "";
   if (resultado.length === 0) {
-    conteiner.innerHTML = `<h1 class="mensajeNoMatch">No tienes Mach Magico, intenta con otras Selecciones</h1>`
+    conteiner.innerHTML = `<h1 class="mensajeNoMatch">¡No tienes Match Mágico¡ <br> Intenta nuevamente con otras selecciones. </h1>`
   } else {
     for (let i = 0; i < resultado.length; i++) {
       let elemen =
         `<div id="contenedorFichas">
     <div class="ficha">
+    <p class="seteoNombresPantallaPersonajes">${resultado[i].name}<p>
       <img class="imagens" src="${resultado[i].image}" id="${resultado[i].name}">
-      <p class="seteoNombresPantallaPersonajes">${resultado[i].name}<p>
       <p id="bioResultado" class="seteoFicha">${resultado[i].personalInfo}<p>
     </div>
   </div>`
@@ -337,7 +336,7 @@ botonAceptarEnemigo.addEventListener('click', () => {
   botonConocerMasEnemigo.setAttribute("id", "quieroConocerEnemigo")
   botonConocerMasEnemigo.setAttribute("class", "botones")
   botonConocerMasEnemigo.appendChild(nombreBotonConocerMasEnemigo);
-  quieroMas.appendChild(botonConocerMasEnemigo);
+  botonesJS.appendChild(botonConocerMasEnemigo);
   const botonMasEnemigo = document.getElementById("quieroConocerEnemigo") //id de boton
   botonMasEnemigo.addEventListener("click", () => {
     conteiner.innerHTML = "";
