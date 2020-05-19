@@ -21,7 +21,14 @@
         font-size:120px;
     }
 } */
-
+#bioResultadoPareja {
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-self: flex-end;
+  justify-self: right;
+}
 
 body {
   background-image: url("./Images_proyect/fondo_general.jpg");
@@ -63,7 +70,7 @@ body {
 .contenedorPreguntas {
   background-color: transparent;
   padding-top: 3vh;
-  padding-left: 3vw;z
+  padding-left: 3vw;
   padding-bottom: 7vh;
   padding-right: 3vw;
   margin-bottom: 5vh;
@@ -97,14 +104,15 @@ body {
 
 /* Ficha resultado, pero no estoy segura si esta funcionando*/
 .fichaResultado {
-  background-color: #FFC107;
+  background-color:fuchsia;
   font-family: 'Manjari', sans-serif;
-}
+  background-color: transparent;
+  width: 90vw;
+  height: 100vh;
+  display: flex;
+  align-self: flex-end;
+  justify-self: right;
 
-/* Letras para ficha resultado, pero no estoy segura si esta funcionado*/
-#letrasResutado {
-  color: aqua;
-  font-family: 'Manjari', sans-serif;
 }
 
 
@@ -183,7 +191,16 @@ body {
     height: 30vh;
     border-radius: 2em;
     border: 0.3em solid rgba(24, 22, 22, 0.897);
-    background-image: url("./Images_proyect/fondo_general.jpg")
+    background-image: url("./Images_proyect/fondo_general.jpg");
+    
+  }
+
+  .imagensResultado {
+    width: 100%;
+    height: 30vh;
+    border-radius: 2em;
+    border: 0.3em solid rgba(24, 22, 22, 0.897);
+    background-image: url("./Images_proyect/fondo_general.jpg");
     
   }
 
@@ -264,6 +281,10 @@ body {
       background-color: transparent;
     }
 
+
+
+
+
 /* Acá ocultamos pantalla pareja*/
 #pareja {
   display: none;
@@ -331,6 +352,8 @@ body {
   color: #FFC107;
   font-size: 1.5em;
   background-image: url("./Images_proyect/fondo_general.jpg");
+  display: flex;
+  flex-direction: row;
 }
 
 
@@ -380,3 +403,8 @@ body {
     align-self: center
   }
   
+  .pimagenParaResultados {
+    width: 70vw
+    height: 30vh;
+    background-image: url("./Images_proyect/fondo_general.jpg");
+  }
