@@ -250,10 +250,12 @@ botonAceptarPareja.addEventListener('click', () => {
   for (let i = 0; i < resultado.length; i++) {
     let elemen =
       `<div id="contenedorFichas">
-    <div class="ficha">
-      <img class="imagens" src="${resultado[i].image}" id="${resultado[i].name}">
-      <p class="seteoFicha">${resultado[i].name}<p>
-      <p class="seteoFicha">${resultado[i].personalInfo}<p>
+
+    <div class="fichaResultado">
+    <p class="seteoFicha">${resultado[i].name}<p>
+     <div class="imagenParaResultados"> <img class="imagensResultado" src="${resultado[i].image}" id="${resultado[i].name}"></div>
+      <p id="bioResultadoPareja" class="seteoFicha">${resultado[i].personalInfo}<p>
+
     </div>
   </div>`
     conteiner.innerHTML += elemen;
