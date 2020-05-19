@@ -454,7 +454,6 @@ botonAceptarEnemigo.addEventListener('click', () => {
 
         modal.classList.add('modal--show')
         modal.addEventListener("click", (e) => {
-          if (e.target.classList.caja('modal')) modal.classList.remove('modal--show')
-
+          if (e.target.classList.contains('modal')) modal.classList.remove('modal--show')
         });
       }

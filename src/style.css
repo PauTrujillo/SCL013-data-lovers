@@ -178,29 +178,22 @@ body {
 }
 
 
-
-
 .imagens {
     width: 100%;
     height: 30vh;
-    border-radius: 10px;
+    border-radius: 2em;
     border: 0.3em solid rgba(24, 22, 22, 0.897);
     background-image: url("./Images_proyect/fondo_general.jpg")
     
   }
 
-
-
-  #letras {
-    background-image: url("./Images_proyect/fondo_general.jpg")
-  }
-
   /*acá inicia el estilo del modal*/
   /*Imagen dentro del modal*/
   .imagensModal {
-    width: 70%;
-    height: 55%;
+    width: 80%;
+    height: 65%;
     border-radius: 5em;
+    margin-top: 2%;
     margin-bottom: 7%;
     border: 0.3em solid rgba(24, 22, 22, 0.897);
     background-image: url("./Images_proyect/fondo_general.jpg") 
@@ -209,32 +202,39 @@ body {
   .modal {
     position: fixed;
     top: 0;  
-    left: 0;
+    left: 3%;
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
+    background-color: transparent;
     transform: scale(0);
-    transition: transform .3s;
+    transition: transform .2s;
   }
   
-  .modal_content {
- background-color: #fff;
- width: 50vw;
- height: 50vh; 
+ /*#modal_Content {
+ background-color: fuchsia;
+ width: 300vw;
+ height: 300vh; 
  padding: 3rem;
-}
+}*/
 
 .modal--show {
     transform: scale(1);
-    background-image: url("./Images_proyect/fondo_general.jpg");
-    width: 50%;
-    height: 80vh;
-    padding-top: 5em;
-    margin-top: 5em;
-    margin-right: 5%;
+    background-color: transparent;
+    width: 45%;
+    height: 70vh;
+    padding-top: 4em;
+    padding-bottom: 10em;
+    padding-right: 30em;
+    padding-left: 1em;
+    margin-top: 2em;
+    margin-right: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
   
   #tarjetaModal {
@@ -242,15 +242,25 @@ body {
     height: 100%;
     padding: 5em;
     background-image: url("./Images_proyect/fondo_general.jpg");
-    border-radius: 10px;
+    border: 0.3em solid rgba(24, 22, 22, 0.897);
+    border-radius: 5em;
+    border: ;
     margin: 1% auto;
     margin-left: 10%;
     margin-right: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
     
+    #letras{
+      padding-top: 0;
+      background-color: transparent;
+    }
+
     .letras{
       font-family: 'Merriweather', serif;
-      color: #bdbdbd;
+      color: #FFC107;
       background-color: transparent;
     }
 
@@ -363,7 +373,7 @@ body {
     font-size: calc(1vh + 0.5vw);
     color: #aa9d9de5;
     background-color: transparent;
-    width: 30vw;
+    width: 40vw;
     height: 4vh;
     display: flex;
     flex-direction: row;
