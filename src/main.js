@@ -68,12 +68,6 @@ let flujo3 = document.getElementById("personajes")
 // FUNCION PAREJA MAGICA
 
 
-function paginaInicio() {
-  flujo1.style.display = "none"; //Oculta seccion de pareja magica
-  intro.style.display = "block"; //Oculta seccion de pantalla principal
-  flujo2.style.display = "none"; // Oculta seccion de enemigo magico
-}
-
 function flow1() {
 
   flujo1.style.display = "block"; //Muestra seccion de pareja magica
@@ -105,7 +99,7 @@ function regresarEnemigo() {
   flujo2.style.display = "none"; // Oculta seccion de enemigo magico
 }
 
-
+const botonesJS= document.getElementById("botonesJS")
 
 function flow3() {
 
@@ -118,16 +112,18 @@ function flow3() {
       `<div id="contenedorFichas" class="contenedorFichasPersonajes">
       <div class="ficha">
         <img class="imagens" src="${dataHarryPotter[i].image}" id="${dataHarryPotter[i].name}">
-        <p class="seteoFicha">${dataHarryPotter[i].name}<p>
+        <p class="seteoNombresPantallaPersonajes">${dataHarryPotter[i].name}<p>
       </div>
     </div>`
     conteiner.innerHTML += elemen;
   }
 
+  
+
   botonInicioPersonajes.setAttribute("id", "vuelvePersonajes")
-  botonInicioPersonajes.setAttribute("class", "botones")
+  botonInicioPersonajes.setAttribute("class", "botonesPantallaPersonajes")
   botonInicioPersonajes.appendChild(nombreBotonPersonajes);
-  document.body.appendChild(botonInicioPersonajes);
+  botonesJS.appendChild(botonInicioPersonajes);
   const botonVuelvePersonaje = document.getElementById("vuelvePersonajes") //id de boton
   botonVuelvePersonaje.addEventListener("click", () => {
     location.reload()
@@ -151,7 +147,7 @@ ordenaAZ.addEventListener("change", () => {
       `<div id="contenedorFichas">
       <div class="ficha">
         <img class="imagens" src="${personajesOrdenados[i].image}" id="${personajesOrdenados[i].name}">
-        <p class="seteoFicha">${personajesOrdenados[i].name}<p>
+        <p class="seteoNombresPantallaPersonajes">${personajesOrdenados[i].name}<p>
       </div>
     </div>`
 
@@ -175,7 +171,7 @@ ordenaRelevanciaAZ.addEventListener("change", () => {
       `<div id="contenedorFichas">
       <div class="ficha">
         <img class="imagens" src="${personajesRelevancia[i].image}" id="${personajesRelevancia[i].name}">
-        <p class="seteoFicha">${personajesRelevancia[i].name}<p>
+        <p class="seteoNombresPantallaPersonajes">${personajesRelevancia[i].name}<p>
       </div>
     </div>`
     conteiner.innerHTML += elemen;
@@ -252,9 +248,9 @@ botonAceptarPareja.addEventListener('click', () => {
       `<div id="contenedorFichas">
 
     <div class="fichaResultado">
-    <p class="seteoFicha">${resultado[i].name}<p>
+    <p class="seteoNombresPantallaPersonajes">${resultado[i].name}<p>
      <div class="imagenParaResultados"> <img class="imagensResultado" src="${resultado[i].image}" id="${resultado[i].name}"></div>
-      <p id="bioResultadoPareja" class="seteoFicha">${resultado[i].personalInfo}<p>
+      <p id="bioResultado" class="seteoFicha">${resultado[i].personalInfo}<p>
 
     </div>
   </div>`
@@ -287,7 +283,7 @@ botonAceptarPareja.addEventListener('click', () => {
         </div>
       </div>`;
       conteiner.innerHTML += elemen;
-    };
+    }
   });
 
   botonInicioPareja.setAttribute("id", "vuelvePareja")
@@ -356,9 +352,8 @@ botonAceptarEnemigo.addEventListener('click', () => {
       `<div id="contenedorFichas">
     <div class="ficha">
       <img class="imagens" src="${resultado[i].image}" id="${resultado[i].name}">
-      <p class="seteoFicha">${resultado[i].name}<p>
-      <p class="seteoFicha">${resultado[i].house}<p>
-      <p class="seteoFicha">${resultado[i].personalInfo}<p>
+      <p class="seteoNombresPantallaPersonajes">${resultado[i].name}<p>
+      <p id="bioResultado" class="seteoFicha">${resultado[i].personalInfo}<p>
     </div>
   </div>`
     conteiner.innerHTML += elemen;
