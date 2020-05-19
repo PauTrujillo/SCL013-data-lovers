@@ -63,7 +63,7 @@ body {
 .contenedorPreguntas {
   background-color: transparent;
   padding-top: 3vh;
-  padding-left: 3vw;z
+  padding-left: 3vw;
   padding-bottom: 7vh;
   padding-right: 3vw;
   margin-bottom: 5vh;
@@ -147,7 +147,7 @@ body {
     margin: 0em 0em 0em 0em;
     background-color: transparent;
   }
-  
+
 
 /* Acá seteamos pantalla fondo personaje */
 .imagenPersonaje {
@@ -160,7 +160,7 @@ body {
   width: 100vw;
   height: 30vh;
   margin: 0em 0em 0em 0em;
-  
+
 }
 
 /* Acá seteamos imagen pantalla portada */
@@ -184,7 +184,7 @@ body {
     border-radius: 2em;
     border: 0.3em solid rgba(24, 22, 22, 0.897);
     background-image: url("./Images_proyect/fondo_general.jpg")
-    
+
   }
 
   /*acá inicia el estilo del modal*/
@@ -196,12 +196,12 @@ body {
     margin-top: 2%;
     margin-bottom: 7%;
     border: 0.3em solid rgba(24, 22, 22, 0.897);
-    background-image: url("./Images_proyect/fondo_general.jpg") 
+    background-image: url("./Images_proyect/fondo_general.jpg")
   }
 
   .modal {
     position: fixed;
-    top: 0;  
+    top: 0;
     left: 3%;
     width: 100vw;
     height: 100vh;
@@ -212,11 +212,11 @@ body {
     transform: scale(0);
     transition: transform .2s;
   }
-  
+
  /*#modal_Content {
  background-color: fuchsia;
  width: 300vw;
- height: 300vh; 
+ height: 300vh;
  padding: 3rem;
 }*/
 
@@ -236,7 +236,7 @@ body {
     align-items: center;
 
   }
-  
+
   #tarjetaModal {
     width: 100%;
     height: 100%;
@@ -252,7 +252,7 @@ body {
     justify-content: center;
     align-items: center;
     }
-    
+
     #letras{
       padding-top: 0;
       background-color: transparent;
@@ -346,7 +346,7 @@ body {
     color: #aa9d9de5;
     font-size: calc(2.5vh + 1vw);
   }
-  
+
   /*Texto portada web */
   .textoPortada {
     font-family: 'Merriweather', serif;
@@ -355,7 +355,7 @@ body {
     background-color: transparent;
     margin: 0em 1em 2.5em 1em;
   }
-  
+
   /*Preguntas de los juegos */
   .textoPregunta {
     font-family: 'Merriweather', serif;
@@ -366,7 +366,7 @@ body {
     padding-top: 2.5vh;
     align-self: center;
   }
-  
+
   /*Select de opciones para preguntas */
   .textoSelect {
     font-family: 'Manjari', sans-serif;
@@ -379,4 +379,9 @@ body {
     flex-direction: row;
     align-self: center
   }
-  
+#inicio{
+    display: none;
+  }
+#vuelve{
+  display: none;
+}
