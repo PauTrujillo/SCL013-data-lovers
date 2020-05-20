@@ -37,14 +37,14 @@ const ocultarPreguntasEnemigo = document.getElementById('enemigo');
 const botonInicioPareja = document.createElement("button"); //se crea boton desde js
 const nombreBotonPareja = document.createTextNode("Inicio"); //se asigna nombre de boton
 
-const botonConocerMasPareja = document.createElement("button");
-const nombreBotonConocerMasPareja = document.createTextNode("Quiero Saber Mas");
+//const botonConocerMasPareja = document.createElement("button");
+//const nombreBotonConocerMasPareja = document.createTextNode("Quiero Saber Mas");
 
 const botonInicioEnemigo = document.createElement("button");
 const nombreBotonEnemigo = document.createTextNode("Inicio");
 
-const botonConocerMasEnemigo = document.createElement("button");
-const nombreBotonConocerMasEnemigo = document.createTextNode("Quiero Saber Mas");
+//const botonConocerMasEnemigo = document.createElement("button");
+//const nombreBotonConocerMasEnemigo = document.createTextNode("Quiero Saber Mas");
 
 
 const botonInicioPersonajes = document.createElement("button");
@@ -102,7 +102,7 @@ function flow3() {
   flujo3.style.display = "block"; //Muestra Seccion de Personajes Magicos
   for (let i = 0; i < dataHarryPotter.length; i++) {
     let elemen =
-      `<div id="contenedorFichas" class="contenedorFichasPersonajes">
+      `<div id="contenedorFichas">
       <div class="ficha">
         <img class="imagens" src="${dataHarryPotter[i].image}" id="${dataHarryPotter[i].name}">
         <p class="seteoNombresPantallaPersonajes">${dataHarryPotter[i].name}<p>
@@ -111,7 +111,7 @@ function flow3() {
     conteiner.innerHTML += elemen;
   }
   botonInicioPersonajes.setAttribute("id", "vuelvePersonajes")
-  botonInicioPersonajes.setAttribute("class", "botonesPantallaPersonajes")
+  botonInicioPersonajes.setAttribute("class", "botones")
   botonInicioPersonajes.appendChild(nombreBotonPersonajes);
   botonesJS.appendChild(botonInicioPersonajes);
   const botonVuelvePersonaje = document.getElementById("vuelvePersonajes") //id de boton
@@ -226,17 +226,17 @@ botonAceptarPareja.addEventListener('click', () => {
     for (let i = 0; i < resultado.length; i++) {
       let elemen =
         `<div class="fichaBio" id="contenedorFichas">
-    
-    <p class="seteoNombresPantallaPersonajes">${resultado[i].name}<p>
+        <p class="tituloMensajes">Tu pareja mágica es: <p> 
      <div class="contenedorImagenBio"> <img class="imagensResultado" src="${resultado[i].image}" ></div>
-      <p id="bioResultado" class="seteoFicha">${resultado[i].personalInfo}<p>
+     <p class="seteoNombresPantallaBio">${resultado[i].name}<p> 
+     <p id="bioResultado" class="seteoFichaBio">${resultado[i].personalInfo}<p>
 
   </div>`
       conteiner.innerHTML += elemen;
     }
   }
 
-  botonConocerMasPareja.setAttribute("id", "quieroConocerPareja")
+  /*botonConocerMasPareja.setAttribute("id", "quieroConocerPareja")
   botonConocerMasPareja.setAttribute("class", "botones")
   botonConocerMasPareja.appendChild(nombreBotonConocerMasPareja);
   botonesJS.appendChild(botonConocerMasPareja);
@@ -258,10 +258,10 @@ botonAceptarPareja.addEventListener('click', () => {
           <p class="fichaResultado">Nucleo de Varita: ${resultado[i].wand.core}<p>
           <p class="fichaResultado">Longuitud de Varita: ${resultado[i].wand.length}<p>
         </div>
-      </div>`;
+      </div>`; 
       conteiner.innerHTML += elemen;
     }
-  });
+  });*/
 
   botonInicioPareja.setAttribute("id", "vuelvePareja")
   botonInicioPareja.setAttribute("class", "botones")
@@ -323,17 +323,17 @@ botonAceptarEnemigo.addEventListener('click', () => {
   } else {
     for (let i = 0; i < resultado.length; i++) {
       let elemen =
-        `<div id="contenedorFichas">
-    <div class="ficha">
-    <p class="seteoNombresPantallaPersonajes">${resultado[i].name}<p>
-      <img class="imagens" src="${resultado[i].image}" id="${resultado[i].name}">
-      <p id="bioResultado" class="seteoFicha">${resultado[i].personalInfo}<p>
-    </div>
-  </div>`
+      `<div class="fichaBio" id="contenedorFichas">
+      <p class="tituloMensajes">Tu enemigo mágico es: <p> 
+      <div class="contenedorImagenBio"> <img class="imagensResultado" src="${resultado[i].image}" ></div>
+      <p class="seteoNombresPantallaBio">${resultado[i].name}<p> 
+      <p id="bioResultado" class="seteoFichaBio">${resultado[i].personalInfo}<p>
+ 
+   </div>`
       conteiner.innerHTML += elemen;
     }
   }
-  botonConocerMasEnemigo.setAttribute("id", "quieroConocerEnemigo")
+  /*botonConocerMasEnemigo.setAttribute("id", "quieroConocerEnemigo")
   botonConocerMasEnemigo.setAttribute("class", "botones")
   botonConocerMasEnemigo.appendChild(nombreBotonConocerMasEnemigo);
   botonesJS.appendChild(botonConocerMasEnemigo);
@@ -358,7 +358,7 @@ botonAceptarEnemigo.addEventListener('click', () => {
       </div>`
       conteiner.innerHTML += elemen;
     }
-  })
+  })*/
 
   botonInicioEnemigo.setAttribute("id", "vuelveEnemigo")
   botonInicioEnemigo.setAttribute("class", "botones")

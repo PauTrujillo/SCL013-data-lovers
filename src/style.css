@@ -16,15 +16,18 @@
 /*Caja para Biografía personajes en resultados juegos*/
 #bioResultado {
   background-image: url("./Images_proyect/fondo_general.jpg");
-  width: 100vw;
+  width: 90vw;
   height: 100%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 3%;
   display: flex;
-  align-self: flex-end;
-  justify-self: right;
+  align-self: center;
+  justify-content: left;
   font-size: calc(0.8em + 0.9vw);
 }
 
-/*Es el cuerpo general del documento. Define el fondo general */
+/*Es el cuerpo general del documento. Define el fondo general y que trabajamos con flexbox */
 body {
   background-image: url("./Images_proyect/fondo_general.jpg");
   padding-top: 0em;
@@ -33,7 +36,7 @@ body {
 }
 
 
-/* Clase para Botones pantallas: portada, juego pareja, juego enemigo.  */
+/* Clase para Botones pantallas: portada, juego pareja, juego enemigo, y personajes */
 .botones {
   background-color: rgba(255, 252, 62, 0.966);
   opacity: 0.7;
@@ -44,21 +47,17 @@ body {
   font-size: calc(0.7em + 0.8vw);
   border-radius: 20%;
 }
-
-/* Clase para Botones pantallas: personajes de la saga */
-.botonesPantallaPersonajes {
-  background-color: rgba(255, 252, 62, 0.966);
-  opacity: 0.7;
-  width: 20vw;
-  height: 10vh;
-  margin-bottom: 10em;
-  border: 0.2em solid #aa9d9de5;
-  font-family: 'Metal Mania', cursive;
-  font-size: calc(0.7em + 0.8vw);
-  border-radius: 20%;
+/*Seteo de contenedor botones creados en JS*/
+#botonesJS {
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 5em;
+  margin-bottom: 1em;
 }
 
-/* Contenedor para Botones pantalla portada, juego pareja, juego enemigo. */
+/* Contenedor para Botones pantalla portada, juego pareja, juego enemigo, creados en HTML */
 .contenedorBotones {
   background-color: transparent;
   margin-top: 6vh;
@@ -68,16 +67,8 @@ body {
   align-items: flex-end;
 }
 
-/* Contenedor fichas */
-/*.contenedorFichasPersonajes {
-  background-image: url("./Images_proyect/fondo_general.jpg");
-  width: 100vw;
-  height: 25vh;
-  display: flex;
-  flex-direction: column;
-} */
 
-/* Contenedor para Preguntas */
+/* Contenedor para Preguntas juegos, creadas en HTML */
 .contenedorPreguntas {
   background-color: transparent;
   padding-top: 3vh;
@@ -89,13 +80,13 @@ body {
   flex-direction: column;
 }
 
-/* Para ocultar pantalla enemigo */
+/* Para ocultar pantalla enemigo en función */
 #enemigo {
   display: none;
 }
 
-
-/* Banner para todo el proyecto*/
+/* Seteo Banner para todo el proyecto*/
+/* Banner en si*/
 #estiloBanner {
   background-image: url("./Images_proyect/Banner.png");
   background-repeat: no-repeat;
@@ -107,26 +98,12 @@ body {
   margin: auto;
 }
 
-
+/* configuración para eliminar franjas negras al hacer resposive pagina*/
 .bannerFondo {
-  background-image: url("./Images_proyect/fondo_general.jpg");
   background-color: transparent;
 }
 
-/* Ficha resultado, pero no estoy segura si esta funcionando*/
-.fichaResultado {
-  background-image: url("./Images_proyect/fondo_general.jpg");
-  background-color: transparent;
-  width: 90vw;
-  height: 100vh;
-  display: flex;
-  align-self: flex-start;
-  justify-self: right;
-
-}
-
-
-/* Acá seteamos ficha personajes */
+/* Acá seteamos ficha personajes, y las hacemos responsive */
 .ficha {
   width: 180px;
   height: 230px;
@@ -135,13 +112,29 @@ body {
   margin: 1% auto;
   margin-left: 1%;
   margin-right: 1%;
+  margin-top: 3%;
+  margin-bottom: 3%;
   background: transparent;
   float: left;
 }
 
+/* Seteo para que podamos ver el fondo de pantalla en biografias */
 .fichaBio {
   background-color: transparent;
 }
+
+/* Ficha resultado, pero la comentamos porque no la estamos usando, porque elminamos ficha resultado
+.fichaResultado {
+  background-image: url("./Images_proyect/fondo_general.jpg");
+  background-color: transparent;
+  width: 90vw;
+  height: 100vh;
+  display: flex;
+  align-self: flex-start;
+  justify-self: right;
+} */
+
+
 
 /* Acá seteamos pantalla fondo enemigo */
 .imagenEnemigo {
@@ -161,7 +154,6 @@ body {
   background-image: url("./Images_proyect/fondo_amor.png");
   background-repeat: no-repeat;
   background-size: cover;
-  /*background-size: 100%;*/
   display: block;
   margin: auto;
   width: 100vw;
@@ -176,7 +168,6 @@ body {
   background-image: url("./Images_proyect/fondo_general.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /*background-size: 100%;*/
   display: block;
   margin: auto;
   width: 100vw;
@@ -190,7 +181,6 @@ body {
   background-image: url("./Images_proyect/fondo_1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  /*background-size: 100%;*/
   display: block;
   margin: auto;
   width: 100vw;
@@ -199,7 +189,7 @@ body {
   padding-top: 6%;
 }
 
-
+/*Seteo imagen para fichas*/
 .imagens {
   width: 100%;
   height: 30vh;
@@ -208,28 +198,23 @@ body {
   background-image: url("./Images_proyect/fondo_general.jpg");
 }
 
-/*Imagen resultado juegos*/
+/*Seteo Imagenes resultado juegos*/
+/*Imagen en si*/
 .imagensResultado {
   width: 20vw;
   height: 15%;
   border-radius: 2em;
   border: 0.3em solid rgba(24, 22, 22, 0.897);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /*contenedor imagen resultado juegos*/
 .contenedorImagenBio {
 background-color: transparent;
+margin-top: 0;
+margin-bottom: 3%;
 }
-
-/*Ver si elimnamos*/
-/*.imagenParaResultados {
-  width: 20vw;
-  height: 30vh;
-  background-image: url("./Images_proyect/fondo_general.jpg");
-}*/
-
-
-
 
 
 /*Seteo letras mensaje no match*/
@@ -238,6 +223,8 @@ background-color: transparent;
   color: #FFC107;
   background-color: transparent;
 }
+
+
 
 
 /*acá inicia el estilo del modal*/
@@ -252,6 +239,7 @@ background-color: transparent;
   background-image: url("./Images_proyect/fondo_general.jpg")
 }
 
+/*seteo modal, pero no se ve esto*/
 .modal {
   position: fixed;
   top: 0;
@@ -266,6 +254,7 @@ background-color: transparent;
   transition: transform .2s;
 }
 
+/*Id modal, pero o lo estamos ocupando para css*/
 /*#modal_Content {
  background-color: fuchsia;
  width: 300vw;
@@ -273,6 +262,7 @@ background-color: transparent;
  padding: 3rem;
 }*/
 
+/*contenedor modal*/
 .modal--show {
   transform: scale(1);
   background-color: transparent;
@@ -289,7 +279,7 @@ background-color: transparent;
   align-items: center;
 
 }
-
+/*modal en si*/
 #tarjetaModal {
   width: 100%;
   height: 100%;
@@ -305,11 +295,13 @@ background-color: transparent;
   align-items: center;
 }
 
+/*contenedor textos modal*/
 #letras {
   padding-top: 0;
   background-color: transparent;
 }
 
+/*estilo letras modal*/
 .letras {
   font-family: 'Merriweather', serif;
   color: #FFC107;
@@ -319,37 +311,19 @@ background-color: transparent;
 
 
 
-
-/* Acá ocultamos pantalla pareja*/
+/* Acá ocultamos pantalla pareja para funcion*/
 #pareja {
   display: none;
 }
 
 
-/* Acá ocultamos pantalla personajes*/
+/* Acá ocultamos pantalla personajes para funcion*/
 #personajes {
   display: none;
 }
 
 
 /* Aca seteamos el estilo del footer del proyecto */
-.pie {
-  background-color: rgb(8, 8, 8);
-  color: #bdbdbd;
-  font-family: 'Metal Mania', cursive;
-  clear: both;
-  text-align: center;
-}
-
-/* Aca seteamos el contenedor de la portada del proyecto*/
-#portada {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-}
-
-
 .pie {
   background-color: black;
   font-family: 'Merriweather', serif;
@@ -361,11 +335,15 @@ background-color: transparent;
  justify-self: flex-end;
 }
 
-
-#personajes {
-  display: none;
+/* Aca seteamos el contenedor de la portada del proyecto*/
+#portada {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
 }
 
+/* Aca seteamos el contenedor root del proyecto*/
 #root {
   margin: 1cm;
   background-color: transparent;
@@ -385,7 +363,7 @@ background-color: transparent;
   height: 5vh;
 }
 
-
+/* Originalente para fichas personajes pero no lo estamos usando. 
 .seteoFicha {
   font-family: 'Manjari', sans-serif;
   color: #FFC107;
@@ -395,29 +373,43 @@ background-color: transparent;
   flex-direction: row;
   width: 20vw;
   height: 30vh;
+}/*
+
+/*estilo de fuente para biografía personajes en resultado juegos */
+.seteoFichaBio {
+  font-family: 'Merriweather', serif;
+  color: #FFC107;
+  font-size: calc(1.4vh + 0.6vw);
+  background-image: url("./Images_proyect/fondo_general.jpg");
+  width: 85%;
+  height: 100%;
+  margin-right: 5%;
+  margin-left: 2%;
 }
 
-/*Seteo nombre en donde aparezcan nombres*/
+/*Seteo nombres en pantalla personajes*/
 .seteoNombresPantallaPersonajes {
   font-family: 'Manjari', sans-serif;
   color: #FFC107;
-  font-size: 1.5em;
+  font-size: calc(1.8vh + 0.9vw);
   background-color: transparent;
-  width: 30%;
-  height: 5vh
-    /*display: flex;
-  flex-direction: row;
-  ;*/
+  display: inline;
 }
 
-
-
-.loqueSaque {
-  background-image: url("./Images_proyect/fondo_general.jpg");
+/*Seteo nombre en bio*/
+.seteoNombresPantallaBio {
+  font-family: 'Metal Mania', cursive;
+  color: #FFC107;
+  font-size: 3em;
+  background-color: transparent;
+  width: 30%;
+  height: 5vh;
   display: flex;
-  flex-direction: row;
-  width: 20vw;
-  height: 30vh;
+  align-items: center;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  margin-left: 40%;
+  font-size: calc(3vh + 2vw);
 }
 
 
@@ -467,16 +459,11 @@ background-color: transparent;
   align-self: center
 }
 
-
-
-/*Seteo de contenedor botones quiero mas enemigo, pareja e inicio enemigo, pareja y personajes*/
-#botonesJS {
-  background: transparent;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 5em;
-  margin-bottom: 1em;
+/*titulo pantalla personajes juegos*/
+.tituloMensajes {
+  font-family: 'Merriweather', serif;
+  color: #aa9d9de5;
+  font-size: calc(3vh + 2vw);
+  background-color: transparent;
+  margin: 0em 1em 1em 1em;
 }
-
-
