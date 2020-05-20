@@ -83,7 +83,7 @@ Te invitamos a acceder nuestra plataforma de trabajo, donde podrás ver gráfica
 
 Todo empieza cuando nuestro cliente plantea la necesidad de crear una plataforma que potenciara la experiencia de los usuarios de "Harry Potter: Wizards Unite", implementando soluciones a las necesidades descubiertas luego de investigaciones UX. 
 
-Si bien lo esencial era implementar el mecanismo de filtrado, y desplegar las fichas de los diferentes personajes, no queríamos simplemente ser un apéndice enciclopédico para el juego, sino estimular al usuario a partir de una experiencia interactiva, intiutiva y con recompensas, con una interfaz amigable, sencilla y que represente la ideantidad de Harry Potter. 
+Si bien lo esencial era implementar el mecanismo de filtrado, y desplegar las fichas de los diferentes personajes, no queríamos simplemente ser un apéndice enciclopédico para el juego, sino estimular al usuario a partir de una experiencia interactiva, intiutiva y con recompensas, con una interfaz amigable, sencilla y que represente la identidad de Harry Potter. 
 
 Ideamos un primer Diagrama de Flujo de la aplicación, donde se refleja la primera aproximación a nuestra propuesta.
 
@@ -131,7 +131,7 @@ Con la planificación clara, procedimos a trabajar en nuestro proyecto.
 
 **SPRINT** :one:
 
-Comenzamos el Sprint tomando dos lineas principales de trabajo. La primera fue Investigación, donde se estudió constantemente las distintas temáticas a aplicarse en nuestro proyecto, desde las diferentes perspectivas desde donde se construye. 
+Comenzamos el Sprint tomando dos lineas principales de trabajo. La primera fue Investigación, donde se estudió constantemente las distintas temáticas a aplicarse en nuestro proyecto, desde las diferentes perspectivas donde se construye. 
 
 En paralelo, tuvimos el proceso de búsqueda para definir y redefinir la aplicación, y setearla como lo que actualmente proponemos como Magic Match. 
 
@@ -169,16 +169,25 @@ Escribimos el código de la aplicación, y trabajamos en aportar nueva informaci
 
 Realizamos una nueva investigación para poder dar un orden de relevancia a los personajes de la aplicación. 
 Luego de una búsqueda exhaustiva, decidimos basarnos en la pagina web [Harry Potter Fandom](https://harrypotter.fandom.com/), la cuál posee información fidedigna y con fuentes verificadas, en relación a diferentes ámbitos del mundo de harry Potter. 
-Dentro de todas la nueva información a la que accedimos, encontramos que la página tiene una sección de categorías para cada personaje, esto quiere decir, que muestra todas las categorías a las cuales esta relacionada un personaje de la saga, por tanto, mientras más categorías se le puedan asignar, mayor es su protagonismo en la historia. Según esto, le dimos a cada peresonaje un valor, según la cantidad de categorías que tiene, y según esto, se le pudo dar un orden de relevancia objetivo y con una fuente fidedigna. 
+Dentro de todas la nueva información a la que accedimos, encontramos que la página tiene una sección de categorías para cada personaje, esto quiere decir, que muestra todas las categorías a las cuales esta relacionada un personaje de la saga, por tanto, mientras más categorías se le puedan asignar, mayor es su protagonismo en la historia. Según esto, le dimos a cada personaje un valor, según la cantidad de categorías que tiene, y según esto, se le pudo dar un orden de relevancia objetivo y con una fuente fidedigna. 
 
 Desde esta misma fuente, pudimos obtener la información para crear una breve biografía de cada personaje, idealmente con datos menos conocidos de los que usualmente sabría un usuario. Esto lo hicimos en vista que el usuario nos solicitó tener mayor información sobre los personajes, y esta recompensa es más interesante que un texto relacionado al usuario. 
 
+Tuvimos la retrospectiva de la semana, y modificamos el Backlog del Sprint 4. 
+
 **Sprint** :four:
 
-Estamos trabajando en CSS y en Testeos. 
+Nos dedicamos a trabajar la interfaz de nuestra plataforma, y también a hacer los Unit Tests para comprobar que nuestro código estaba correcto a nivel de redacción y funcionalidad. 
 
+Recibimos una nueva fecha de entrega, por lo tanto pudimos reorganizarnos, dedicando así mayor tiempo a los Unit Tests, y considerando el Sprint Final para afinar todos los detalles que se nos estaban escapando o aún faltaban por completar. 
 
+Hicimos nuestra restrospectiva de la semana y reformulamos las últimas tareas pendientes de el backlog de nuestro proyecto. 
 
+**Sprint** :five:
+
+Afinamos los últimos detalles de la interfaz y de la funcionalidad del proyecto. 
+
+Terminamos el Readme, y nos preparamos para nuestra presentación. 
 
 ***
  
@@ -332,7 +341,7 @@ Una vez lista la maqueta, esta fue implementada en Maze, para llevar a cabo nuev
 
 [Revisa Informe de Pruebas en Maze Aquí](https://maze.design/r/7c89ck7xk9pa69nb#mission-1)
 
-Estas pruebas de usuaron se enfocaron en confirmar la mejora en las distintas áreas que obtuvieron resultados mas bajos en las pruebas de usuario anteriores, y que tuvimos que re construir. 
+Estas pruebas de usuario se enfocaron en confirmar la mejora en las distintas áreas que obtuvieron resultados mas bajos en las pruebas de usuario anteriores, y que tuvimos que re construir. 
 Las áreas a trabajar fueron:
 
 -Mejorar visualidad y acercarla más a Mundo Harry Potter. 
@@ -350,7 +359,7 @@ Luego de realizar las pruebas en Maze a 12 usuarios, podemos concluir lo siquien
 
 :black_circle: Existieron problemas técnicos en la implementación de la maqueta en Maze, lo cuál incide en los porcentajes obtenidos en el Reporte que nos entrega la plataforma de testeo. Esto afectó el porcentaje de usabilidad de la aplicación, así como fue parte de los comentarios de los usuarios. 
 
-:black_circle: A pesar de los problemas técnicos, el usuario fue capaz de entender la aplicación y de contestar las preguntas directas que se solicitaban, para así obtener una respuesta en cuanto a las inquietudes que buscábamos resolver resolver a través de estos testeos. 
+:black_circle: A pesar de los problemas técnicos, el usuario fue capaz de entender la aplicación y de contestar las preguntas directas que se solicitaban, para así obtener una respuesta en cuanto a las inquietudes que buscábamos resolver a través de estos testeos. 
 
 :black_circle: Usuarios disfrutan de la aplicación. 
 
@@ -364,37 +373,30 @@ Luego de realizar las pruebas en Maze a 12 usuarios, podemos concluir lo siquien
 Con estos resultados, decidimos que era el momento de comenzar a trabajar en la aplicación real, basándonos en la maqueta testeada, ya que cumple con las expectativas que deseamos, para así cumplir con los objetivos expuestos. 
 
 
+A continuación presentamos nuestra plataforma final. 
 
+[Git Hub Proyecto](https://github.com/PauTrujillo/SCL013-data-lovers)
 
-Por completar al principio de Sprint 4 
-
-PRUEBAS DE USUARIO PRODUCTO FINAL. TBC
-
-PRODUCTO FINAL + LINK EN GIT HUB PAGES 
+[Deploy Plataforma Web](https://pautrujillo.github.io/SCL013-data-lovers/src/index.html)
 
 
 ***	
 
 <a id="conclusiones"> :first_quarter_moon_with_face:  5. CONCLUSIONES Y REFLEXIONES :first_quarter_moon_with_face:</a>
 
-:o: El usuario siempre está en búsqueda de una mejor experiencia de usuario. 
+Luego de haber finalizado nuestro proceso de investigación y desarrollo, podemos llegar a las siguientes conclusiones. 
 
-Por completar al principio de Sprint 4:
+:o: El usuario siempre está en búsqueda de una mejor experiencia de usuario. Gracias a las diferentes iteraciones, nos dimos cuenta que siempre se puede optimizar nuestra aplicación, por tanto, el proceso de mejora puede ser constante y continuo. 
 
-Resolvemos necesidades de Cliente? 
+:o: Logramos resolver las necesidades técnicas presentadas por nuestro cliente. 
 
-Resolvemos necesidades de usuario? 
+:o: Logramos resolver las necesidades de los usuarios propuestas por nuestro cliente. 
 
-Qué se nos hizo difícil?
+:o: El proceso de trabajo fue muy intenso y continuo, teniendo que estar constantemente recurriendo a la investigación, para las mejoras tanto desde nuestra parte técnica, como interfaz e información a desplegar. 
 
-Qué se nos hizo fácil?
+En general disfrutamos de el trabajo en conjunto, y sentimos que llegamos a un gran resultado, pudiendo cumplir con nuestras metas y objetivos planteados desde un principio. 
 
-Cuplimos Objetivos? Reflexión al respecto. 
-
-Como podemos mejorar? 
-
-Reflexión conclusiva. 
-
+Si bien estamos contentas por todo lo logrado, para una próxima instancia sabesmos que podemos implementar ciertas mejoras a nuestra plataforma, como por ejemplo, mejorar la data y también mejorar el mecanismo de resultado de filtrado, para optimizar el proceso de obtención de los match mágicos. 
 
 ***	
 
@@ -402,7 +404,11 @@ Reflexión conclusiva.
 <a id="agradecimientos"> :sun_with_face: 6. AGRADECIMIENTOS  :sun_with_face: </a>
 
 
-Por completar al principio de Sprint 4. 
+Agradecemos al equipo de laboratoria, en especial a nuestras coachs, por toda la ayuda que nos brindaron durante el proceso de aprendizaje. 
+
+También nos gustaría dar un gran reconocimiento a nuestras compañeras de Squad y de antiguos Squad, quienes estuvieron siempre a nuestro lado, apoyándonos y también aprendiendo juntas. 
+
+Finalmente nos gustaría agradecer a nuestras familias, por todo el amor, paciencia y apoyo que nos brindaron en este intenso, pero hermoso proceso. 
 
 
 
